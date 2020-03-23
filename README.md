@@ -3,7 +3,7 @@
 [![npm version](https://badge.fury.io/js/eslint-plugin-square.svg)](https://badge.fury.io/js/eslint-plugin-square)
 ![CI](https://github.com/square/eslint-plugin-square/workflows/CI/badge.svg)
 
-This plugin contains lint rule definitions and configurations for [ESLint](http://eslint.org) specific to Square's needs.
+This plugin contains lint rule definitions and configurations for [ESLint](http://eslint.org) specific to Square's needs. It serves mainly to consolidate Square's web frontend linting setup in one place.
 
 ## Requirements
 
@@ -35,6 +35,12 @@ module.exports = {
 | [ember] | [Ember.js]-specific additions on top of `base`. Includes recommended and optional rules from [eslint-plugin-ember], kebab-case filename enforcement with [eslint-plugin-filenames], and more. |
 
 ## Custom rules
+
+Note that we prefer to upstream our custom lint rules to third-party eslint plugins whenever possible. The rules that still remain here are typically here because:
+
+* We haven't found the appropriate eslint plugin to upstream them to.
+* We haven't found the time to upstream them.
+* They are specific to Square in some way / not generic enough.
 
 | Rule | Category | Configuration Enabled In | Fixable? |
 | --- | --- | --- | --- |
