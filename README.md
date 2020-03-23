@@ -1,5 +1,7 @@
 # eslint-plugin-square
 
+[![npm version](https://badge.fury.io/js/eslint-plugin-square.svg)](https://badge.fury.io/js/eslint-plugin-square)
+
 This plugin contains lint rule definitions and configurations for [ESLint](http://eslint.org) specific to Square's needs.
 
 ## Requirements
