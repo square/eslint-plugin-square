@@ -33,6 +33,7 @@ module.exports = {
 | --- | --- |
 | [base] | Rules and configuration for any JavaScript-based project. Includes recommended and optional rules from [eslint], [prettier], [eslint-plugin-eslint-comments], [eslint-plugin-import], and more. |
 | [ember] | [Ember.js]-specific additions on top of `base`. Includes recommended and optional rules from [eslint-plugin-ember], kebab-case filename enforcement with [eslint-plugin-filenames], and more. |
+| [typescript] | [TypeScript](https://www.typescriptlang.org/)-specific additions on top of `base`. Use with [@typescript-eslint/parser]. Includes recommended rules from [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import#typescript), [prettier/@typescript-eslint], and more.
 
 ## Custom rules
 
@@ -69,6 +70,9 @@ Note that we prefer to upstream our custom lint rules to third-party eslint plug
 [eslint-plugin-filenames]: https://github.com/selaux/eslint-plugin-filenames
 [eslint-plugin-import]: https://github.com/benmosher/eslint-plugin-import
 [prettier]: https://prettier.io/
+[typescript]: lib/config/typescript.js
+[@typescript-eslint/parser]: https://www.npmjs.com/package/@typescript-eslint/parser
+[prettier/@typescript-eslint]: https://github.com/prettier/eslint-config-prettier/blob/master/%40typescript-eslint.js
 
 ## License
 

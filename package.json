@@ -18,7 +18,8 @@
     "eslint",
     "eslint-config",
     "eslint-plugin",
-    "linter"
+    "linter",
+    "typescript"
   ],
   "license": "Apache-2.0",
   "repository": {
@@ -29,6 +30,7 @@
     "node": ">= 10"
   },
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.25.0",
     "camelcase": "^5.3.1",
     "eslint-config-prettier": "^6.10.1",
     "eslint-plugin-ember": "^7.11.0",
