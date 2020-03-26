@@ -26,7 +26,7 @@
     "url": "https://github.com/square/eslint-plugin-square.git"
   },
   "engines": {
-    "node": ">= 10"
+    "node": "10.* || >= 12"
   },
   "dependencies": {
     "camelcase": "^5.3.1",
