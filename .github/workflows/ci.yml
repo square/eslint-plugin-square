@@ -24,8 +24,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: yarn install --frozen-lockfile
+    - run: yarn install --frozen-lockfile --non-interactive
     - run: yarn lint
     - run: yarn test
-      env:
-        CI: true
+    - run: yarn add --dev eslint@5 && yarn test
