@@ -71,6 +71,7 @@ Note that we prefer to upstream our custom lint rules to third-party eslint plug
 [eslint-plugin-import]: https://github.com/benmosher/eslint-plugin-import
 [prettier]: https://prettier.io/
 [typescript]: lib/config/typescript.js
+[@typescript-eslint/parser]: https://www.npmjs.com/package/@typescript-eslint/parser
 
 ## License
 
