@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-square",
-  "version": "13.0.0",
+  "version": "13.1.0",
   "description": "Linting plugin containing Square's custom lint rules and lint configuration for JavaScript and Ember.",
   "main": "lib/index.js",
   "scripts": {
