@@ -1,7 +1,7 @@
 {
   "name": "eslint-plugin-square",
   "version": "13.1.0",
-  "description": "Linting plugin containing Square's custom lint rules and lint configuration for JavaScript and Ember.",
+  "description": "Linting plugin containing Square's custom lint rules and configuration for JavaScript and related technologies.",
   "main": "lib/index.js",
   "scripts": {
     "lint": "npm-run-all lint:* --continue-on-error",
@@ -20,6 +20,7 @@
     "eslint-config",
     "eslint-plugin",
     "linter",
+    "react",
     "typescript"
   ],
   "license": "Apache-2.0",
@@ -40,6 +41,7 @@
     "eslint-plugin-filenames": "^1.3.2",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-prettier": "3.1.2",
+    "eslint-plugin-react": "^7.19.0",
     "espree": "^6.2.1",
     "estraverse": "^5.0.0",
     "prettier": "^2.0.2"
