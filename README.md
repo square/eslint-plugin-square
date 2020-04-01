@@ -36,6 +36,12 @@ module.exports = {
 | [react] | [React](https://reactjs.org)-specific additions on top of `base`. |
 | [typescript] | [TypeScript](https://www.typescriptlang.org/)-specific additions on top of `base`. Use with [@typescript-eslint/parser]. |
 
+Rules enabled by these configurations should meet the following criteria:
+
+* They make sense in a wide variety of codebases (and have been tested in a variety of Square's applications).
+* They are generally acceptable and desirable (in terms of enforcing best practices, consistency, avoiding bugs) to most developers.
+* There is a practical migration path (autofixers, codemod, find-and-replace, manual fixes) for enabling them in most applications.
+
 ## Custom rules
 
 | Rule | Category | Configuration Enabled In | Fixable? |
