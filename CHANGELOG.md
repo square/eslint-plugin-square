@@ -1,3 +1,11 @@
+## v13.2.1 (2020-04-01)
+
+#### :bug: Bug Fix
+* [#25](https://github.com/square/eslint-plugin-square/pull/25) Allow PascalCase component filenames in `react` config ([@ghaagsma](https://github.com/ghaagsma))
+
+#### Committers: 1
+- Gerald Haagsma ([@ghaagsma](https://github.com/ghaagsma))
+
 ## v13.2.0 (2020-04-01)
 
 #### :rocket: Enhancement
