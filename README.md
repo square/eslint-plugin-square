@@ -38,12 +38,6 @@ module.exports = {
 
 ## Custom rules
 
-Note that we prefer to upstream our custom lint rules to third-party eslint plugins whenever possible. The rules that still remain here are typically here because:
-
-* We haven't found the appropriate eslint plugin to upstream them to.
-* We haven't found the time to upstream them.
-* They are specific to Square in some way / not generic enough.
-
 | Rule | Category | Configuration Enabled In | Fixable? |
 | --- | --- | --- | --- |
 | [no-async](docs/rules/no-async.md) | JavaScript | N/A | |
@@ -61,6 +55,12 @@ Note that we prefer to upstream our custom lint rules to third-party eslint plug
 | [no-test-return-value](docs/rules/no-test-return-value.md) | Testing | [ember] | |
 | [use-call-count-test-assert](docs/rules/use-call-count-test-assert.md) | Testing | [ember] | :wrench: |
 | [use-ember-find](docs/rules/use-ember-find.md) | Testing | [ember] | :wrench: |
+
+Note that we prefer to upstream our custom lint rules to third-party eslint plugins whenever possible. The rules that still remain here are typically here because:
+
+* We haven't found the appropriate eslint plugin to upstream them to.
+* We haven't found the time to upstream them.
+* They are specific to Square in some way / not generic enough.
 
 [base]: lib/config/base.js
 [ember]: lib/config/ember.js
