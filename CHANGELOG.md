@@ -1,3 +1,16 @@
+## v13.2.0 (2020-04-01)
+
+#### :rocket: Enhancement
+* [#22](https://github.com/square/eslint-plugin-square/pull/22) Add `react` configuration ([@ghaagsma](https://github.com/ghaagsma))
+
+#### :memo: Documentation
+* [#24](https://github.com/square/eslint-plugin-square/pull/24) Mention the criteria that rules should meet to be enabled in our configurations ([@bmish](https://github.com/bmish))
+
+#### Committers: 3
+- Bryan Mishkin ([@bmish](https://github.com/bmish))
+- Gerald Haagsma ([@ghaagsma](https://github.com/ghaagsma))
+- [@dependabot-preview[bot]](https://github.com/apps/dependabot-preview)
+
 ## v13.1.0 (2020-03-28)
 
 #### :rocket: Enhancement
