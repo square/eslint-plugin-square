@@ -1386,7 +1386,7 @@ eslint-plugin-node@11.1.0:
     resolve "^1.10.1"
     semver "^6.1.0"
 
-eslint-plugin-prettier@3.1.2:
+eslint-plugin-prettier@^3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-3.1.2.tgz#432e5a667666ab84ce72f945c72f77d996a5c9ba"
   integrity sha512-GlolCC9y3XZfv3RQfwGew7NnuFDKsfI4lbvRK+PIIo23SFH+LemGs4cKwzAaRa+Mdb+lQO/STaIayno8T5sJJA==
@@ -3680,7 +3680,7 @@ registry-url@^5.0.0:
   dependencies:
     rc "^1.2.8"
 
-release-it-lerna-changelog@^2.1.2:
+release-it-lerna-changelog@2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/release-it-lerna-changelog/-/release-it-lerna-changelog-2.1.2.tgz#7173be48422d873c5160ce5a3231863fcd8ef513"
   integrity sha512-JxOVXjBcdsuwW6r2EgWhjF3ta3Fu3lxOt8yw9VdnEJjM6uOD7S0WMR4L5B3zu9Z+1UXF1VqOasUi0mMliU6fmw==
