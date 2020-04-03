@@ -23,7 +23,19 @@ describe('filenames', () => {
       ].forEach((t) => assert.ok(re.test(t), `expected '${t}' to be ok`));
 
       ['snake_case', 'camelCase', 'PascalCase'].forEach((t) =>
-        assert.ok(!re.test(t), `expted ${t} to NOT be ok`)
+        assert.ok(!re.test(t), `expected ${t} to NOT be ok`)
+      );
+    });
+
+    it('supports pascal case', () => {
+      const re = new RegExp(filenames.regex.pascal);
+
+      ['App', 'PascalCase', 'FooBarBaz', 'App.test'].forEach((t) =>
+        assert.ok(re.test(t), `expected '${t}' to be ok`)
+      );
+
+      ['simple', 'snake_case', 'kebab-case', 'dot.case'].forEach((t) =>
+        assert.ok(!re.test(t), `expected ${t} to NOT be ok`)
       );
     });
   });
