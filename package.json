@@ -8,7 +8,6 @@
     "lint:docs": "markdownlint '**/*.md' -i CHANGELOG.md -i node_modules",
     "lint:js": "eslint .",
     "preversion": "yarn test && yarn lint",
-    "release": "release-it",
     "test": "nyc --all --check-coverage mocha --recursive tests"
   },
   "files": [
