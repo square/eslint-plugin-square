@@ -10,7 +10,7 @@ const RULE_NAMES = Object.keys(rules);
 
 describe('rules setup is correct', function () {
   it('should have a list of exported rules and rules directory that match', function () {
-    const path = join(__dirname, '../lib/rules');
+    const path = join(__dirname, '..', 'lib', 'rules');
     const files = readdirSync(path);
 
     assert.deepStrictEqual(
@@ -22,7 +22,7 @@ describe('rules setup is correct', function () {
   });
 
   it('should have tests for all rules', function () {
-    const path = join(__dirname, '../tests/lib/rules');
+    const path = join(__dirname, '..', 'tests', 'lib', 'rules');
     const files = readdirSync(path);
 
     assert.deepStrictEqual(
@@ -34,7 +34,7 @@ describe('rules setup is correct', function () {
   });
 
   it('should have documentation for all rules', function () {
-    const path = join(__dirname, '../docs/rules');
+    const path = join(__dirname, '..', 'docs', 'rules');
     const files = readdirSync(path);
 
     assert.deepStrictEqual(
@@ -69,7 +69,7 @@ describe('rules setup is correct', function () {
   });
 
   it('should mention all rules in the README', function () {
-    const path = join(__dirname, '../README.md');
+    const path = join(__dirname, '..', 'README.md');
     const file = readFileSync(path);
 
     RULE_NAMES.forEach((ruleName) => assert.ok(file.includes(ruleName)));
