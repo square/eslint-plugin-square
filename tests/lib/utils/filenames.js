@@ -20,6 +20,8 @@ describe('filenames', () => {
         'type.d',
         'index.test',
         'apple.stories',
+        '.eslintrc',
+        '.template-lintrc',
       ].forEach((t) => assert.ok(re.test(t), `expected '${t}' to be ok`));
 
       ['snake_case', 'camelCase', 'PascalCase'].forEach((t) =>
