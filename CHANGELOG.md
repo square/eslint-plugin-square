@@ -1,3 +1,14 @@
+## v13.2.2 (2020-04-03)
+
+#### :bug: Bug Fix
+* [#27](https://github.com/square/eslint-plugin-square/pull/27) Tweak filename regexes and other rules in `react` config ([@ghaagsma](https://github.com/ghaagsma))
+* [#28](https://github.com/square/eslint-plugin-square/pull/28) Disable `no-useless-constructor` rule in `typescript` config ([@maxbeatty](https://github.com/maxbeatty))
+
+#### Committers: 3
+- Bryan Mishkin ([@bmish](https://github.com/bmish))
+- Gerald Haagsma ([@ghaagsma](https://github.com/ghaagsma))
+- Max Beatty ([@maxbeatty](https://github.com/maxbeatty))
+
 ## v13.2.1 (2020-04-01)
 
 #### :bug: Bug Fix
