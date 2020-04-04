@@ -1,3 +1,15 @@
+## v13.2.3 (2020-04-03)
+
+#### :bug: Bug Fix
+* [#30](https://github.com/square/eslint-plugin-square/pull/30) Fix filename regex inconsistencies ([@maxbeatty](https://github.com/maxbeatty))
+
+#### :house: Internal
+* [#31](https://github.com/square/eslint-plugin-square/pull/31) Add tests to ensure configs are exported and mentioned in README ([@bmish](https://github.com/bmish))
+
+#### Committers: 2
+- Bryan Mishkin ([@bmish](https://github.com/bmish))
+- Max Beatty ([@maxbeatty](https://github.com/maxbeatty))
+
 ## v13.2.2 (2020-04-03)
 
 #### :bug: Bug Fix
