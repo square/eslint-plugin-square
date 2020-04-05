@@ -1,5 +1,7 @@
 # use-ember-find (fixable)
 
+:fire: The `"extends": "plugin:square/ember"` property in a configuration file enables this rule.
+
 It is preferred to use Ember test helpers like `find(selector)` instead of jQuery for selecting elements in tests.
 
 ## Rule Details

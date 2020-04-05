@@ -5,8 +5,11 @@ const { readdirSync, readFileSync } = require('fs');
 const { join } = require('path');
 const assert = require('assert');
 const rules = require('../lib').rules;
+const configEmber = require('../lib/config/ember');
 
 const RULE_NAMES = Object.keys(rules);
+const RULE_NAMES_EMBER = new Set(Object.keys(configEmber.rules));
+RULE_NAMES_EMBER.add('square/require-await-function'); // This rule is enabled in an override.
 
 describe('rules setup is correct', function () {
   it('should have a list of exported rules and rules directory that match', function () {
@@ -46,6 +49,9 @@ describe('rules setup is correct', function () {
   });
 
   it('should have the right contents (title, examples, fixable notice) for each rule documentation file', function () {
+    const CONFIG_MSG_EMBER =
+      ':fire: The `"extends": "plugin:square/ember"` property in a configuration file enables this rule.';
+
     RULE_NAMES.forEach((ruleName) => {
       const rule = rules[ruleName];
       const path = join(__dirname, '..', 'docs', 'rules', `${ruleName}.md`);
@@ -63,6 +69,15 @@ describe('rules setup is correct', function () {
         assert.ok(
           !file.includes('(fixable)'),
           'does not include fixable notice'
+        );
+      }
+
+      if (RULE_NAMES_EMBER.has(`square/${ruleName}`)) {
+        assert.ok(file.includes(CONFIG_MSG_EMBER), 'has `ember` config notice');
+      } else {
+        assert.ok(
+          !file.includes(CONFIG_MSG_EMBER),
+          'does not have `ember` config notice'
         );
       }
     });

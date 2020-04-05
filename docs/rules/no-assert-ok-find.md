@@ -1,5 +1,7 @@
 # no-assert-ok-find
 
+:fire: The `"extends": "plugin:square/ember"` property in a configuration file enables this rule.
+
 Ember's `find('.selector')` test helper function always returns an array, even when no elements match. As a result, `assert.ok(find('.selector'))` will always pass, even if no elements are found, as an empty array is still truthy.
 
 ## Rule Details

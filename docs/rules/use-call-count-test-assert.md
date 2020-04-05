@@ -1,5 +1,7 @@
 # use-call-count-test-assert (fixable)
 
+:fire: The `"extends": "plugin:square/ember"` property in a configuration file enables this rule.
+
 Using `callCount` rather than the other shortcut count helpers (such as `calledOnce`, `notCalled`) allows the test runner to show the actual number of times the spy was called.
 
 ## Rule Details

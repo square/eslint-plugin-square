@@ -1,5 +1,7 @@
 # no-test-return-value
 
+:fire: The `"extends": "plugin:square/ember"` property in a configuration file enables this rule.
+
 This rule disallows test functions with return values.
 
 For asynchronous tests, use async/await instead of returning a promise.

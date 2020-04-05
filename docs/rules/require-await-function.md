@@ -1,5 +1,7 @@
 # require-await-function (fixable)
 
+:fire: The `"extends": "plugin:square/ember"` property in a configuration file enables this rule.
+
 Some functions are asynchronous and you may want to wait for their code to finish executing before continuing on. The modern `async` / `await` syntax can help you achieve this.
 
 ## Rule Details
