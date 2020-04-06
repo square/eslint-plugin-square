@@ -1,5 +1,7 @@
 # no-lazy-arrow-functions (fixable)
 
+:fire: The `"extends": "plugin:square/ember"` property in a configuration file enables this rule.
+
 When people use arrow functions in their [qunit-bdd](https://github.com/square/qunit-bdd) `lazy` test variables, they often run into issues where they try to use `this` for the test context and it doesn't work.
 
 ## Examples

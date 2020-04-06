@@ -1,5 +1,7 @@
 # no-test-expect-assertion-count
 
+:fire: The `"extends": "plugin:square/ember"` property in a configuration file enables this rule.
+
 Prevents the use of `expect(n)` to count the number of expected assertions in tests. This rule is in place because `expect(n)` can be a burden to maintain and exposes bad patterns such as nested promise chains.
 
 ## Examples

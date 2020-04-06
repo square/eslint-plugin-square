@@ -1,5 +1,7 @@
 # no-focused-tests
 
+:fire: The `"extends": "plugin:square/ember"` property in a configuration file enables this rule.
+
 [only](https://api.qunitjs.com/QUnit/only) can be useful when debugging tests, but merging a test case with it can prevent CI from running other tests.
 
 This rule handles the following [qunit-bdd](https://github.com/square/qunit-bdd) test hooks:

@@ -29,12 +29,12 @@ module.exports = {
 
 ## Configurations
 
-| Name | Description |
-| --- | --- |
-| [base] | Rules and configuration for any JavaScript-based project. Includes recommended and optional rules from [eslint], [prettier], [eslint-plugin-eslint-comments], [eslint-plugin-import], and more. |
-| [ember] | [Ember.js]-specific additions on top of `base`. Includes recommended and optional rules from [eslint-plugin-ember], kebab-case filename enforcement with [eslint-plugin-filenames], and more. |
-| [react] | [React](https://reactjs.org)-specific additions on top of `base`. |
-| [typescript] | [TypeScript](https://www.typescriptlang.org/)-specific additions on top of `base`. Use with [@typescript-eslint/parser]. |
+|     | Name | Description |
+| --- | --- | --- |
+| | [base] | Rules and configuration for any JavaScript-based project. Includes recommended and optional rules from [eslint], [prettier], [eslint-plugin-eslint-comments], [eslint-plugin-import], and more. |
+| :fire: | [ember] | [Ember.js]-specific additions on top of `base`. Includes recommended and optional rules from [eslint-plugin-ember], kebab-case filename enforcement with [eslint-plugin-filenames], and more. |
+| | [react] | [React](https://reactjs.org)-specific additions on top of `base`. |
+| | [typescript] | [TypeScript](https://www.typescriptlang.org/)-specific additions on top of `base`. Use with [@typescript-eslint/parser]. |
 
 Rules enabled by these configurations should meet the following criteria:
 
@@ -44,23 +44,23 @@ Rules enabled by these configurations should meet the following criteria:
 
 ## Custom rules
 
-| Rule | Category | Configuration Enabled In | Fixable? |
-| --- | --- | --- | --- |
-| [no-async](docs/rules/no-async.md) | JavaScript | N/A | |
-| [no-for-of](docs/rules/no-for-of.md) | JavaScript | N/A | |
-| [no-undef](docs/rules/no-undef.md) | JavaScript | N/A | :wrench: |
-| [require-await-function](docs/rules/require-await-function.md) | JavaScript | [ember] | :wrench: |
-| [no-handlebar-interpolation](docs/rules/no-handlebar-interpolation.md) | Ember | N/A | |
-| [no-modifying-immutable-properties](docs/rules/no-modifying-immutable-properties.md) | Ember | N/A | :wrench: |
-| [no-translation-key-interpolation](docs/rules/no-translation-key-interpolation.md) | Ember | [ember] | |
-| [no-assert-ok-find](docs/rules/no-assert-ok-find.md) | Testing | [ember] | |
-| [no-focused-tests](docs/rules/no-focused-tests.md) | Testing | [ember] | |
-| [no-lazy-arrow-functions](docs/rules/no-lazy-arrow-functions.md) | Testing | [ember] | :wrench: |
-| [no-missing-tests](docs/rules/no-missing-tests.md) | Testing | N/A | |
-| [no-test-expect-assertion-count](docs/rules/no-test-expect-assertion-count.md) | Testing | [ember] | |
-| [no-test-return-value](docs/rules/no-test-return-value.md) | Testing | [ember] | |
-| [use-call-count-test-assert](docs/rules/use-call-count-test-assert.md) | Testing | [ember] | :wrench: |
-| [use-ember-find](docs/rules/use-ember-find.md) | Testing | [ember] | :wrench: |
+| Rule | Category | Config | Fixable? |
+| :--- | :------- | :----- | :------- |
+| [no-async](docs/rules/no-async.md) | JavaScript | | |
+| [no-for-of](docs/rules/no-for-of.md) | JavaScript | | |
+| [no-undef](docs/rules/no-undef.md) | JavaScript | | :wrench: |
+| [require-await-function](docs/rules/require-await-function.md) | JavaScript | :fire: | :wrench: |
+| [no-handlebar-interpolation](docs/rules/no-handlebar-interpolation.md) | Ember | | |
+| [no-modifying-immutable-properties](docs/rules/no-modifying-immutable-properties.md) | Ember | | :wrench: |
+| [no-translation-key-interpolation](docs/rules/no-translation-key-interpolation.md) | Ember | :fire: | |
+| [no-assert-ok-find](docs/rules/no-assert-ok-find.md) | Testing | :fire: | |
+| [no-focused-tests](docs/rules/no-focused-tests.md) | Testing | :fire: | |
+| [no-lazy-arrow-functions](docs/rules/no-lazy-arrow-functions.md) | Testing | :fire: | :wrench: |
+| [no-missing-tests](docs/rules/no-missing-tests.md) | Testing | | |
+| [no-test-expect-assertion-count](docs/rules/no-test-expect-assertion-count.md) | Testing | :fire: | |
+| [no-test-return-value](docs/rules/no-test-return-value.md) | Testing | :fire: | |
+| [use-call-count-test-assert](docs/rules/use-call-count-test-assert.md) | Testing | :fire: | :wrench: |
+| [use-ember-find](docs/rules/use-ember-find.md) | Testing | :fire: | :wrench: |
 
 Note that we prefer to upstream our custom lint rules to third-party eslint plugins whenever possible. The rules that still remain here are typically here because:
 
