@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^2.26.0",
-    "camelcase": "^5.3.1",
+    "camelcase": "^6.0.0",
     "eslint-config-prettier": "^6.10.1",
     "eslint-plugin-ember": "^8.1.1",
     "eslint-plugin-es": "^3.0.0",
