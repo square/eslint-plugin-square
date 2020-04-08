@@ -12,6 +12,7 @@ describe('filenames', () => {
       const re = new RegExp(filenames.regex.kebab);
 
       [
+        't',
         'foo',
         'foo-bar',
         'foo-bar-baz',
@@ -32,7 +33,7 @@ describe('filenames', () => {
     it('supports pascal case', () => {
       const re = new RegExp(filenames.regex.pascal);
 
-      ['App', 'PascalCase', 'FooBarBaz', 'App.test'].forEach((t) =>
+      ['A', 'App', 'PascalCase', 'FooBarBaz', 'App.test'].forEach((t) =>
         assert.ok(re.test(t), `expected '${t}' to be ok`)
       );
 
