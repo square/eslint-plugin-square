@@ -3,9 +3,8 @@ module.exports = {
     './lib/config/base.js',
     'plugin:eslint-plugin/all',
     'plugin:node/recommended',
-    'plugin:unicorn/recommended',
   ],
-  plugins: ['eslint-plugin', 'unicorn'],
+  plugins: ['eslint-plugin'],
   env: {
     commonjs: true,
   },
@@ -23,10 +22,6 @@ module.exports = {
       },
     ],
     'eslint-plugin/test-case-property-ordering': 'off',
-
-    // Unicorn:
-    'unicorn/no-fn-reference-in-iterator': 'off',
-    'unicorn/no-null': 'off'
   },
   overrides: [
     {

@@ -31,7 +31,7 @@ module.exports = {
 
 |     | Name | Description |
 | --- | --- | --- |
-| | [base] | Rules and configuration for any JavaScript-based project. Includes recommended and optional rules from [eslint], [prettier], [eslint-plugin-eslint-comments], [eslint-plugin-import], and more. |
+| | [base] | Rules and configuration for any JavaScript-based project. Includes recommended and optional rules from [eslint], [prettier], [eslint-plugin-eslint-comments], [eslint-plugin-import], [eslint-plugin-unicorn], and more. |
 | :fire: | [ember] | [Ember.js]-specific additions on top of `base`. Includes recommended and optional rules from [eslint-plugin-ember], kebab-case filename enforcement with [eslint-plugin-filenames], and more. |
 | | [react] | [React](https://reactjs.org)-specific additions on top of `base`. |
 | | [typescript] | [TypeScript](https://www.typescriptlang.org/)-specific additions on top of `base`. Use with [@typescript-eslint/parser]. |
@@ -76,6 +76,7 @@ Note that we prefer to upstream our custom lint rules to third-party eslint plug
 [eslint-plugin-eslint-comments]: https://github.com/mysticatea/eslint-plugin-eslint-comments
 [eslint-plugin-filenames]: https://github.com/selaux/eslint-plugin-filenames
 [eslint-plugin-import]: https://github.com/benmosher/eslint-plugin-import
+[eslint-plugin-unicorn]: https://github.com/sindresorhus/eslint-plugin-unicorn
 [prettier]: https://prettier.io/
 [react]: lib/config/react.js
 [typescript]: lib/config/typescript.js
