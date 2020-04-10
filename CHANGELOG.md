@@ -1,3 +1,16 @@
+## v13.2.4 (2020-04-10)
+
+#### :bug: Bug Fix
+* [#38](https://github.com/square/eslint-plugin-square/pull/38) Export filename regex utils ([@bmish](https://github.com/bmish))
+* [#39](https://github.com/square/eslint-plugin-square/pull/39) Kebab-case filename restrictions should allow single-character filenames ([@bmish](https://github.com/bmish))
+
+#### :memo: Documentation
+* [#32](https://github.com/square/eslint-plugin-square/pull/32) Update each rule doc to mention what config enables the rule ([@bmish](https://github.com/bmish))
+
+#### Committers: 2
+- Bryan Mishkin ([@bmish](https://github.com/bmish))
+- [@dependabot-preview[bot]](https://github.com/apps/dependabot-preview)
+
 ## v13.2.3 (2020-04-03)
 
 #### :bug: Bug Fix
