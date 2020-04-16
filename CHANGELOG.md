@@ -1,3 +1,16 @@
+## v13.3.0 (2020-04-16)
+
+#### :rocket: Enhancement
+* [#45](https://github.com/square/eslint-plugin-square/pull/45) build(deps): bump @typescript-eslint/eslint-plugin from 2.27.0 to 2.28.0 ([@dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+* [#48](https://github.com/square/eslint-plugin-square/pull/48) build(deps): bump eslint-plugin-ember from 8.2.0 to 8.4.0 ([@dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+* [#47](https://github.com/square/eslint-plugin-square/pull/47) build(deps): bump estraverse from 5.0.0 to 5.1.0 ([@dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+
+#### :bug: Bug Fix
+* [#44](https://github.com/square/eslint-plugin-square/pull/44) build(deps): bump eslint-plugin-prettier from 3.1.2 to 3.1.3 ([@dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+
+#### Committers: 1
+- [@dependabot-preview[bot]](https://github.com/apps/dependabot-preview)
+
 ## v13.2.4 (2020-04-10)
 
 #### :bug: Bug Fix
