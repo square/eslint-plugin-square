@@ -23,6 +23,10 @@ module.exports = {
       },
     ],
     'eslint-plugin/test-case-property-ordering': 'off',
+
+    // Unicorn:
+    'unicorn/no-fn-reference-in-iterator': 'off',
+    'unicorn/no-null': 'off'
   },
   overrides: [
     {
