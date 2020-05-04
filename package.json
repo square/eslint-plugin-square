@@ -4,7 +4,7 @@
   "description": "Linting plugin containing Square's custom lint rules and configuration for JavaScript and related technologies.",
   "main": "lib/index.js",
   "scripts": {
-    "lint": "npm-run-all lint:* --continue-on-error",
+    "lint": "npm-run-all --continue-on-error --aggregate-output --parallel lint:*",
     "lint:docs": "markdownlint '**/*.md' -i CHANGELOG.md -i node_modules",
     "lint:js": "eslint .",
     "preversion": "yarn test && yarn lint",
