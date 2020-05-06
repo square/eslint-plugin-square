@@ -31,7 +31,7 @@
     "node": "10.* || >= 12"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.30.0",
+    "@typescript-eslint/eslint-plugin": "^2.31.0",
     "camelcase": "^6.0.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-ember": "^8.4.0",
