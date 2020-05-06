@@ -1,3 +1,26 @@
+## v14.0.0 (2020-05-06)
+
+#### :boom: Breaking Change
+* [#41](https://github.com/square/eslint-plugin-square/pull/41) Enable most [eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn) recommended rules in `base` configuration ([@bmish](https://github.com/bmish))
+* [#62](https://github.com/square/eslint-plugin-square/pull/62) Enable `catchRouterMicrolib` option on [ember/no-private-routing-service](https://github.com/ember-cli/eslint-plugin-ember/blob/master/docs/rules/no-private-routing-service.md) rule ([@bmish](https://github.com/bmish))
+* [#42](https://github.com/square/eslint-plugin-square/pull/42) Enforce kebab-case filenames in `base` configuration ([@maxbeatty](https://github.com/maxbeatty))
+* [#40](https://github.com/square/eslint-plugin-square/pull/40) Move [sort-vars](https://eslint.org/docs/rules/sort-vars) rule to `base` configuration ([@bmish](https://github.com/bmish))
+
+#### :rocket: Enhancement
+* [#61](https://github.com/square/eslint-plugin-square/pull/61) build(deps): bump eslint-plugin-ember from [8.4.0](https://github.com/ember-cli/eslint-plugin-ember/releases/tag/v8.4.0) to [8.5.0](https://github.com/ember-cli/eslint-plugin-ember/releases/tag/v8.5.0) ([@dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+
+#### :bug: Bug Fix
+* [#49](https://github.com/square/eslint-plugin-square/pull/49) Update warning for [@typescript-eslint/no-unused-vars](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unused-vars.md) rule in `typescript` configuration ([@alexandersmanning](https://github.com/alexandersmanning))
+
+#### :house: Internal
+* [#57](https://github.com/square/eslint-plugin-square/pull/57) Begin testing under Node 14 ([@bmish](https://github.com/bmish))
+
+#### Committers: 4
+- Alex Manning ([@alexandersmanning](https://github.com/alexandersmanning))
+- Bryan Mishkin ([@bmish](https://github.com/bmish))
+- Max Beatty ([@maxbeatty](https://github.com/maxbeatty))
+- [@dependabot-preview[bot]](https://github.com/apps/dependabot-preview)
+
 ## v13.3.0 (2020-04-16)
 
 #### :rocket: Enhancement
