@@ -18,7 +18,8 @@ module.exports = {
     'eslint-plugin/require-meta-docs-url': [
       'error',
       {
-        pattern: 'https://github.com/square/eslint-plugin-square/tree/master/docs/rules/{{name}}.md',
+        pattern:
+          'https://github.com/square/eslint-plugin-square/tree/master/docs/rules/{{name}}.md',
       },
     ],
     'eslint-plugin/test-case-property-ordering': 'off',
