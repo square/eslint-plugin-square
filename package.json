@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "lint": "npm-run-all --continue-on-error --aggregate-output --parallel lint:*",
-    "lint:docs": "markdownlint '**/*.md' -i CHANGELOG.md -i node_modules",
+    "lint:docs": "markdownlint '**/*.md'",
     "lint:js": "eslint .",
     "preversion": "yarn test && yarn lint",
     "test": "nyc --all --check-coverage mocha --recursive tests"
