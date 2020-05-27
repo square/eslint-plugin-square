@@ -48,6 +48,7 @@ Rules enabled by these configurations should meet the following criteria:
 | :--- | :------- | :----- | :------- |
 | [no-async](docs/rules/no-async.md) | JavaScript | | |
 | [no-for-of](docs/rules/no-for-of.md) | JavaScript | | |
+| [no-restricted-files](docs/rules/no-restricted-files.md) | JavaScript | | |
 | [no-undef](docs/rules/no-undef.md) | JavaScript | | :wrench: |
 | [require-await-function](docs/rules/require-await-function.md) | JavaScript | :fire: | :wrench: |
 | [no-handlebar-interpolation](docs/rules/no-handlebar-interpolation.md) | Ember | | |
