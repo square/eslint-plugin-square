@@ -19,8 +19,8 @@ Example configuration:
   rules: {
     'square/no-missing-tests': ['error', [
       {
-        filePath: 'app/components',
-        testPaths: ['tests/integration/components', 'tests/unit/components']
+        filePath: `${__dirname}/app/components`,
+        testPaths: [`${__dirname}/tests/integration/components`, `${__dirname}/tests/unit/components`]
       }
     ]]
   }
