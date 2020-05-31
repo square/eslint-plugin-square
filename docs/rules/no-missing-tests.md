@@ -6,15 +6,13 @@ Ensuring that certain types of files, such as components, have corresponding tes
 
 This rule enforces that the specified files have corresponding test files.
 
-TODO: this rule currently does not support `.ts` files, it only supports `.js` files.
-
 ## Examples
 
 Example configuration:
 
 ```js
 {
-  files: ['app/components/**/*.js'],
+  files: ['app/components/**/*.{js,ts}'],
   excludedFiles: ['**/*/svgs/**/*', '**/*/svg/**/*'],
   rules: {
     'square/no-missing-tests': ['error', [
