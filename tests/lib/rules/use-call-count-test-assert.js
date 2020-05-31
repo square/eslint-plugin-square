@@ -2,6 +2,7 @@
 
 const rule = require('../../../lib/rules/use-call-count-test-assert');
 const RuleTester = require('eslint').RuleTester;
+const flat = require('../../../lib/utils/flat');
 
 const { ERROR_MESSAGE, ASSERT_PROPERTY_NAMES, STUB_PROPERTY_NAMES } = rule;
 
@@ -70,9 +71,9 @@ const VALID_HELPER_USAGES = [
   },
 ];
 
-const INVALID_HELPER_USAGES = flatten(
+const INVALID_HELPER_USAGES = flat(
   ASSERT_PROPERTY_NAMES.map((assertPropertyName) => {
-    return flatten(
+    return flat(
       STUB_PROPERTY_NAMES.map((stubPropertyName) => {
         // Test case: basic.
         const ex1 = {
@@ -117,11 +118,6 @@ const INVALID_HELPER_USAGES = flatten(
     );
   })
 );
-
-function flatten(array) {
-  // JavaScript `Array.prototype.flat()` not available yet.
-  return array.reduce((accumulator, value) => accumulator.concat(value));
-}
 
 ruleTester.run('use-call-count-test-assert', rule, {
   valid: VALID_HELPER_USAGES,
