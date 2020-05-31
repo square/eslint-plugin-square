@@ -1,6 +1,6 @@
 # no-missing-tests
 
-Ensuring that certain types of files, such as components, have corresponding test files can be helpful towards improving test coverage.
+Ensuring that files have corresponding test files can be helpful towards improving test coverage.
 
 ## Rule Details
 
@@ -8,24 +8,29 @@ This rule enforces that the specified files have corresponding test files.
 
 ## Examples
 
-Example configuration:
+Example entry in `overrides` in the `.eslintrc.js` configuration file used to enable this rule:
 
 ```js
 {
-  files: ['app/components/**/*.{js,ts}'],
-  excludedFiles: ['**/*/svgs/**/*', '**/*/svg/**/*'],
+  files: ['app/**/*.{js,ts}'],
   rules: {
-    'square/no-missing-tests': ['error', [
-      {
-        filePath: `${__dirname}/app/components`,
-        testPaths: [`${__dirname}/tests/integration/components`, `${__dirname}/tests/unit/components`]
-      }
-    ]]
+    'square/no-missing-tests': [
+      'error',
+      [
+        {
+          filePath: `${__dirname}/app`,
+          testPaths: [
+            `${__dirname}/tests/integration`,
+            `${__dirname}/tests/unit`
+          ]
+        }
+      ]
+    ]
   }
 }
 ```
 
-Example files:
+Example implementation file and test file pair that would be enforced:
 
 * `app/components/my-component.js`
 * `tests/unit/components/my-component-test.js`
