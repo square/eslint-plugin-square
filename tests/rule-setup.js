@@ -21,6 +21,10 @@ function getAllNamedOptions(jsonSchema) {
     return flat(jsonSchema.map(getAllNamedOptions));
   }
 
+  if (jsonSchema.items) {
+    return getAllNamedOptions(jsonSchema.items);
+  }
+
   if (jsonSchema.properties) {
     return Object.keys(jsonSchema.properties);
   }
