@@ -33,3 +33,5 @@ Example:
   ]
 }
 ```
+
+There's also a [typeof](https://eslint.org/docs/rules/no-undef#typeof) from the original rule.

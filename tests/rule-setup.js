@@ -6,10 +6,27 @@ const { join } = require('path');
 const assert = require('assert');
 const rules = require('../lib').rules;
 const configEmber = require('../lib/config/ember');
+const flat = require('../lib/utils/flat');
 
 const RULE_NAMES = Object.keys(rules);
 const RULE_NAMES_EMBER = new Set(Object.keys(configEmber.rules));
 RULE_NAMES_EMBER.add('square/require-await-function'); // This rule is enabled in an override.
+
+function getAllNamedOptions(jsonSchema) {
+  if (!jsonSchema) {
+    return [];
+  }
+
+  if (Array.isArray(jsonSchema)) {
+    return flat(jsonSchema.map(getAllNamedOptions));
+  }
+
+  if (jsonSchema.properties) {
+    return Object.keys(jsonSchema.properties);
+  }
+
+  return [];
+}
 
 describe('rules setup is correct', function () {
   it('should have a list of exported rules and rules directory that match', function () {
@@ -62,6 +79,32 @@ describe('rules setup is correct', function () {
         file.includes('## Examples'),
         'includes example section header'
       );
+
+      // Check if the rule has configuration options.
+      if (
+        (Array.isArray(rule.meta.schema) && rule.meta.schema.length > 0) ||
+        (typeof rule.meta.schema === 'object' &&
+          Object.keys(rule.meta.schema).length > 0)
+      ) {
+        // Should have a configuration section header:
+        assert.ok(
+          file.includes('## Configuration'),
+          'has a "Configuration" section'
+        );
+
+        // Ensure all configuration options are mentioned.
+        getAllNamedOptions(rule.meta.schema).forEach((namedOption) =>
+          assert.ok(
+            file.includes(namedOption),
+            `mentions rule option ${namedOption}`
+          )
+        );
+      } else {
+        assert.ok(
+          !file.includes('## Configuration'),
+          'does not have a "Configuration" section'
+        );
+      }
 
       if (rule.meta.fixable === 'code') {
         assert.ok(file.includes('(fixable)'), 'includes fixable notice');
