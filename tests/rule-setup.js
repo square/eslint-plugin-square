@@ -69,64 +69,71 @@ describe('rules setup is correct', function () {
     );
   });
 
-  it('should have the right contents (title, examples, fixable notice) for each rule documentation file', function () {
-    const CONFIG_MSG_EMBER =
-      ':fire: The `"extends": "plugin:square/ember"` property in a configuration file enables this rule.';
-
+  describe('rule documentation files', function () {
     RULE_NAMES.forEach((ruleName) => {
-      const rule = rules[ruleName];
-      const path = join(__dirname, '..', 'docs', 'rules', `${ruleName}.md`);
-      const file = readFileSync(path, 'utf8');
+      describe(ruleName, function () {
+        it('should have the right contents (title, examples, fixable notice)', function () {
+          const CONFIG_MSG_EMBER =
+            ':fire: The `"extends": "plugin:square/ember"` property in a configuration file enables this rule.';
 
-      assert.ok(file.includes(`# ${ruleName}`), 'includes title header');
-      assert.ok(
-        file.includes('## Examples'),
-        'includes example section header'
-      );
+          const rule = rules[ruleName];
+          const path = join(__dirname, '..', 'docs', 'rules', `${ruleName}.md`);
+          const file = readFileSync(path, 'utf8');
 
-      // Check if the rule has configuration options.
-      if (
-        (Array.isArray(rule.meta.schema) && rule.meta.schema.length > 0) ||
-        (typeof rule.meta.schema === 'object' &&
-          Object.keys(rule.meta.schema).length > 0)
-      ) {
-        // Should have a configuration section header:
-        assert.ok(
-          file.includes('## Configuration'),
-          'has a "Configuration" section'
-        );
-
-        // Ensure all configuration options are mentioned.
-        getAllNamedOptions(rule.meta.schema).forEach((namedOption) =>
+          assert.ok(file.includes(`# ${ruleName}`), 'includes title header');
           assert.ok(
-            file.includes(namedOption),
-            `mentions rule option ${namedOption}`
-          )
-        );
-      } else {
-        assert.ok(
-          !file.includes('## Configuration'),
-          'does not have a "Configuration" section'
-        );
-      }
+            file.includes('## Examples'),
+            'includes example section header'
+          );
 
-      if (rule.meta.fixable === 'code') {
-        assert.ok(file.includes('(fixable)'), 'includes fixable notice');
-      } else {
-        assert.ok(
-          !file.includes('(fixable)'),
-          'does not include fixable notice'
-        );
-      }
+          // Check if the rule has configuration options.
+          if (
+            (Array.isArray(rule.meta.schema) && rule.meta.schema.length > 0) ||
+            (typeof rule.meta.schema === 'object' &&
+              Object.keys(rule.meta.schema).length > 0)
+          ) {
+            // Should have a configuration section header:
+            assert.ok(
+              file.includes('## Configuration'),
+              'has a "Configuration" section'
+            );
 
-      if (RULE_NAMES_EMBER.has(`square/${ruleName}`)) {
-        assert.ok(file.includes(CONFIG_MSG_EMBER), 'has `ember` config notice');
-      } else {
-        assert.ok(
-          !file.includes(CONFIG_MSG_EMBER),
-          'does not have `ember` config notice'
-        );
-      }
+            // Ensure all configuration options are mentioned.
+            getAllNamedOptions(rule.meta.schema).forEach((namedOption) =>
+              assert.ok(
+                file.includes(namedOption),
+                `mentions rule option ${namedOption}`
+              )
+            );
+          } else {
+            assert.ok(
+              !file.includes('## Configuration'),
+              'does not have a "Configuration" section'
+            );
+          }
+
+          if (rule.meta.fixable === 'code') {
+            assert.ok(file.includes('(fixable)'), 'includes fixable notice');
+          } else {
+            assert.ok(
+              !file.includes('(fixable)'),
+              'does not include fixable notice'
+            );
+          }
+
+          if (RULE_NAMES_EMBER.has(`square/${ruleName}`)) {
+            assert.ok(
+              file.includes(CONFIG_MSG_EMBER),
+              'has `ember` config notice'
+            );
+          } else {
+            assert.ok(
+              !file.includes(CONFIG_MSG_EMBER),
+              'does not have `ember` config notice'
+            );
+          }
+        });
+      });
     });
   });
 
@@ -134,6 +141,8 @@ describe('rules setup is correct', function () {
     const path = join(__dirname, '..', 'README.md');
     const file = readFileSync(path);
 
-    RULE_NAMES.forEach((ruleName) => assert.ok(file.includes(ruleName)));
+    RULE_NAMES.forEach((ruleName) =>
+      assert.ok(file.includes(ruleName), `mentions \`${ruleName}\``)
+    );
   });
 });
