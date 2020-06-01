@@ -70,16 +70,16 @@ describe('rules setup is correct', function () {
   });
 
   describe('rule documentation files', function () {
+    const CONFIG_MSG_EMBER =
+      ':fire: The `"extends": "plugin:square/ember"` property in a configuration file enables this rule.';
+
     RULE_NAMES.forEach((ruleName) => {
+      const rule = rules[ruleName];
+      const path = join(__dirname, '..', 'docs', 'rules', `${ruleName}.md`);
+      const file = readFileSync(path, 'utf8');
+
       describe(ruleName, function () {
         it('should have the right contents (title, examples, fixable notice)', function () {
-          const CONFIG_MSG_EMBER =
-            ':fire: The `"extends": "plugin:square/ember"` property in a configuration file enables this rule.';
-
-          const rule = rules[ruleName];
-          const path = join(__dirname, '..', 'docs', 'rules', `${ruleName}.md`);
-          const file = readFileSync(path, 'utf8');
-
           assert.ok(file.includes(`# ${ruleName}`), 'includes title header');
           assert.ok(
             file.includes('## Examples'),
