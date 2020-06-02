@@ -16,4 +16,4 @@ Allows this scoped component: `app/components/scope/my-component.js`
 
 * object[] -- containing the following properties:
   * string[] -- `paths` -- list of regexp file paths to disallow
-  * string -- `error` -- optional custom error message to display for these disallowed file paths
+  * string -- `message` -- optional custom error message to display for these disallowed file paths
