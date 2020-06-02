@@ -205,6 +205,11 @@
   resolved "https://registry.yarnpkg.com/@istanbuljs/schema/-/schema-0.1.2.tgz#26520bf09abe4a5644cd5414e37125a8954241dd"
   integrity sha512-tsAQNx32a8CoFhjhijUIhI4kccIAgmGhy8LZMZgGfmXcpMbPRUqn5LWmgRttILi6yeGmBJd2xsPkFMs0PzgPCw==
 
+"@square/prettier-config@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@square/prettier-config/-/prettier-config-1.0.0.tgz#5bf0dd20e4256838babcfa667b9a123c263c6192"
+  integrity sha512-uGGTvwLH3XDcaTwiVoKhbV+s4QTvQ/z10dhMbwVIosskdBFk2s/87I6N9sVFnLeLjzw7niRm3dxR2RX1dlHfIw==
+
 "@types/color-name@^1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@types/color-name/-/color-name-1.1.1.tgz#1c1261bbeaa10a8055bbc5d8ab84b7b2afc846a0"
