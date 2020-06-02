@@ -37,7 +37,7 @@ ruleTester.run('no-restricted-files', rule, {
       options: [
         {
           paths: [REGEXP_DISALLOW_UNSCOPED_COMPONENTS],
-          error: 'No unscoped components.',
+          message: 'No unscoped components.',
         },
       ],
       filename: FILEPATH_UNSCOPED_COMPONENT,
@@ -53,7 +53,7 @@ ruleTester.run('no-restricted-files', rule, {
         },
         {
           paths: [REGEXP_DISALLOW_UNSCOPED_COMPONENTS],
-          error: 'No unscoped components.',
+          message: 'No unscoped components.',
         },
       ],
       filename: FILEPATH_UNSCOPED_COMPONENT,
