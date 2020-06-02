@@ -1,3 +1,23 @@
+## v14.2.0 (2020-06-02)
+
+#### :rocket: Enhancement
+* [#96](https://github.com/square/eslint-plugin-square/pull/96) build(deps): bump eslint-plugin-ember from 8.5.2 to 8.6.0 ([@dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+* [#83](https://github.com/square/eslint-plugin-square/pull/83) build(deps): bump eslint-plugin-unicorn from 20.0.0 to 20.1.0 ([@dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+* [#82](https://github.com/square/eslint-plugin-square/pull/82) build(deps): bump eslint-plugin-eslint-comments from 3.1.2 to 3.2.0 ([@dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+* [#80](https://github.com/square/eslint-plugin-square/pull/80) Add new rule [no-restricted-files](https://github.com/square/eslint-plugin-square/blob/master/docs/rules/no-restricted-files.md) ([@bmish](https://github.com/bmish))
+
+#### :bug: Bug Fix
+* [#94](https://github.com/square/eslint-plugin-square/pull/94) Fix incorrect rule severity level in `typescript` config ([@bmish](https://github.com/bmish))
+* [#88](https://github.com/square/eslint-plugin-square/pull/88) Handle TypeScript files with [no-missing-tests](https://github.com/square/eslint-plugin-square/blob/master/docs/rules/no-missing-tests.md) rule ([@bmish](https://github.com/bmish))
+* [#77](https://github.com/square/eslint-plugin-square/pull/77) build(deps): bump eslint-plugin-ember from 8.5.1 to 8.5.2 ([@dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+
+#### :house: Internal
+* [#90](https://github.com/square/eslint-plugin-square/pull/90) Ensure rule docs mention all rule configuration options ([@bmish](https://github.com/bmish))
+
+#### Committers: 2
+- Bryan Mishkin ([@bmish](https://github.com/bmish))
+- [@dependabot-preview[bot]](https://github.com/apps/dependabot-preview)
+
 ## v14.1.0 (2020-05-19)
 
 #### :rocket: Enhancement
