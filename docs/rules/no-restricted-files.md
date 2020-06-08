@@ -17,3 +17,7 @@ Allows this scoped component: `app/components/scope/my-component.js`
 * object[] -- containing the following properties:
   * string[] -- `paths` -- list of regexp file paths to disallow
   * string -- `message` -- optional custom error message to display for these disallowed file paths
+
+## Migration
+
+There's an autofixer in the rule implementation that can be uncommented as desired.
