@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "npm-run-all --continue-on-error --aggregate-output --parallel lint:*",
     "lint:docs": "markdownlint '**/*.md'",
-    "lint:js": "eslint .",
+    "lint:js": "eslint --cache .",
     "preversion": "yarn test && yarn lint",
     "test": "nyc --all --check-coverage mocha --recursive tests"
   },
