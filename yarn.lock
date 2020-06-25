@@ -928,10 +928,10 @@ eslint-module-utils@^2.6.0:
     debug "^2.6.9"
     pkg-dir "^2.0.0"
 
-eslint-plugin-ember@^8.6.0:
-  version "8.6.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-ember/-/eslint-plugin-ember-8.6.0.tgz#9099a222325aa57fd0c9782e0a7ea12b1b6552c9"
-  integrity sha512-qd/JmdRe180WR7Yc62+Wl9dSGA90vQsuZ92xIP8nL4a16752rUCpKxVeNi0p2tAieB06yFZBWd8C2JZsBC08/g==
+eslint-plugin-ember@^8.8.0:
+  version "8.8.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-ember/-/eslint-plugin-ember-8.8.0.tgz#d3572944b1744c801d7099379cdfeaab6905a33b"
+  integrity sha512-E1qYkA+mPGVagRaCoGWonXWl6qox4VL8oHN+dCUrMyANFLNANfD0Zbt/D3aOAY2wtbwKSZtoiiNIxfoMGQzPRw==
   dependencies:
     "@ember-data/rfc395-data" "^0.0.4"
     ember-rfc176-data "^0.3.13"
