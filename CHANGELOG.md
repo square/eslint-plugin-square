@@ -1,3 +1,31 @@
+## v15.0.0 (2020-06-26)
+
+#### :boom: Breaking Change
+* [#130](https://github.com/square/eslint-plugin-square/pull/130) Drop ESLint 5 support ([@bmish](https://github.com/bmish))
+* [#128](https://github.com/square/eslint-plugin-square/pull/128) Drop Node 13 support ([@bmish](https://github.com/bmish))
+* [#103](https://github.com/square/eslint-plugin-square/pull/103) Enable [filenames/match-exported](https://github.com/selaux/eslint-plugin-filenames#matching-exported-values-match-exported) rule in `base` config ([@bmish](https://github.com/bmish))
+* [#123](https://github.com/square/eslint-plugin-square/pull/123) Enable [unicorn/prefer-flat-map](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-flat-map.md) rule in `base` config ([@bmish](https://github.com/bmish))
+* [#124](https://github.com/square/eslint-plugin-square/pull/124) Enable [unicorn/prefer-optional-catch-binding](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-optional-catch-binding.md) rule in `base` config ([@bmish](https://github.com/bmish))
+* [#121](https://github.com/square/eslint-plugin-square/pull/121) Enable [ember/no-assignment-of-untracked-properties-used-in-tracking-contexts](https://github.com/ember-cli/eslint-plugin-ember/blob/master/docs/rules/no-assignment-of-untracked-properties-used-in-tracking-contexts.md) rule in `ember` config ([@bmish](https://github.com/bmish))
+* [#131](https://github.com/square/eslint-plugin-square/pull/131) Enable [ember/no-invalid-test-waiters](https://github.com/ember-cli/eslint-plugin-ember/blob/master/docs/rules/no-invalid-test-waiters.md) rule in `ember` config ([@bmish](https://github.com/bmish))
+* [#127](https://github.com/square/eslint-plugin-square/pull/127) Enable [ember/no-test-this-render](https://github.com/ember-cli/eslint-plugin-ember/blob/master/docs/rules/no-test-this-render.md) rule in `ember` config ([@bmish](https://github.com/bmish))
+* [#126](https://github.com/square/eslint-plugin-square/pull/126) Enable [ember/prefer-ember-test-helpers](https://github.com/ember-cli/eslint-plugin-ember/blob/master/docs/rules/prefer-ember-test-helpers.md) rule in `ember` config ([@bmish](https://github.com/bmish))
+* [#133](https://github.com/square/eslint-plugin-square/pull/133) Remove custom `no-undef` rule ([@bmish](https://github.com/bmish))
+
+#### :rocket: Enhancement
+* [#129](https://github.com/square/eslint-plugin-square/pull/129) Only enable TypeScript linting for `.ts` files in `typescript` config ([@bmish](https://github.com/bmish))
+* [#122](https://github.com/square/eslint-plugin-square/pull/122) Enable `useOptionalChaining` option on [ember/no-get](https://github.com/ember-cli/eslint-plugin-ember/blob/master/docs/rules/no-get.md) rule in `ember` config ([@bmish](https://github.com/bmish))
+* [#120](https://github.com/square/eslint-plugin-square/pull/120) build(deps): bump eslint-plugin-ember from 8.6.0 to 8.8.0 ([@dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+* [#100](https://github.com/square/eslint-plugin-square/pull/100) build(deps): bump eslint-plugin-import from 2.20.2 to 2.21.1 ([@dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+
+#### :bug: Bug Fix
+* [#112](https://github.com/square/eslint-plugin-square/pull/112) build(deps): bump eslint-plugin-prettier from 3.1.3 to 3.1.4 ([@dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+* [#109](https://github.com/square/eslint-plugin-square/pull/109) build(deps): bump eslint-plugin-import from 2.21.1 to 2.21.2 ([@dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+
+#### Committers: 2
+- Bryan Mishkin ([@bmish](https://github.com/bmish))
+- [@dependabot-preview[bot]](https://github.com/apps/dependabot-preview)
+
 ## v14.2.0 (2020-06-02)
 
 #### :rocket: Enhancement
