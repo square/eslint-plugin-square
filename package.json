@@ -28,7 +28,7 @@
     "url": "https://github.com/square/eslint-plugin-square.git"
   },
   "engines": {
-    "node": "10.* || >= 12"
+    "node": "10.* || 12.* || >= 14.*"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^3.4.0",
