@@ -1,3 +1,19 @@
+## v15.1.0 (2020-07-01)
+
+#### :rocket: Enhancement
+* [#136](https://github.com/square/eslint-plugin-square/pull/136) build(deps): bump eslint-plugin-import from 2.21.2 to 2.22.0 ([@dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+* [#140](https://github.com/square/eslint-plugin-square/pull/140) build(deps): bump eslint-plugin-ember from 8.8.0 to 8.9.0 ([@dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+* [#139](https://github.com/square/eslint-plugin-square/pull/139) build(deps): bump @typescript-eslint/eslint-plugin from 3.4.0 to 3.5.0 ([@dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+
+#### :bug: Bug Fix
+* [#142](https://github.com/square/eslint-plugin-square/pull/142) Disable `filenames/match-exported` rule for certain Ember file types in `ember` config ([@bmish](https://github.com/bmish))
+* [#141](https://github.com/square/eslint-plugin-square/pull/141) build(deps): bump eslint-plugin-react from 7.20.2 to 7.20.3 ([@dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+* [#137](https://github.com/square/eslint-plugin-square/pull/137) build(deps): bump eslint-plugin-react from 7.20.0 to 7.20.2 ([@dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+
+#### Committers: 2
+- Bryan Mishkin ([@bmish](https://github.com/bmish))
+- [@dependabot-preview[bot]](https://github.com/apps/dependabot-preview)
+
 ## v15.0.0 (2020-06-26)
 
 #### :boom: Breaking Change
