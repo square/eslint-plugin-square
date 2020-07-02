@@ -1,3 +1,11 @@
+## v15.1.1 (2020-07-02)
+
+#### :bug: Bug Fix
+* [#143](https://github.com/square/eslint-plugin-square/pull/143) Disable `filenames/match-exported` rule for certain files in dummy apps / subapps in `ember` config ([@bmish](https://github.com/bmish))
+
+#### Committers: 1
+- Bryan Mishkin ([@bmish](https://github.com/bmish))
+
 ## v15.1.0 (2020-07-01)
 
 #### :rocket: Enhancement
