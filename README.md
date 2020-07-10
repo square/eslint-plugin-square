@@ -55,7 +55,6 @@ Rules enabled by these configurations should meet the following criteria:
 | [no-translation-key-interpolation](docs/rules/no-translation-key-interpolation.md) | Ember | :fire: | |
 | [no-assert-ok-find](docs/rules/no-assert-ok-find.md) | Testing | :fire: | |
 | [no-focused-tests](docs/rules/no-focused-tests.md) | Testing | :fire: | |
-| [no-lazy-arrow-functions](docs/rules/no-lazy-arrow-functions.md) | Testing | :fire: | :wrench: |
 | [no-missing-tests](docs/rules/no-missing-tests.md) | Testing | | |
 | [no-test-expect-assertion-count](docs/rules/no-test-expect-assertion-count.md) | Testing | :fire: | |
 | [no-test-return-value](docs/rules/no-test-return-value.md) | Testing | :fire: | |

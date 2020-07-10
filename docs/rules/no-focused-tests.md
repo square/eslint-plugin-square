@@ -4,7 +4,7 @@
 
 [only](https://api.qunitjs.com/QUnit/only) can be useful when debugging tests, but merging a test case with it can prevent CI from running other tests.
 
-This rule handles the following [qunit-bdd](https://github.com/square/qunit-bdd) test hooks:
+This rule handles the following test hooks:
 
 * `describe`
 * `context`
