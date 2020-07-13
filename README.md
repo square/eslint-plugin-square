@@ -7,8 +7,8 @@ This plugin contains lint rule definitions and configurations for [ESLint](http:
 
 ## Requirements
 
-* [ESLint](https://eslint.org/) `>= 5.16`
-* [Node.js](https://nodejs.org/) `10.* || >= 12`
+* [ESLint](https://eslint.org/) `>= 6`
+* [Node.js](https://nodejs.org/) `10.* || 12.* || >= 14.*`
 
 ## Usage
 
@@ -49,7 +49,6 @@ Rules enabled by these configurations should meet the following criteria:
 | [no-async](docs/rules/no-async.md) | JavaScript | | |
 | [no-for-of](docs/rules/no-for-of.md) | JavaScript | | |
 | [no-restricted-files](docs/rules/no-restricted-files.md) | JavaScript | | |
-| [no-undef](docs/rules/no-undef.md) | JavaScript | | :wrench: |
 | [require-await-function](docs/rules/require-await-function.md) | JavaScript | :fire: | :wrench: |
 | [no-handlebar-interpolation](docs/rules/no-handlebar-interpolation.md) | Ember | | |
 | [no-modifying-immutable-properties](docs/rules/no-modifying-immutable-properties.md) | Ember | | :wrench: |

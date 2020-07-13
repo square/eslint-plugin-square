@@ -2,7 +2,7 @@
 
 const assert = require('assert');
 const parse = require('espree').parse;
-const scopeReferencesThis = require('../../../lib/utils/scope-reference-this');
+const scopeReferencesThis = require('../../../lib/utils/scope-references-this');
 
 function p(code) {
   return parse(code, { ecmaVersion: 6 });
