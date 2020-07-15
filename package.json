@@ -53,6 +53,7 @@
     "prettier": "^2.0.5"
   },
   "devDependencies": {
+    "@square/prettier-config": "^1.0.0",
     "eslint": "7.4.0",
     "eslint-plugin-eslint-plugin": "2.3.0",
     "eslint-plugin-node": "11.1.0",
@@ -68,5 +69,6 @@
     "lines": 96,
     "functions": 97,
     "statements": 96
-  }
+  },
+  "prettier": "@square/prettier-config"
 }
