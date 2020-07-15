@@ -21,7 +21,7 @@ The above do not provide as much information to the test runner.
 Examples of **incorrect** code for this rule:
 
 ```js
-test('it works', function(assert) {
+test('it works', function (assert) {
   assert.ok(this.spy.calledOnce);
 });
 ```
@@ -29,7 +29,7 @@ test('it works', function(assert) {
 Examples of **correct** code for this rule:
 
 ```js
-test('it works', function(assert) {
+test('it works', function (assert) {
   assert.equal(this.spy.callCount, 1);
 });
 ```

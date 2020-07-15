@@ -34,16 +34,16 @@ Here's a code sample demonstrating how it can be especially useful to enforce us
 
 ```js
 // Lint rule configuration: ['error', { functions: ['click'] }]
-test('clicking the button sends the action', function(assert) {
+test('clicking the button sends the action', function (assert) {
   click('.my-button'); // Invalid usage.
   assert.ok(this.myAction.calledOnce);
 });
-test('clicking the button sends the action', function(assert) {
+test('clicking the button sends the action', function (assert) {
   click('.my-button').then(() => {
     assert.ok(this.myAction.calledOnce);
   }); // Invalid usage.
 });
-test('clicking the button sends the action', async function(assert) {
+test('clicking the button sends the action', async function (assert) {
   await click('.my-button'); // Valid usage.
   assert.ok(this.myAction.calledOnce);
 });

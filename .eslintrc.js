@@ -30,5 +30,21 @@ module.exports = {
       files: ['tests/**/*.js'],
       env: { mocha: true },
     },
+    {
+      // Markdown code samples in documentation:
+      files: ['**/*.md'],
+      plugins: ['markdown'],
+      parserOptions: {
+        sourceType: 'module',
+      },
+      rules: {
+        'filenames/match-regex': 'off',
+        'no-undef': 'off',
+        'no-unused-vars': 'off',
+        'node/no-missing-import': 'off',
+        'node/no-unsupported-features/es-syntax': 'off',
+        'unicorn/filename-case': 'off',
+      },
+    },
   ],
 };

@@ -13,14 +13,14 @@ Some tests may have unnecessary return statements leftover from running [decaffe
 Examples of **incorrect** code for this rule:
 
 ```js
-test('it does something', function(assert) {
+test('it does something', function (assert) {
   const thenable = new Promise();
   return thenable;
 });
 ```
 
 ```js
-test('it does something', function(assert) {
+test('it does something', function (assert) {
   return assert.ok(something); // unnecessary return
 });
 ```
@@ -28,14 +28,14 @@ test('it does something', function(assert) {
 Examples of **correct** code for this rule:
 
 ```js
-test('it does something', async function(assert) {
+test('it does something', async function (assert) {
   const thenable = new Promise();
   await thenable;
 });
 ```
 
 ```js
-test('it does something', function(assert) {
+test('it does something', function (assert) {
   assert.ok(something);
 });
 ```

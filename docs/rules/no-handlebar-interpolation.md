@@ -16,7 +16,7 @@ Examples of **incorrect** code for this rule:
 ```js
 // translations/en.module.js
 module.exports = {
-  'amounts.paidIn': '{{{amount}}} Paid In'
+  'amounts.paidIn': '{{{amount}}} Paid In',
 };
 ```
 
@@ -25,19 +25,19 @@ Examples of **correct** code for this rule:
 ```js
 // translations/en.module.js
 module.exports = {
-  'amounts.paidIn': '{{amount}} Paid In'
+  'amounts.paidIn': '{{amount}} Paid In',
 };
 ```
 
 ## Configuration
 
 ```js
-{
+const config = {
   filePatterns: [
     /\w\w(-\w\w)?\/translations\.js$/,
-    /translations\/\w\w(-\w\w)?\.js$/
-  ]
-}
+    /translations\/\w\w(-\w\w)?\.js$/,
+  ],
+};
 ```
 
 The RegExp's above matches files with endings such as 'en/translations.js' and 'en-us/translations.js' or 'translations/en.js' and 'translations/en-us.js', respectively.
