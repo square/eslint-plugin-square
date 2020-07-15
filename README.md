@@ -23,7 +23,7 @@ Edit your `.eslintrc.js` configuration file to extend one of the available confi
 ```js
 module.exports = {
   plugins: ['square'],
-  extends: ['plugin:square/ember'] // Or other configuration.
+  extends: ['plugin:square/ember'], // Or other configuration.
 };
 ```
 

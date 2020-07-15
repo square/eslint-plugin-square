@@ -13,7 +13,7 @@ This rule disallows the aforementioned test assertion.
 Examples of **incorrect** code for this rule:
 
 ```js
-test('the element exists', function(assert) {
+test('the element exists', function (assert) {
   assert.ok(find('.selector'));
 });
 ```
@@ -21,13 +21,13 @@ test('the element exists', function(assert) {
 Examples of **correct** code for this rule:
 
 ```js
-test('the element exists', function(assert) {
+test('the element exists', function (assert) {
   assert.equal(find('.selector').length, 1);
 });
 ```
 
 ```js
-test('the element exists', function(assert) {
+test('the element exists', function (assert) {
   assert.dom('.selector').exists(); // qunit-dom
 });
 ```

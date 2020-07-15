@@ -20,7 +20,8 @@ for (const element of array1) {
 Examples of **correct** code for this rule:
 
 ```js
-for (i = 0; i < array1.length; i++) {
+// eslint-disable-next-line unicorn/no-for-loop
+for (let i = 0; i < array1.length; i++) {
   const element = array1[i];
   console.log(element);
 }
