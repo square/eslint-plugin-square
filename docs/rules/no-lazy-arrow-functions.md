@@ -12,7 +12,7 @@ Examples of **incorrect** code for this rule:
 lazy('user', () => {
   return {
     countryCode: this.countryCode,
-    currentLanguage: 'en'
+    currentLanguage: 'en',
   };
 });
 ```
@@ -20,10 +20,10 @@ lazy('user', () => {
 Examples of **correct** code for this rule:
 
 ```js
-lazy('user', function() {
+lazy('user', function () {
   return {
     countryCode: this.countryCode,
-    currentLanguage: 'en'
+    currentLanguage: 'en',
   };
 });
 ```

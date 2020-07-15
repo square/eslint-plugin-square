@@ -9,7 +9,7 @@ Prevents the use of `expect(n)` to count the number of expected assertions in te
 Examples of **incorrect** code for this rule:
 
 ```js
-test('it works', function(assert) {
+test('it works', function (assert) {
   assert.expect(1);
   clickButton('Ok');
   andThen(() => {
@@ -21,14 +21,14 @@ test('it works', function(assert) {
 Examples of **correct** code for this rule:
 
 ```js
-test('it works', async function(assert) {
+test('it works', async function (assert) {
   await clickButton('Ok');
   assert.equal(currentURL(), '/');
 });
 ```
 
 ```js
-test('it works', async function(assert) {
+test('it works', async function (assert) {
   assert.expect(0); // Allowed when there are no other assertions.
   await clickButton('Ok');
 });

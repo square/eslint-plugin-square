@@ -15,11 +15,12 @@ All examples assume a configuration of `properties: ['currentUser']`.
 Examples of **incorrect** code for this rule:
 
 ```js
+import Component from '@ember/component';
 import { alias, reads } from '@ember/object/computed';
 
 export default Component.extend({
-    somePermission1: alias('currentUser.somePermission1'),
-    somePermission2: reads('currentUser.somePermission2')
+  somePermission1: alias('currentUser.somePermission1'),
+  somePermission2: reads('currentUser.somePermission2'),
 });
 ```
 
@@ -30,10 +31,11 @@ this.set('currentUser.somePermission', true);
 Examples of **correct** code for this rule:
 
 ```js
+import Component from '@ember/component';
 import { readOnly } from '@ember/object/computed';
 
 export default Component.extend({
-    somePermission: readOnly('currentUser.somePermission')
+  somePermission: readOnly('currentUser.somePermission'),
 });
 ```
 

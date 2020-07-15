@@ -11,7 +11,7 @@ This rule enforces that the specified files have corresponding test files.
 Example entry in `overrides` in the `.eslintrc.js` configuration file used to enable this rule:
 
 ```js
-{
+const config = {
   files: ['app/**/*.{js,ts}'],
   rules: {
     'square/no-missing-tests': [
@@ -21,13 +21,13 @@ Example entry in `overrides` in the `.eslintrc.js` configuration file used to en
           filePath: `${__dirname}/app`,
           testPaths: [
             `${__dirname}/tests/integration`,
-            `${__dirname}/tests/unit`
-          ]
-        }
-      ]
-    ]
-  }
-}
+            `${__dirname}/tests/unit`,
+          ],
+        },
+      ],
+    ],
+  },
+};
 ```
 
 Example implementation file and test file pair that would be enforced:
