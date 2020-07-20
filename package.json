@@ -54,7 +54,7 @@
   },
   "devDependencies": {
     "@square/prettier-config": "^1.0.0",
-    "eslint": "7.4.0",
+    "eslint": "7.5.0",
     "eslint-plugin-eslint-plugin": "2.3.0",
     "eslint-plugin-node": "11.1.0",
     "lerna-changelog": "1.0.1",
