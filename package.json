@@ -45,7 +45,7 @@
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-markdown": "^1.0.2",
     "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-react": "^7.20.3",
+    "eslint-plugin-react": "^7.20.5",
     "eslint-plugin-unicorn": "20.1.0",
     "espree": "^7.0.0",
     "estraverse": "^5.1.0",
