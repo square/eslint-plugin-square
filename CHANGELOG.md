@@ -1,3 +1,30 @@
+## v15.2.0 (2020-08-26)
+
+#### :rocket: Enhancement
+* [#156](https://github.com/square/eslint-plugin-square/pull/156) build(deps): bump eslint-plugin-unicorn from 20.1.0 to 21.0.0 ([@dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+* [#166](https://github.com/square/eslint-plugin-square/pull/166) build(deps): bump estraverse from 5.1.0 to 5.2.0 ([@dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+* [#176](https://github.com/square/eslint-plugin-square/pull/176) build(deps): bump espree from 7.1.0 to 7.3.0 ([@dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+* [#181](https://github.com/square/eslint-plugin-square/pull/181) build(deps): bump eslint-plugin-ember from 8.9.1 to 8.13.0 ([@dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+* [#179](https://github.com/square/eslint-plugin-square/pull/179) build(deps): bump prettier from 2.0.5 to 2.1.1 ([@dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+* [#180](https://github.com/square/eslint-plugin-square/pull/180) build(deps): bump @typescript-eslint/eslint-plugin from 3.6.1 to 3.10.1 ([@dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+
+#### :bug: Bug Fix
+* [#170](https://github.com/square/eslint-plugin-square/pull/170) build(deps): bump eslint-plugin-react from 7.20.3 to 7.20.6 ([@dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+
+#### :memo: Documentation
+* [#182](https://github.com/square/eslint-plugin-square/pull/182) Mention that the `qunit/require-expect` rule is related to our `no-test-expect-assertion-count` rule ([@bmish](https://github.com/bmish))
+
+#### :house: Internal
+* [#148](https://github.com/square/eslint-plugin-square/pull/148) Remove unnecessary `@typescript-eslint/eslint-recommended` in `typescript` config ([@maxbeatty](https://github.com/maxbeatty))
+* [#98](https://github.com/square/eslint-plugin-square/pull/98) Use shared prettier config ([@maxbeatty](https://github.com/maxbeatty))
+* [#151](https://github.com/square/eslint-plugin-square/pull/151) Add npm-package-json-lint ([@bmish](https://github.com/bmish))
+* [#150](https://github.com/square/eslint-plugin-square/pull/150) Add eslint-plugin-markdown ([@bmish](https://github.com/bmish))
+
+#### Committers: 3
+- Bryan Mishkin ([@bmish](https://github.com/bmish))
+- Max Beatty ([@maxbeatty](https://github.com/maxbeatty))
+- [@dependabot-preview[bot]](https://github.com/apps/dependabot-preview)
+
 ## v15.1.1 (2020-07-02)
 
 #### :bug: Bug Fix
