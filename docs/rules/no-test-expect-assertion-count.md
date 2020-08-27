@@ -41,3 +41,4 @@ There's an autofixer in the rule implementation that can be uncommented as desir
 ## Related Rules
 
 * [require-await-function](./require-await-function.md)
+* [qunit/require-expect](https://github.com/platinumazure/eslint-plugin-qunit/blob/master/docs/rules/require-expect.md) with the [never-except-zero](https://github.com/platinumazure/eslint-plugin-qunit/blob/master/docs/rules/require-expect.md#never-except-zero) configuration is equivalent to this rule
