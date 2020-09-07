@@ -35,7 +35,7 @@
     "eslint": ">= 6"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^3.10.1",
+    "@typescript-eslint/eslint-plugin": "^4.0.1",
     "camelcase": "^6.0.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-ember": "^8.13.0",
