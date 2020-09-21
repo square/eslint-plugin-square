@@ -2,7 +2,7 @@
 /* eslint-env node */
 
 const { readdirSync, readFileSync } = require('fs');
-const { join } = require('path');
+const path = require('path');
 const assert = require('assert');
 const configs = require('../lib').configs;
 
@@ -10,8 +10,8 @@ const CONFIG_NAMES = Object.keys(configs);
 
 describe('config setup is correct', function () {
   it('should have a list of exported configs and config directory that match', function () {
-    const path = join(__dirname, '..', 'lib', 'config');
-    const files = readdirSync(path);
+    const filePath = path.join(__dirname, '..', 'lib', 'config');
+    const files = readdirSync(filePath);
 
     assert.deepStrictEqual(
       CONFIG_NAMES,
@@ -22,8 +22,8 @@ describe('config setup is correct', function () {
   });
 
   it('should mention all configs in the README', function () {
-    const path = join(__dirname, '..', 'README.md');
-    const file = readFileSync(path);
+    const filePath = path.join(__dirname, '..', 'README.md');
+    const file = readFileSync(filePath);
 
     CONFIG_NAMES.forEach((configName) => assert.ok(file.includes(configName)));
   });

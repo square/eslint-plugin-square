@@ -2,7 +2,7 @@
 
 /* eslint-env node */
 
-const { join, normalize } = require('path');
+const path = require('path');
 const RuleTester = require('eslint').RuleTester;
 const rule = require('../../../lib/rules/no-missing-tests');
 
@@ -11,12 +11,12 @@ const { ERROR_MESSAGE } = rule;
 const ruleTester = new RuleTester();
 
 const RULES_TESTS_PATH = __dirname;
-const RULES_LIB_PATH = normalize(
-  join(__dirname, '..', '..', '..', 'lib', 'rules')
+const RULES_LIB_PATH = path.normalize(
+  path.join(__dirname, '..', '..', '..', 'lib', 'rules')
 );
-const RULE_FILE = join(RULES_LIB_PATH, 'no-missing-tests.js');
-const RANDOM_FILE = normalize(
-  join(__dirname, '..', '..', '..', 'lib', 'index.js')
+const RULE_FILE = path.join(RULES_LIB_PATH, 'no-missing-tests.js');
+const RANDOM_FILE = path.normalize(
+  path.join(__dirname, '..', '..', '..', 'lib', 'index.js')
 );
 
 ruleTester.run('no-missing-tests', rule, {
@@ -55,7 +55,9 @@ ruleTester.run('no-missing-tests', rule, {
         [
           {
             filePath: RULES_LIB_PATH,
-            testPaths: [normalize(join(RULES_TESTS_PATH, '..', '..'))], // This is intentionally incorrect to cause the rule to think the test is missing.
+            testPaths: [
+              path.normalize(path.join(RULES_TESTS_PATH, '..', '..')),
+            ], // This is intentionally incorrect to cause the rule to think the test is missing.
             hasTestSuffix: false,
           },
         ],
