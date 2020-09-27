@@ -1,3 +1,34 @@
+## v16.0.0 (2020-09-27)
+
+#### :boom: Breaking Change
+* [#209](https://github.com/square/eslint-plugin-square/pull/209) Enable `checkPlainGetters` option on `ember/no-side-effects` rule ([@bmish](https://github.com/bmish))
+* [#208](https://github.com/square/eslint-plugin-square/pull/208) Disable `checkInitOnly` and enable `checkNativeClasses` options on `ember/require-super-in-init` rule ([@bmish](https://github.com/bmish))
+* [#207](https://github.com/square/eslint-plugin-square/pull/207) Remove `no-for-of` rule ([@bmish](https://github.com/bmish))
+* [#206](https://github.com/square/eslint-plugin-square/pull/206) Remove `no-async` rule ([@bmish](https://github.com/bmish))
+* [#203](https://github.com/square/eslint-plugin-square/pull/203) Remove `no-focused-tests` rule replaced by `qunit/no-only` rule ([@bmish](https://github.com/bmish))
+* [#202](https://github.com/square/eslint-plugin-square/pull/202) Remove `no-test-expect-assertion-count` rule replaced by `qunit/require-expect` rule ([@bmish](https://github.com/bmish))
+* [#147](https://github.com/square/eslint-plugin-square/pull/147) Remove `no-lazy-arrow-functions` rule for deprecated qunit-bdd plugin ([@bmish](https://github.com/bmish))
+* [#201](https://github.com/square/eslint-plugin-square/pull/201) Add eslint-plugin-qunit to `ember` config ([@bmish](https://github.com/bmish))
+* [#195](https://github.com/square/eslint-plugin-square/pull/195) build(deps): bump eslint-plugin-unicorn from 21.0.0 to 22.0.0 ([@dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+* [#200](https://github.com/square/eslint-plugin-square/pull/200) build(deps): bump eslint-plugin-ember from 8.13.0 to 9.1.0 ([@dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+* [#197](https://github.com/square/eslint-plugin-square/pull/197) build(deps): bump @typescript-eslint/eslint-plugin from 3.10.1 to 4.2.0 ([@dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+
+#### :rocket: Enhancement
+* [#198](https://github.com/square/eslint-plugin-square/pull/198) build(deps): bump eslint-plugin-react from 7.20.6 to 7.21.2 ([@dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+* [#199](https://github.com/square/eslint-plugin-square/pull/199) build(deps): bump eslint-config-prettier from 6.11.0 to 6.12.0 ([@dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+
+#### :bug: Bug Fix
+* [#204](https://github.com/square/eslint-plugin-square/pull/204) Fix false positive in `no-test-return-value` rule ([@bmish](https://github.com/bmish))
+* [#192](https://github.com/square/eslint-plugin-square/pull/192) build(deps): bump prettier from 2.1.1 to 2.1.2 ([@dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+* [#185](https://github.com/square/eslint-plugin-square/pull/185) Move eslint-plugin-markdown from dependency to dev-dependency ([@bmish](https://github.com/bmish))
+
+#### :house: Internal
+* [#189](https://github.com/square/eslint-plugin-square/pull/189) Add sort-package-json ([@bmish](https://github.com/bmish))
+
+#### Committers: 2
+- Bryan Mishkin ([@bmish](https://github.com/bmish))
+- [@dependabot-preview[bot]](https://github.com/apps/dependabot-preview)
+
 ## v15.2.0 (2020-08-26)
 
 #### :rocket: Enhancement
