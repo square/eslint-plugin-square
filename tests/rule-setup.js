@@ -2,7 +2,7 @@
 /* eslint-env node */
 
 const { readdirSync, readFileSync } = require('fs');
-const { join } = require('path');
+const path = require('path');
 const assert = require('assert');
 const rules = require('../lib').rules;
 const configEmber = require('../lib/config/ember');
@@ -34,8 +34,8 @@ function getAllNamedOptions(jsonSchema) {
 
 describe('rules setup is correct', function () {
   it('should have a list of exported rules and rules directory that match', function () {
-    const path = join(__dirname, '..', 'lib', 'rules');
-    const files = readdirSync(path);
+    const filePath = path.join(__dirname, '..', 'lib', 'rules');
+    const files = readdirSync(filePath);
 
     assert.deepStrictEqual(
       RULE_NAMES,
@@ -46,8 +46,8 @@ describe('rules setup is correct', function () {
   });
 
   it('should have tests for all rules', function () {
-    const path = join(__dirname, '..', 'tests', 'lib', 'rules');
-    const files = readdirSync(path);
+    const filePath = path.join(__dirname, '..', 'tests', 'lib', 'rules');
+    const files = readdirSync(filePath);
 
     assert.deepStrictEqual(
       RULE_NAMES,
@@ -58,8 +58,8 @@ describe('rules setup is correct', function () {
   });
 
   it('should have documentation for all rules', function () {
-    const path = join(__dirname, '..', 'docs', 'rules');
-    const files = readdirSync(path);
+    const filePath = path.join(__dirname, '..', 'docs', 'rules');
+    const files = readdirSync(filePath);
 
     assert.deepStrictEqual(
       RULE_NAMES,
@@ -75,8 +75,14 @@ describe('rules setup is correct', function () {
 
     RULE_NAMES.forEach((ruleName) => {
       const rule = rules[ruleName];
-      const path = join(__dirname, '..', 'docs', 'rules', `${ruleName}.md`);
-      const file = readFileSync(path, 'utf8');
+      const filePath = path.join(
+        __dirname,
+        '..',
+        'docs',
+        'rules',
+        `${ruleName}.md`
+      );
+      const file = readFileSync(filePath, 'utf8');
 
       describe(ruleName, function () {
         it('should have the right contents (title, examples, fixable notice)', function () {
@@ -138,8 +144,8 @@ describe('rules setup is correct', function () {
   });
 
   it('should mention all rules in the README', function () {
-    const path = join(__dirname, '..', 'README.md');
-    const file = readFileSync(path);
+    const filePath = path.join(__dirname, '..', 'README.md');
+    const file = readFileSync(filePath);
 
     RULE_NAMES.forEach((ruleName) =>
       assert.ok(file.includes(ruleName), `mentions \`${ruleName}\``)
