@@ -54,7 +54,6 @@ Rules enabled by these configurations should meet the following criteria:
 | [no-modifying-immutable-properties](docs/rules/no-modifying-immutable-properties.md) | Ember | | :wrench: |
 | [no-translation-key-interpolation](docs/rules/no-translation-key-interpolation.md) | Ember | :fire: | |
 | [no-assert-ok-find](docs/rules/no-assert-ok-find.md) | Testing | :fire: | |
-| [no-focused-tests](docs/rules/no-focused-tests.md) | Testing | :fire: | |
 | [no-missing-tests](docs/rules/no-missing-tests.md) | Testing | | |
 | [no-test-return-value](docs/rules/no-test-return-value.md) | Testing | :fire: | |
 | [use-call-count-test-assert](docs/rules/use-call-count-test-assert.md) | Testing | :fire: | :wrench: |
