@@ -46,7 +46,6 @@ Rules enabled by these configurations should meet the following criteria:
 
 | Rule | Category | Config | Fixable? |
 | :--- | :------- | :----- | :------- |
-| [no-async](docs/rules/no-async.md) | JavaScript | | |
 | [no-for-of](docs/rules/no-for-of.md) | JavaScript | | |
 | [no-restricted-files](docs/rules/no-restricted-files.md) | JavaScript | | |
 | [require-await-function](docs/rules/require-await-function.md) | JavaScript | :fire: | :wrench: |
