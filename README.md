@@ -56,7 +56,6 @@ Rules enabled by these configurations should meet the following criteria:
 | [no-assert-ok-find](docs/rules/no-assert-ok-find.md) | Testing | :fire: | |
 | [no-focused-tests](docs/rules/no-focused-tests.md) | Testing | :fire: | |
 | [no-missing-tests](docs/rules/no-missing-tests.md) | Testing | | |
-| [no-test-expect-assertion-count](docs/rules/no-test-expect-assertion-count.md) | Testing | :fire: | |
 | [no-test-return-value](docs/rules/no-test-return-value.md) | Testing | :fire: | |
 | [use-call-count-test-assert](docs/rules/use-call-count-test-assert.md) | Testing | :fire: | :wrench: |
 | [use-ember-find](docs/rules/use-ember-find.md) | Testing | :fire: | :wrench: |
