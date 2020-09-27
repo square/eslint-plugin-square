@@ -1264,6 +1264,11 @@ eslint-plugin-prettier@^3.1.4:
   dependencies:
     prettier-linter-helpers "^1.0.0"
 
+eslint-plugin-qunit@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.npmjs.org/eslint-plugin-qunit/-/eslint-plugin-qunit-5.0.0.tgz#2f33707b97f7b0a338c16378794e325550a1431b"
+  integrity sha512-F1AuwxsJ4YgSQztd3OZCNtM3DXpiDF9bpXbVCBcBU+8l5WOAAxfJHNYqP3tOhEEbIJPRkcTgk0SAJPYtdVjBmQ==
+
 eslint-plugin-react@^7.21.2:
   version "7.21.2"
   resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.21.2.tgz#3bd5d2c4c36d5a0428d0d6dda301ac9a84d681b2"
