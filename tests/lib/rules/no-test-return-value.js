@@ -18,6 +18,10 @@ const ruleTester = new RuleTester({
 ruleTester.run('no-test-return-value', rule, {
   valid: [
     {
+      code: 'function hello() { return true; }',
+      filename: TEST_FILE_NAME,
+    },
+    {
       code: 'describe(function() { 1; })',
       filename: TEST_FILE_NAME,
     },
@@ -36,6 +40,14 @@ ruleTester.run('no-test-return-value', rule, {
     {
       code: 'describe(function() { return true; })',
       filename: NON_TEST_FILE_NAME,
+    },
+    {
+      code: 'describe.foo(function() { return true; })',
+      filename: TEST_FILE_NAME,
+    },
+    {
+      code: 'foo.describe(function() { return true; })',
+      filename: TEST_FILE_NAME,
     },
   ],
   invalid: [
