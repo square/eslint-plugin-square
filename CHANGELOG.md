@@ -1,3 +1,14 @@
+## v16.0.1 (2020-09-27)
+
+#### :bug: Bug Fix
+* [#213](https://github.com/square/eslint-plugin-square/pull/213) Turn off `unicorn/import-style` rule ([@bmish](https://github.com/bmish))
+* [#214](https://github.com/square/eslint-plugin-square/pull/214) build(deps): bump eslint-plugin-ember from 9.1.0 to 9.1.1 ([@dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+* [#212](https://github.com/square/eslint-plugin-square/pull/212) build(deps): bump eslint-plugin-import from 2.22.0 to 2.22.1 ([@dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+
+#### Committers: 2
+- Bryan Mishkin ([@bmish](https://github.com/bmish))
+- [@dependabot-preview[bot]](https://github.com/apps/dependabot-preview)
+
 ## v16.0.0 (2020-09-27)
 
 #### :boom: Breaking Change
