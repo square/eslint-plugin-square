@@ -37,6 +37,7 @@
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^4.5.0",
+    "@typescript-eslint/parser": "4.6.1",
     "camelcase": "^6.0.0",
     "eslint-config-prettier": "^6.12.0",
     "eslint-plugin-ember": "^9.1.1",
@@ -50,7 +51,8 @@
     "eslint-plugin-unicorn": "22.0.0",
     "espree": "^7.3.0",
     "estraverse": "^5.2.0",
-    "prettier": "^2.1.2"
+    "prettier": "^2.1.2",
+    "typescript": "^4.0.5"
   },
   "devDependencies": {
     "@square/prettier-config": "^1.0.0",
