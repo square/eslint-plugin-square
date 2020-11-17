@@ -23,7 +23,7 @@ Edit your `.eslintrc.js` configuration file to extend one of the available confi
 ```js
 module.exports = {
   plugins: ['square'],
-  extends: ['plugin:square/ember'], // Or other configuration.
+  extends: ['plugin:square/base'], // Or other configuration.
 };
 ```
 
@@ -34,6 +34,7 @@ module.exports = {
 | | [base] | Rules and configuration for any JavaScript-based project. Includes recommended and optional rules from [eslint], [prettier], [eslint-plugin-eslint-comments], [eslint-plugin-import], [eslint-plugin-unicorn], and more. |
 | :fire: | [ember] | [Ember.js]-specific additions on top of `base`. Includes recommended and optional rules from [eslint-plugin-ember], kebab-case filename enforcement with [eslint-plugin-filenames], and more. |
 | | [react] | [React](https://reactjs.org)-specific additions on top of `base`. |
+| | [strict] | A variety of stricter lint rules on top of `base`. |
 | | [typescript] | [TypeScript](https://www.typescriptlang.org/)-specific additions on top of `base`. Use with [@typescript-eslint/parser]. |
 
 Rules enabled by these configurations should meet the following criteria:
@@ -74,6 +75,7 @@ Note that we prefer to upstream our custom lint rules to third-party eslint plug
 [eslint-plugin-unicorn]: https://github.com/sindresorhus/eslint-plugin-unicorn
 [prettier]: https://prettier.io/
 [react]: lib/config/react.js
+[strict]: lib/config/strict.js
 [typescript]: lib/config/typescript.js
 [@typescript-eslint/parser]: https://www.npmjs.com/package/@typescript-eslint/parser
 
