@@ -1,3 +1,18 @@
+## v17.0.0 (2020-12-02)
+
+#### :boom: Breaking Change
+* [#265](https://github.com/square/eslint-plugin-square/pull/265) build(deps): bump eslint-plugin-ember from 9.6.0 to 10.0.1 ([@dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+* [#231](https://github.com/square/eslint-plugin-square/pull/231) build(deps): bump eslint-plugin-unicorn from 22.0.0 to 23.0.0 ([@dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+* [#247](https://github.com/square/eslint-plugin-square/pull/247) Split new `strict` config out of `typescript` config ([@bmish](https://github.com/bmish))
+* [#266](https://github.com/square/eslint-plugin-square/pull/266) Enable `qunit/no-assert-equal-boolean` rule in `ember` config ([@bmish](https://github.com/bmish))
+
+#### :bug: Bug Fix
+* [#267](https://github.com/square/eslint-plugin-square/pull/267) Use more specific path for router.js file override in `ember` config ([@bmish](https://github.com/bmish))
+
+#### Committers: 2
+- Bryan Mishkin ([@bmish](https://github.com/bmish))
+- [@dependabot-preview[bot]](https://github.com/apps/dependabot-preview)
+
 ## v16.0.1 (2020-09-27)
 
 #### :bug: Bug Fix
