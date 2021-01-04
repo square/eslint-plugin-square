@@ -39,7 +39,7 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^4.9.0",
     "camelcase": "^6.2.0",
-    "eslint-config-prettier": "^6.15.0",
+    "eslint-config-prettier": "^7.1.0",
     "eslint-plugin-ember": "^10.0.1",
     "eslint-plugin-es": "^4.1.0",
     "eslint-plugin-eslint-comments": "^3.2.0",
