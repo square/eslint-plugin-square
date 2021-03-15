@@ -18,7 +18,7 @@ function getAllNamedOptions(jsonSchema) {
   }
 
   if (Array.isArray(jsonSchema)) {
-    return flat(jsonSchema.map(getAllNamedOptions));
+    return flat(jsonSchema.map((item) => getAllNamedOptions(item)));
   }
 
   if (jsonSchema.items) {
@@ -73,7 +73,7 @@ describe('rules setup is correct', function () {
     const CONFIG_MSG_EMBER =
       ':fire: The `"extends": "plugin:square/ember"` property in a configuration file enables this rule.';
 
-    RULE_NAMES.forEach((ruleName) => {
+    for (const ruleName of RULE_NAMES) {
       const rule = rules[ruleName];
       const filePath = path.join(
         __dirname,
@@ -105,12 +105,12 @@ describe('rules setup is correct', function () {
             );
 
             // Ensure all configuration options are mentioned.
-            getAllNamedOptions(rule.meta.schema).forEach((namedOption) =>
+            for (const namedOption of getAllNamedOptions(rule.meta.schema)) {
               assert.ok(
                 file.includes(namedOption),
                 `mentions rule option ${namedOption}`
-              )
-            );
+              );
+            }
           } else {
             assert.ok(
               !file.includes('## Configuration'),
@@ -140,15 +140,15 @@ describe('rules setup is correct', function () {
           }
         });
       });
-    });
+    }
   });
 
   it('should mention all rules in the README', function () {
     const filePath = path.join(__dirname, '..', 'README.md');
     const file = readFileSync(filePath);
 
-    RULE_NAMES.forEach((ruleName) =>
-      assert.ok(file.includes(ruleName), `mentions \`${ruleName}\``)
-    );
+    for (const ruleName of RULE_NAMES) {
+      assert.ok(file.includes(ruleName), `mentions \`${ruleName}\``);
+    }
   });
 });

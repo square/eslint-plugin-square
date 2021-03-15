@@ -25,6 +25,8 @@ describe('config setup is correct', function () {
     const filePath = path.join(__dirname, '..', 'README.md');
     const file = readFileSync(filePath);
 
-    CONFIG_NAMES.forEach((configName) => assert.ok(file.includes(configName)));
+    for (const configName of CONFIG_NAMES) {
+      assert.ok(file.includes(configName));
+    }
   });
 });
