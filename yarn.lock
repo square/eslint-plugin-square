@@ -1622,14 +1622,15 @@ eslint-module-utils@^2.6.0:
     debug "^2.6.9"
     pkg-dir "^2.0.0"
 
-eslint-plugin-ember@^10.0.1:
-  version "10.0.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-ember/-/eslint-plugin-ember-10.0.1.tgz#41f545a14ba3f4bd83987cc4c7ef3160c15b6bab"
-  integrity sha512-KN1ycf8jGiS7sAr/Hj/j1qspnm5HBS0FezbskdL2xQgQQHMGqvcrbNVUwQd8VOSJzF7OUcOnoBI10U6RmGfHuQ==
+eslint-plugin-ember@^10.2.0:
+  version "10.2.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-ember/-/eslint-plugin-ember-10.2.0.tgz#449c3ce8e5421c61ab47e0cb6954e2f6f1cfbdc8"
+  integrity sha512-W5cPJa+bBcKJ5kmmu7o8r1hbbT45ZCy8eE5EyRjqJ02B7Jlg74mX+Hdz4RYNSvV1+G7YAOwEZLUkIdJ+44ySGA==
   dependencies:
     "@ember-data/rfc395-data" "^0.0.4"
     css-tree "^1.0.0-alpha.39"
     ember-rfc176-data "^0.3.15"
+    eslint-utils "^2.1.0"
     lodash.kebabcase "^4.1.1"
     snake-case "^3.0.3"
 
