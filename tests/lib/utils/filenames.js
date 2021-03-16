@@ -11,7 +11,7 @@ describe('filenames', () => {
     it('supports kebab case', () => {
       const re = new RegExp(filenames.regex.kebab);
 
-      [
+      for (const t of [
         't',
         'foo',
         'foo-bar',
@@ -23,23 +23,25 @@ describe('filenames', () => {
         'apple.stories',
         '.eslintrc',
         '.template-lintrc',
-      ].forEach((t) => assert.ok(re.test(t), `expected '${t}' to be ok`));
+      ]) {
+        assert.ok(re.test(t), `expected '${t}' to be ok`);
+      }
 
-      ['snake_case', 'camelCase', 'PascalCase'].forEach((t) =>
-        assert.ok(!re.test(t), `expected ${t} to NOT be ok`)
-      );
+      for (const t of ['snake_case', 'camelCase', 'PascalCase']) {
+        assert.ok(!re.test(t), `expected ${t} to NOT be ok`);
+      }
     });
 
     it('supports pascal case', () => {
       const re = new RegExp(filenames.regex.pascal);
 
-      ['A', 'App', 'PascalCase', 'FooBarBaz', 'App.test'].forEach((t) =>
-        assert.ok(re.test(t), `expected '${t}' to be ok`)
-      );
+      for (const t of ['A', 'App', 'PascalCase', 'FooBarBaz', 'App.test']) {
+        assert.ok(re.test(t), `expected '${t}' to be ok`);
+      }
 
-      ['simple', 'snake_case', 'kebab-case', 'dot.case'].forEach((t) =>
-        assert.ok(!re.test(t), `expected ${t} to NOT be ok`)
-      );
+      for (const t of ['simple', 'snake_case', 'kebab-case', 'dot.case']) {
+        assert.ok(!re.test(t), `expected ${t} to NOT be ok`);
+      }
     });
   });
 });
