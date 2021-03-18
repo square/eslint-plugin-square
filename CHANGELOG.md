@@ -1,3 +1,22 @@
+## v18.0.0 (2021-03-18)
+
+#### :boom: Breaking Change
+* [#329](https://github.com/square/eslint-plugin-square/pull/329) chore(deps): bump eslint-config-prettier from 6.15.0 to 8.1.0 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#322](https://github.com/square/eslint-plugin-square/pull/322) chore(deps): bump eslint-plugin-unicorn from 23.0.0 to 28.0.2 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#333](https://github.com/square/eslint-plugin-square/pull/333) chore(deps): bump eslint-plugin-qunit from 5.1.1 to 6.0.0 ([@dependabot[bot]](https://github.com/apps/dependabot))
+
+#### :bug: Bug Fix
+* [#291](https://github.com/square/eslint-plugin-square/pull/291) Add missing dependency range carets ([@bmish](https://github.com/bmish))
+
+#### :house: Internal
+* [#290](https://github.com/square/eslint-plugin-square/pull/290) Automate release process with release-it-lerna-changelog ([@bmish](https://github.com/bmish))
+* [#289](https://github.com/square/eslint-plugin-square/pull/289) Add Windows to CI test matrix ([@bmish](https://github.com/bmish))
+
+#### Committers: 2
+- Bryan Mishkin ([@bmish](https://github.com/bmish))
+- [@dependabot-preview[bot]](https://github.com/apps/dependabot-preview)
+
+
 ## v17.0.0 (2020-12-02)
 
 #### :boom: Breaking Change
