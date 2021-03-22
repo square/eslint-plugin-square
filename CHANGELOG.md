@@ -1,3 +1,11 @@
+## v19.0.0 (2021-03-22)
+
+#### :boom: Breaking Change
+* [#338](https://github.com/square/eslint-plugin-square/pull/338) chore(deps): bump eslint-plugin-unicorn from 28.0.2 to 29.0.0 ([@dependabot[bot]](https://github.com/apps/dependabot))
+
+#### Committers: 0
+
+
 ## v18.0.0 (2021-03-18)
 
 #### :boom: Breaking Change
