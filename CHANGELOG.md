@@ -1,3 +1,12 @@
+## v19.0.2 (2021-03-24)
+
+#### :bug: Bug Fix
+* [#340](https://github.com/square/eslint-plugin-square/pull/340) Disable `unicorn/no-array-for-each` rule in `base` config ([@bmish](https://github.com/bmish))
+
+#### Committers: 1
+- Bryan Mishkin ([@bmish](https://github.com/bmish))
+
+
 ## v19.0.1 (2021-03-24)
 
 #### :bug: Bug Fix
