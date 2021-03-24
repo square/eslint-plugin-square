@@ -1,3 +1,12 @@
+## v19.0.1 (2021-03-24)
+
+#### :bug: Bug Fix
+* [#341](https://github.com/square/eslint-plugin-square/pull/341) Disable `unicorn/no-lonely-if` rule in `base` config ([@bmish](https://github.com/bmish))
+
+#### Committers: 1
+- Bryan Mishkin ([@bmish](https://github.com/bmish))
+
+
 ## v19.0.0 (2021-03-22)
 
 #### :boom: Breaking Change
