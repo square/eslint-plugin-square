@@ -55,7 +55,7 @@ ruleTester.run('no-test-return-value', rule, {
       code: `${testHook}(function() { return 1; })`,
       filename: TEST_FILE_NAME,
       output: null,
-      errors: [{ message: ERROR_MESSAGE }],
+      errors: [{ message: ERROR_MESSAGE, type: 'ReturnStatement' }],
     })),
     {
       code: `
@@ -64,7 +64,7 @@ ruleTester.run('no-test-return-value', rule, {
         })`,
       filename: TEST_FILE_NAME,
       output: null,
-      errors: [{ message: ERROR_MESSAGE }],
+      errors: [{ message: ERROR_MESSAGE, type: 'ReturnStatement' }],
       options: [{ testHooks: ['testHook'] }],
     },
   ],
