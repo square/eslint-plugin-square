@@ -3,7 +3,7 @@
 const rule = require('../../../lib/rules/no-test-return-value');
 const RuleTester = require('eslint').RuleTester;
 
-const { DEFAULT_TEST_HOOKS, ERROR_MESSAGE } = rule;
+const { DEFAULT_TEST_HOOKS, ERROR_MESSAGE, SUGGEST_MESSAGE } = rule;
 
 const TEST_FILE_NAME = 'some-test.js';
 const NON_TEST_FILE_NAME = 'some-file.js';
@@ -55,7 +55,18 @@ ruleTester.run('no-test-return-value', rule, {
       code: `${testHook}(function() { return 1; })`,
       filename: TEST_FILE_NAME,
       output: null,
-      errors: [{ message: ERROR_MESSAGE, type: 'ReturnStatement' }],
+      errors: [
+        {
+          message: ERROR_MESSAGE,
+          type: 'ReturnStatement',
+          suggestions: [
+            {
+              desc: SUGGEST_MESSAGE,
+              output: `${testHook}(function() { 1; })`,
+            },
+          ],
+        },
+      ],
     })),
     {
       code: `
@@ -64,7 +75,21 @@ ruleTester.run('no-test-return-value', rule, {
         })`,
       filename: TEST_FILE_NAME,
       output: null,
-      errors: [{ message: ERROR_MESSAGE, type: 'ReturnStatement' }],
+      errors: [
+        {
+          message: ERROR_MESSAGE,
+          type: 'ReturnStatement',
+          suggestions: [
+            {
+              desc: SUGGEST_MESSAGE,
+              output: `
+        testHook(function(condition) {
+          condition ? 1 : 2;
+        })`,
+            },
+          ],
+        },
+      ],
       options: [{ testHooks: ['testHook'] }],
     },
   ],

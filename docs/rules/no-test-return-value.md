@@ -40,10 +40,6 @@ test('it does something', function (assert) {
 });
 ```
 
-## Migration
-
-There's an autofixer in the rule implementation that can be uncommented as desired.
-
 ## Configuration
 
 * object -- containing the following properties:
