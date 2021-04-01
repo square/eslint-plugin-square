@@ -32,10 +32,6 @@ test('the element exists', function (assert) {
 });
 ```
 
-## Migration
-
-There's an autofixer in the rule implementation that can be uncommented as desired.
-
 ## References
 
 * See the [documentation](https://github.com/emberjs/ember-test-helpers/blob/master/API.md#find) for Ember's `find` test helper

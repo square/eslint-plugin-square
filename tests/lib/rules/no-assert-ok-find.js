@@ -3,7 +3,7 @@
 const rule = require('../../../lib/rules/no-assert-ok-find');
 const RuleTester = require('eslint').RuleTester;
 
-const { ERROR_MESSAGE } = rule;
+const { ERROR_MESSAGE, SUGGEST_MESSAGE } = rule;
 
 const TEST_FILE_NAME = 'some-test.js';
 const NON_TEST_FILE_NAME = 'some-file.js';
@@ -43,37 +43,105 @@ ruleTester.run('no-assert-ok-find', rule, {
       code: "assert.ok(find('.class'));",
       filename: TEST_FILE_NAME,
       output: null,
-      errors: [{ message: ERROR_MESSAGE, type: 'CallExpression' }],
+      errors: [
+        {
+          message: ERROR_MESSAGE,
+          type: 'CallExpression',
+          suggestions: [
+            {
+              desc: SUGGEST_MESSAGE,
+              output: "assert.equal(find('.class').length, 1);",
+            },
+          ],
+        },
+      ],
     },
     {
       code: "assert.ok(find('.class'), 'it exists');",
       filename: TEST_FILE_NAME,
       output: null,
-      errors: [{ message: ERROR_MESSAGE, type: 'CallExpression' }],
+      errors: [
+        {
+          message: ERROR_MESSAGE,
+          type: 'CallExpression',
+          suggestions: [
+            {
+              desc: SUGGEST_MESSAGE,
+              output: "assert.equal(find('.class').length, 1, 'it exists');",
+            },
+          ],
+        },
+      ],
     },
     {
       code: "assert.ok(findButton('Button Text'));",
       filename: TEST_FILE_NAME,
       output: null,
-      errors: [{ message: ERROR_MESSAGE, type: 'CallExpression' }],
+      errors: [
+        {
+          message: ERROR_MESSAGE,
+          type: 'CallExpression',
+          suggestions: [
+            {
+              desc: SUGGEST_MESSAGE,
+              output: "assert.equal(findButton('Button Text').length, 1);",
+            },
+          ],
+        },
+      ],
     },
     {
       code: "assert.ok(findButton('Button Text'), 'it exists');",
       filename: TEST_FILE_NAME,
       output: null,
-      errors: [{ message: ERROR_MESSAGE, type: 'CallExpression' }],
+      errors: [
+        {
+          message: ERROR_MESSAGE,
+          type: 'CallExpression',
+          suggestions: [
+            {
+              desc: SUGGEST_MESSAGE,
+              output:
+                "assert.equal(findButton('Button Text').length, 1, 'it exists');",
+            },
+          ],
+        },
+      ],
     },
     {
       code: "assert.ok(findLink('Link Text'));",
       filename: TEST_FILE_NAME,
       output: null,
-      errors: [{ message: ERROR_MESSAGE, type: 'CallExpression' }],
+      errors: [
+        {
+          message: ERROR_MESSAGE,
+          type: 'CallExpression',
+          suggestions: [
+            {
+              desc: SUGGEST_MESSAGE,
+              output: "assert.equal(findLink('Link Text').length, 1);",
+            },
+          ],
+        },
+      ],
     },
     {
       code: "assert.ok(findLink('Link Text'), 'it exists');",
       filename: TEST_FILE_NAME,
       output: null,
-      errors: [{ message: ERROR_MESSAGE, type: 'CallExpression' }],
+      errors: [
+        {
+          message: ERROR_MESSAGE,
+          type: 'CallExpression',
+          suggestions: [
+            {
+              desc: SUGGEST_MESSAGE,
+              output:
+                "assert.equal(findLink('Link Text').length, 1, 'it exists');",
+            },
+          ],
+        },
+      ],
     },
   ],
 });
