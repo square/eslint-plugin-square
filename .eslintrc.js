@@ -31,8 +31,12 @@ module.exports = {
       env: { mocha: true },
     },
     {
-      // Markdown code samples in documentation:
       files: ['**/*.md'],
+      processor: 'markdown/markdown',
+    },
+    {
+      // Markdown code samples in documentation:
+      files: ['**/*.md/*.js'],
       plugins: ['markdown'],
       parserOptions: {
         sourceType: 'module',
