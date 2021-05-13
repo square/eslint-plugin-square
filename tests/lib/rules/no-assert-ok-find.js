@@ -20,21 +20,32 @@ ruleTester.run('no-assert-ok-find', rule, {
     {
       code: "exists('.class');",
       filename: TEST_FILE_NAME,
+      globals: { find: true },
     },
     {
       code: "assert.dom('.class').exists();",
       filename: TEST_FILE_NAME,
+      globals: { find: true },
     },
     {
       code: "assert.otherFunction(find('.class'));",
       filename: TEST_FILE_NAME,
+      globals: { find: true },
     },
     {
       code: "otherClass.ok(find('.class'));",
       filename: TEST_FILE_NAME,
+      globals: { find: true },
     },
     {
       code: "assert.ok(find('.class'));",
+      filename: NON_TEST_FILE_NAME,
+      globals: { find: true },
+    },
+
+    // Not the global
+    {
+      code: "import { find } from '@ember/test-helpers'; assert.ok(find('.class'));",
       filename: NON_TEST_FILE_NAME,
     },
   ],
@@ -42,6 +53,7 @@ ruleTester.run('no-assert-ok-find', rule, {
     {
       code: "assert.ok(find('.class'));",
       filename: TEST_FILE_NAME,
+      globals: { find: true },
       output: null,
       errors: [
         {
@@ -59,6 +71,7 @@ ruleTester.run('no-assert-ok-find', rule, {
     {
       code: "assert.ok(find('.class'), 'it exists');",
       filename: TEST_FILE_NAME,
+      globals: { find: true },
       output: null,
       errors: [
         {
@@ -68,76 +81,6 @@ ruleTester.run('no-assert-ok-find', rule, {
             {
               desc: SUGGEST_MESSAGE,
               output: "assert.equal(find('.class').length, 1, 'it exists');",
-            },
-          ],
-        },
-      ],
-    },
-    {
-      code: "assert.ok(findButton('Button Text'));",
-      filename: TEST_FILE_NAME,
-      output: null,
-      errors: [
-        {
-          message: ERROR_MESSAGE,
-          type: 'CallExpression',
-          suggestions: [
-            {
-              desc: SUGGEST_MESSAGE,
-              output: "assert.equal(findButton('Button Text').length, 1);",
-            },
-          ],
-        },
-      ],
-    },
-    {
-      code: "assert.ok(findButton('Button Text'), 'it exists');",
-      filename: TEST_FILE_NAME,
-      output: null,
-      errors: [
-        {
-          message: ERROR_MESSAGE,
-          type: 'CallExpression',
-          suggestions: [
-            {
-              desc: SUGGEST_MESSAGE,
-              output:
-                "assert.equal(findButton('Button Text').length, 1, 'it exists');",
-            },
-          ],
-        },
-      ],
-    },
-    {
-      code: "assert.ok(findLink('Link Text'));",
-      filename: TEST_FILE_NAME,
-      output: null,
-      errors: [
-        {
-          message: ERROR_MESSAGE,
-          type: 'CallExpression',
-          suggestions: [
-            {
-              desc: SUGGEST_MESSAGE,
-              output: "assert.equal(findLink('Link Text').length, 1);",
-            },
-          ],
-        },
-      ],
-    },
-    {
-      code: "assert.ok(findLink('Link Text'), 'it exists');",
-      filename: TEST_FILE_NAME,
-      output: null,
-      errors: [
-        {
-          message: ERROR_MESSAGE,
-          type: 'CallExpression',
-          suggestions: [
-            {
-              desc: SUGGEST_MESSAGE,
-              output:
-                "assert.equal(findLink('Link Text').length, 1, 'it exists');",
             },
           ],
         },

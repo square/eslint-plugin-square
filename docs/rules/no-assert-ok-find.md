@@ -2,7 +2,9 @@
 
 :fire: The `"extends": "plugin:square/ember"` property in a configuration file enables this rule.
 
-Ember's `find('.selector')` test helper function always returns an array, even when no elements match. As a result, `assert.ok(find('.selector'))` will always pass, even if no elements are found, as an empty array is still truthy.
+Ember's old built-in `find('.selector')` acceptance test helper function always returns an array, even when no elements match. As a result, `assert.ok(find('.selector'))` will always pass, even if no elements are found, as an empty array is still truthy.
+
+Note: [find](https://github.com/emberjs/ember-test-helpers/blob/master/API.md#find) from `@ember/test-helpers` does not have this problem.
 
 ## Rule Details
 
@@ -32,7 +34,15 @@ test('the element exists', function (assert) {
 });
 ```
 
+```js
+import { find } from '@ember/test-helpers';
+
+test('the element exists', function (assert) {
+  assert.ok(find('.selector'));
+});
+```
+
 ## References
 
-* See the [documentation](https://github.com/emberjs/ember-test-helpers/blob/master/API.md#find) for Ember's `find` test helper
+* See the [documentation](https://guides.emberjs.com/v2.14.0/testing/acceptance/) for Ember's `find` acceptance test helper
 * See the [documentation](https://github.com/simplabs/qunit-dom) for the `qunit-dom` package
