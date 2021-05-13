@@ -46,7 +46,7 @@
     "eslint-plugin-filenames": "^1.3.2",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-qunit": "^6.0.0",
+    "eslint-plugin-qunit": "^6.1.0",
     "eslint-plugin-react": "^7.23.2",
     "eslint-plugin-unicorn": "^29.0.0",
     "espree": "^7.3.0",
