@@ -59,8 +59,7 @@ const INVALID_USAGES = [
   },
   {
     // Missing `await` but inside another `await` function call.
-    code:
-      'async function topLevelFunction() { await otherAsyncFunc(async () => { asyncFunc(); }); }',
+    code: 'async function topLevelFunction() { await otherAsyncFunc(async () => { asyncFunc(); }); }',
     options: [{ functions: ['asyncFunc'] }],
     output:
       'async function topLevelFunction() { await otherAsyncFunc(async () => { await asyncFunc(); }); }',
