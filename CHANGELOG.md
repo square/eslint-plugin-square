@@ -1,3 +1,21 @@
+## v19.1.0 (2021-05-30)
+
+#### :rocket: Enhancement
+* [#388](https://github.com/square/eslint-plugin-square/pull/388) chore(deps): bump eslint-utils from 2.1.0 to 3.0.0 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#347](https://github.com/square/eslint-plugin-square/pull/347) feat: add automated suggestion to `no-assert-ok-find` rule ([@bmish](https://github.com/bmish))
+* [#348](https://github.com/square/eslint-plugin-square/pull/348) feat: add automated suggestion to `no-test-return-value` rule ([@bmish](https://github.com/bmish))
+
+#### :bug: Bug Fix
+* [#382](https://github.com/square/eslint-plugin-square/pull/382) Only catch global `find` Ember acceptance test helper in `no-assert-ok-find` rule ([@bmish](https://github.com/bmish))
+
+#### :house: Internal
+* [#372](https://github.com/square/eslint-plugin-square/pull/372) Use `requireindex` to export rules and configs ([@bmish](https://github.com/bmish))
+* [#346](https://github.com/square/eslint-plugin-square/pull/346) test: add missing error node type assertions in a few tests ([@bmish](https://github.com/bmish))
+
+#### Committers: 1
+- Bryan Mishkin ([@bmish](https://github.com/bmish))
+
+
 ## v19.0.2 (2021-03-24)
 
 #### :bug: Bug Fix
