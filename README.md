@@ -50,7 +50,6 @@ Rules enabled by these configurations should meet the following criteria:
 | [no-restricted-files](docs/rules/no-restricted-files.md) | JavaScript | | |
 | [require-await-function](docs/rules/require-await-function.md) | JavaScript | :fire: | :wrench: |
 | [no-handlebar-interpolation](docs/rules/no-handlebar-interpolation.md) | Ember | | |
-| [no-modifying-immutable-properties](docs/rules/no-modifying-immutable-properties.md) | Ember | | :wrench: |
 | [no-translation-key-interpolation](docs/rules/no-translation-key-interpolation.md) | Ember | :fire: | |
 | [no-missing-tests](docs/rules/no-missing-tests.md) | Testing | | |
 | [no-test-return-value](docs/rules/no-test-return-value.md) | Testing | :fire: | |
