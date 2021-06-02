@@ -6,7 +6,7 @@ const { DEFAULT_ERROR_MESSAGE } = rule;
 const ruleTester = new RuleTester({
   parserOptions: {
     sourceType: 'module',
-    ecmaVersion: 2015,
+    ecmaVersion: 2020,
   },
 });
 

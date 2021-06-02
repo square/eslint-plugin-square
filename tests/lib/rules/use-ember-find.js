@@ -77,7 +77,7 @@ ruleTester.run('use-ember-find', rule, {
       filename: TEST_FILE_NAME,
       code: '$(`.some-${selector}`);', // eslint-disable-line no-template-curly-in-string
       output: "find(`.some-${selector}`, 'body');", // eslint-disable-line no-template-curly-in-string
-      parserOptions: { ecmaVersion: 6 },
+      parserOptions: { ecmaVersion: 2020 },
       errors: [{ message: ERROR_MESSAGE, type: 'CallExpression' }],
     },
 
@@ -98,7 +98,7 @@ ruleTester.run('use-ember-find', rule, {
       filename: TEST_FILE_NAME,
       code: 'jQuery(`.some-${selector}`);', // eslint-disable-line no-template-curly-in-string
       output: "find(`.some-${selector}`, 'body');", // eslint-disable-line no-template-curly-in-string
-      parserOptions: { ecmaVersion: 6 },
+      parserOptions: { ecmaVersion: 2020 },
       errors: [{ message: ERROR_MESSAGE, type: 'CallExpression' }],
     },
   ],
