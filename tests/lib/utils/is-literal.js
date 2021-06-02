@@ -44,5 +44,5 @@ describe('isLiteral', function () {
 });
 
 function p(code) {
-  return parse(code, { ecmaVersion: 6 }).body[0].expression;
+  return parse(code, { ecmaVersion: 2020 }).body[0].expression;
 }

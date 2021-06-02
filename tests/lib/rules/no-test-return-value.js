@@ -10,7 +10,7 @@ const NON_TEST_FILE_NAME = 'some-file.js';
 
 const ruleTester = new RuleTester({
   parserOptions: {
-    ecmaVersion: 2015,
+    ecmaVersion: 2020,
     sourceType: 'module',
   },
 });

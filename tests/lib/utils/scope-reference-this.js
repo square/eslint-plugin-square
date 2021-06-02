@@ -5,7 +5,7 @@ const parse = require('espree').parse;
 const scopeReferencesThis = require('../../../lib/utils/scope-references-this');
 
 function p(code) {
-  return parse(code, { ecmaVersion: 6 });
+  return parse(code, { ecmaVersion: 2020 });
 }
 
 describe('scopeReferencesThis', function () {
