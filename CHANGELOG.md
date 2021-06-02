@@ -1,3 +1,18 @@
+## v20.0.0 (2021-06-02)
+
+#### :boom: Breaking Change
+* [#408](https://github.com/square/eslint-plugin-square/pull/408) Drop support for Node 10 and Node 15 ([@bmish](https://github.com/bmish))
+* [#405](https://github.com/square/eslint-plugin-square/pull/405) chore(deps): bump eslint-plugin-unicorn to 33.0.0 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#406](https://github.com/square/eslint-plugin-square/pull/406) chore(deps): bump eslint-plugin-unicorn to 31.0.0 ([@bmish](https://github.com/bmish))
+* [#397](https://github.com/square/eslint-plugin-square/pull/397) Remove rule `no-modifying-immutable-properties` ([@bmish](https://github.com/bmish))
+
+#### :house: Internal
+* [#409](https://github.com/square/eslint-plugin-square/pull/409) Use `ecmaVersion` of `2020` for internal tests/linting ([@bmish](https://github.com/bmish))
+
+#### Committers: 1
+- Bryan Mishkin ([@bmish](https://github.com/bmish))
+
+
 ## v19.1.0 (2021-05-30)
 
 #### :rocket: Enhancement
