@@ -6,7 +6,6 @@ const path = require('path');
 const assert = require('assert');
 const rules = require('../lib').rules;
 const configEmber = require('../lib/config/ember');
-const flat = require('../lib/utils/flat');
 
 const RULE_NAMES = Object.keys(rules);
 const RULE_NAMES_EMBER = new Set(Object.keys(configEmber.rules));
@@ -18,7 +17,7 @@ function getAllNamedOptions(jsonSchema) {
   }
 
   if (Array.isArray(jsonSchema)) {
-    return flat(jsonSchema.map((item) => getAllNamedOptions(item)));
+    return jsonSchema.flatMap((item) => getAllNamedOptions(item));
   }
 
   if (jsonSchema.items) {

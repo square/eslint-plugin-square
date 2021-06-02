@@ -2,7 +2,6 @@
 
 const rule = require('../../../lib/rules/use-call-count-test-assert');
 const RuleTester = require('eslint').RuleTester;
-const flat = require('../../../lib/utils/flat');
 
 const { ERROR_MESSAGE, ASSERT_PROPERTY_NAMES, STUB_PROPERTY_NAMES } = rule;
 
@@ -71,52 +70,50 @@ const VALID_HELPER_USAGES = [
   },
 ];
 
-const INVALID_HELPER_USAGES = flat(
-  ASSERT_PROPERTY_NAMES.map((assertPropertyName) => {
-    return flat(
-      STUB_PROPERTY_NAMES.map((stubPropertyName) => {
-        // Test case: basic.
-        const ex1 = {
-          code: `assert.${assertPropertyName}(myStub.${stubPropertyName});`,
-          output: null,
-          errors: [{ message: ERROR_MESSAGE, type: 'CallExpression' }],
-          filename: TEST_FILE_NAME,
-        };
+const INVALID_HELPER_USAGES = ASSERT_PROPERTY_NAMES.flatMap(
+  (assertPropertyName) => {
+    return STUB_PROPERTY_NAMES.flatMap((stubPropertyName) => {
+      // Test case: basic.
+      const ex1 = {
+        code: `assert.${assertPropertyName}(myStub.${stubPropertyName});`,
+        output: null,
+        errors: [{ message: ERROR_MESSAGE, type: 'CallExpression' }],
+        filename: TEST_FILE_NAME,
+      };
 
-        // Test case: with more complicated stub path.
-        const ex2 = {
-          code: `assert.${assertPropertyName}(this.prop.myStub.${stubPropertyName});`,
-          output: null,
-          errors: [{ message: ERROR_MESSAGE, type: 'CallExpression' }],
-          filename: TEST_FILE_NAME,
-        };
+      // Test case: with more complicated stub path.
+      const ex2 = {
+        code: `assert.${assertPropertyName}(this.prop.myStub.${stubPropertyName});`,
+        output: null,
+        errors: [{ message: ERROR_MESSAGE, type: 'CallExpression' }],
+        filename: TEST_FILE_NAME,
+      };
 
-        // Test case: passing the optional message parameter.
-        const ex3 = {
-          code: `assert.${assertPropertyName}(myStub.${stubPropertyName}, 'is called the right number of times');`,
-          output: null,
-          errors: [{ message: ERROR_MESSAGE, type: 'CallExpression' }],
-          filename: TEST_FILE_NAME,
-        };
+      // Test case: passing the optional message parameter.
+      const ex3 = {
+        code: `assert.${assertPropertyName}(myStub.${stubPropertyName}, 'is called the right number of times');`,
+        output: null,
+        errors: [{ message: ERROR_MESSAGE, type: 'CallExpression' }],
+        filename: TEST_FILE_NAME,
+      };
 
-        const isAssertNotOkayCalled =
-          assertPropertyName === 'notOk' && stubPropertyName === 'called';
-        if (stubPropertyName !== 'called' || isAssertNotOkayCalled) {
-          // Can't autofix this since we don't know the expected call count.
+      const isAssertNotOkayCalled =
+        assertPropertyName === 'notOk' && stubPropertyName === 'called';
+      if (stubPropertyName !== 'called' || isAssertNotOkayCalled) {
+        // Can't autofix this since we don't know the expected call count.
 
-          const expectedCallCount = isAssertNotOkayCalled
-            ? 0
-            : STUB_PROPERTY_NAMES.indexOf(stubPropertyName);
+        const expectedCallCount = isAssertNotOkayCalled
+          ? 0
+          : STUB_PROPERTY_NAMES.indexOf(stubPropertyName);
 
-          ex1.output = `assert.equal(myStub.callCount, ${expectedCallCount});`;
-          ex2.output = `assert.equal(this.prop.myStub.callCount, ${expectedCallCount});`;
-          ex3.output = `assert.equal(myStub.callCount, ${expectedCallCount}, 'is called the right number of times');`;
-        }
+        ex1.output = `assert.equal(myStub.callCount, ${expectedCallCount});`;
+        ex2.output = `assert.equal(this.prop.myStub.callCount, ${expectedCallCount});`;
+        ex3.output = `assert.equal(myStub.callCount, ${expectedCallCount}, 'is called the right number of times');`;
+      }
 
-        return [ex1, ex2, ex3];
-      })
-    );
-  })
+      return [ex1, ex2, ex3];
+    });
+  }
 );
 
 ruleTester.run('use-call-count-test-assert', rule, {
