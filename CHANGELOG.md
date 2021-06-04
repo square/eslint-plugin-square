@@ -1,3 +1,12 @@
+## v20.0.1 (2021-06-04)
+
+#### :bug: Bug Fix
+* [#411](https://github.com/square/eslint-plugin-square/pull/411) Fix typo when disabling `unicorn/prefer-prototype-methods` rule ([@bmish](https://github.com/bmish))
+
+#### Committers: 1
+- Bryan Mishkin ([@bmish](https://github.com/bmish))
+
+
 ## v20.0.0 (2021-06-02)
 
 #### :boom: Breaking Change
