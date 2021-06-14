@@ -18,36 +18,36 @@ const ruleTester = new RuleTester({
 ruleTester.run('no-test-return-value', rule, {
   valid: [
     {
+      filename: TEST_FILE_NAME,
       code: 'function hello() { return true; }',
-      filename: TEST_FILE_NAME,
     },
     {
+      filename: TEST_FILE_NAME,
       code: 'describe(function() { 1; })',
-      filename: TEST_FILE_NAME,
     },
     {
+      filename: TEST_FILE_NAME,
       code: 'describe(function() { return; })',
-      filename: TEST_FILE_NAME,
     },
     {
+      filename: TEST_FILE_NAME,
       code: `
         foo(function() {
           bar('test');
           return 1;
         })`,
-      filename: TEST_FILE_NAME,
     },
     {
-      code: 'describe(function() { return true; })',
       filename: NON_TEST_FILE_NAME,
+      code: 'describe(function() { return true; })',
     },
     {
+      filename: TEST_FILE_NAME,
       code: 'describe.foo(function() { return true; })',
-      filename: TEST_FILE_NAME,
     },
     {
-      code: 'foo.describe(function() { return true; })',
       filename: TEST_FILE_NAME,
+      code: 'foo.describe(function() { return true; })',
     },
   ],
   invalid: [
@@ -69,12 +69,13 @@ ruleTester.run('no-test-return-value', rule, {
       ],
     })),
     {
+      filename: TEST_FILE_NAME,
       code: `
         testHook(function(condition) {
           return condition ? 1 : 2;
         })`,
-      filename: TEST_FILE_NAME,
       output: null,
+      options: [{ testHooks: ['testHook'] }],
       errors: [
         {
           message: ERROR_MESSAGE,
@@ -90,7 +91,6 @@ ruleTester.run('no-test-return-value', rule, {
           ],
         },
       ],
-      options: [{ testHooks: ['testHook'] }],
     },
   ],
 });

@@ -18,43 +18,43 @@ const ruleTester = new RuleTester({
 ruleTester.run('no-assert-ok-find', rule, {
   valid: [
     {
+      filename: TEST_FILE_NAME,
       code: "exists('.class');",
-      filename: TEST_FILE_NAME,
       globals: { find: true },
     },
     {
+      filename: TEST_FILE_NAME,
       code: "assert.dom('.class').exists();",
-      filename: TEST_FILE_NAME,
       globals: { find: true },
     },
     {
+      filename: TEST_FILE_NAME,
       code: "assert.otherFunction(find('.class'));",
-      filename: TEST_FILE_NAME,
       globals: { find: true },
     },
     {
+      filename: TEST_FILE_NAME,
       code: "otherClass.ok(find('.class'));",
-      filename: TEST_FILE_NAME,
       globals: { find: true },
     },
     {
-      code: "assert.ok(find('.class'));",
       filename: NON_TEST_FILE_NAME,
+      code: "assert.ok(find('.class'));",
       globals: { find: true },
     },
 
     // Not the global
     {
-      code: "import { find } from '@ember/test-helpers'; assert.ok(find('.class'));",
       filename: NON_TEST_FILE_NAME,
+      code: "import { find } from '@ember/test-helpers'; assert.ok(find('.class'));",
     },
   ],
   invalid: [
     {
-      code: "assert.ok(find('.class'));",
       filename: TEST_FILE_NAME,
-      globals: { find: true },
+      code: "assert.ok(find('.class'));",
       output: null,
+      globals: { find: true },
       errors: [
         {
           message: ERROR_MESSAGE,
@@ -69,10 +69,10 @@ ruleTester.run('no-assert-ok-find', rule, {
       ],
     },
     {
-      code: "assert.ok(find('.class'), 'it exists');",
       filename: TEST_FILE_NAME,
-      globals: { find: true },
+      code: "assert.ok(find('.class'), 'it exists');",
       output: null,
+      globals: { find: true },
       errors: [
         {
           message: ERROR_MESSAGE,

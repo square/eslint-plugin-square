@@ -18,35 +18,37 @@ const FILEPATH_SCOPED_COMPONENT = 'app/components/scope/my-component.js';
 ruleTester.run('no-restricted-files', rule, {
   valid: [
     {
+      filename: FILEPATH_SCOPED_COMPONENT,
       code: 'const x = 123;',
       options: [{ paths: [REGEXP_DISALLOW_UNSCOPED_COMPONENTS] }],
-      filename: FILEPATH_SCOPED_COMPONENT,
     },
   ],
   invalid: [
     {
-      code: 'const x = 123;',
-      options: [{ paths: [REGEXP_DISALLOW_UNSCOPED_COMPONENTS] }],
       filename: FILEPATH_UNSCOPED_COMPONENT,
+      code: 'const x = 123;',
       output: null,
+      options: [{ paths: [REGEXP_DISALLOW_UNSCOPED_COMPONENTS] }],
       errors: [{ message: DEFAULT_ERROR_MESSAGE, type: 'Program' }],
     },
     {
       // With custom error message:
+      filename: FILEPATH_UNSCOPED_COMPONENT,
       code: 'const x = 123;',
+      output: null,
       options: [
         {
           paths: [REGEXP_DISALLOW_UNSCOPED_COMPONENTS],
           message: 'No unscoped components.',
         },
       ],
-      filename: FILEPATH_UNSCOPED_COMPONENT,
-      output: null,
       errors: [{ message: 'No unscoped components.', type: 'Program' }],
     },
     {
       // With two objects passed.
+      filename: FILEPATH_UNSCOPED_COMPONENT,
       code: 'const x = 123;',
+      output: null,
       options: [
         {
           paths: ['random-path'],
@@ -56,8 +58,6 @@ ruleTester.run('no-restricted-files', rule, {
           message: 'No unscoped components.',
         },
       ],
-      filename: FILEPATH_UNSCOPED_COMPONENT,
-      output: null,
       errors: [{ message: 'No unscoped components.', type: 'Program' }],
     },
   ],

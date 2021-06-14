@@ -11,8 +11,6 @@ module.exports = {
   },
   rules: {
     'eslint-plugin/consistent-output': ['error', 'always'],
-    'eslint-plugin/meta-property-ordering': 'off',
-    'eslint-plugin/prefer-object-rule': 'error',
     'eslint-plugin/require-meta-docs-url': [
       'error',
       {
@@ -20,7 +18,6 @@ module.exports = {
           'https://github.com/square/eslint-plugin-square/tree/master/docs/rules/{{name}}.md',
       },
     ],
-    'eslint-plugin/test-case-property-ordering': 'off',
   },
   overrides: [
     {
