@@ -64,8 +64,8 @@ ruleTester.run('no-translation-key-interpolation', rule, {
     // Custom service name:
     {
       code: 'this.i18n.t(`key.${variable}`);', // eslint-disable-line no-template-curly-in-string
-      options: [{ serviceName: 'i18n' }],
       output: null,
+      options: [{ serviceName: 'i18n' }],
       errors: [{ message: ERROR_MESSAGE, type: 'CallExpression' }],
     },
   ],

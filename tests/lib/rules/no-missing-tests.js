@@ -22,6 +22,7 @@ const RANDOM_FILE = path.normalize(
 ruleTester.run('no-missing-tests', rule, {
   valid: [
     {
+      filename: RULE_FILE, // This file has a corresponding test file.
       code: 'var x = 123;',
       options: [
         [
@@ -32,9 +33,9 @@ ruleTester.run('no-missing-tests', rule, {
           },
         ],
       ],
-      filename: RULE_FILE, // This file has a corresponding test file.
     },
     {
+      filename: RANDOM_FILE, // This file is not covered by the rule configuration and should be ignored.
       code: 'var x = 123;',
       options: [
         [
@@ -45,12 +46,13 @@ ruleTester.run('no-missing-tests', rule, {
           },
         ],
       ],
-      filename: RANDOM_FILE, // This file is not covered by the rule configuration and should be ignored.
     },
   ],
   invalid: [
     {
+      filename: RULE_FILE,
       code: 'var x = 123;',
+      output: null,
       options: [
         [
           {
@@ -62,12 +64,12 @@ ruleTester.run('no-missing-tests', rule, {
           },
         ],
       ],
-      output: null,
-      filename: RULE_FILE,
       errors: [{ message: ERROR_MESSAGE, line: 1, column: 1, type: 'Program' }],
     },
     {
+      filename: RULE_FILE,
       code: 'var x = 123;',
+      output: null,
       options: [
         [
           {
@@ -77,8 +79,6 @@ ruleTester.run('no-missing-tests', rule, {
           },
         ],
       ],
-      output: null,
-      filename: RULE_FILE,
       errors: [{ message: ERROR_MESSAGE, line: 1, column: 1, type: 'Program' }],
     },
   ],
