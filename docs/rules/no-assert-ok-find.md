@@ -2,6 +2,8 @@
 
 :fire: The `"extends": "plugin:square/ember"` property in a configuration file enables this rule.
 
+💡 Some problems reported by this rule are manually fixable by editor [suggestions](https://eslint.org/docs/developer-guide/working-with-rules#providing-suggestions).
+
 Ember's old built-in `find('.selector')` acceptance test helper function always returns an array, even when no elements match. As a result, `assert.ok(find('.selector'))` will always pass, even if no elements are found, as an empty array is still truthy.
 
 Note: [find](https://github.com/emberjs/ember-test-helpers/blob/master/API.md#find) from `@ember/test-helpers` does not have this problem.
