@@ -1,3 +1,16 @@
+## v20.0.2 (2021-06-20)
+
+#### :bug: Bug Fix
+* [#418](https://github.com/square/eslint-plugin-square/pull/418) Use `meta.hasSuggestions` for suggestable rules to prepare for ESLint 8 ([@bmish](https://github.com/bmish))
+
+#### :memo: Documentation
+* [#429](https://github.com/square/eslint-plugin-square/pull/429) Add disclaimer that this plugin is not recommended for public usage ([@bmish](https://github.com/bmish))
+* [#428](https://github.com/square/eslint-plugin-square/pull/428) Mention rules that provide automated suggestions in README rules table ([@bmish](https://github.com/bmish))
+
+#### Committers: 1
+- Bryan Mishkin ([@bmish](https://github.com/bmish))
+
+
 ## v20.0.1 (2021-06-04)
 
 #### :bug: Bug Fix
