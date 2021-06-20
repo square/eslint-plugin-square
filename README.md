@@ -3,7 +3,7 @@
 [![npm version](https://badge.fury.io/js/eslint-plugin-square.svg)](https://badge.fury.io/js/eslint-plugin-square)
 ![CI](https://github.com/square/eslint-plugin-square/workflows/CI/badge.svg)
 
-This plugin contains lint rule definitions and configurations for [ESLint](http://eslint.org) specific to Square's needs. It serves mainly to consolidate Square's web frontend linting setup in one place.
+This plugin contains lint rule definitions and configurations for [ESLint](http://eslint.org) specific to Square's needs. It serves mainly to consolidate Square's web frontend linting setup in one place. It is generally **not recommended for public usage** outside of Square.
 
 ## Requirements
 
