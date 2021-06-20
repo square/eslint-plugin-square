@@ -47,14 +47,14 @@ Rules enabled by these configurations should meet the following criteria:
 
 | Rule | Category | Config | Fixable? | Suggestions? |
 | :--- | :------- | :----- | :------- | :----------- |
-| [no-restricted-files](docs/rules/no-restricted-files.md) | JavaScript | | | |
-| [require-await-function](docs/rules/require-await-function.md) | JavaScript | :fire: | :wrench: | |
-| [no-handlebar-interpolation](docs/rules/no-handlebar-interpolation.md) | Ember | | | |
-| [no-translation-key-interpolation](docs/rules/no-translation-key-interpolation.md) | Ember | :fire: | | |
-| [no-missing-tests](docs/rules/no-missing-tests.md) | Testing | | | |
-| [no-test-return-value](docs/rules/no-test-return-value.md) | Testing | :fire: | | 💡 |
-| [use-call-count-test-assert](docs/rules/use-call-count-test-assert.md) | Testing | :fire: | :wrench: | |
 | [no-assert-ok-find](docs/rules/no-assert-ok-find.md) | Ember Testing | :fire: | | 💡 |
+| [no-handlebar-interpolation](docs/rules/no-handlebar-interpolation.md) | Ember | | | |
+| [no-missing-tests](docs/rules/no-missing-tests.md) | Testing | | | |
+| [no-restricted-files](docs/rules/no-restricted-files.md) | JavaScript | | | |
+| [no-test-return-value](docs/rules/no-test-return-value.md) | Testing | :fire: | | 💡 |
+| [no-translation-key-interpolation](docs/rules/no-translation-key-interpolation.md) | Ember | :fire: | | |
+| [require-await-function](docs/rules/require-await-function.md) | JavaScript | :fire: | :wrench: | |
+| [use-call-count-test-assert](docs/rules/use-call-count-test-assert.md) | Testing | :fire: | :wrench: | |
 | [use-ember-find](docs/rules/use-ember-find.md) | Ember Testing | :fire: | :wrench: | |
 
 Note that we prefer to upstream our custom lint rules to third-party eslint plugins whenever possible. The rules that still remain here are typically here because:
