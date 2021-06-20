@@ -72,6 +72,9 @@ describe('rules setup is correct', function () {
     const CONFIG_MSG_EMBER =
       ':fire: The `"extends": "plugin:square/ember"` property in a configuration file enables this rule.';
 
+    const HAS_SUGGESTIONS =
+      '💡 Some problems reported by this rule are manually fixable by editor [suggestions](https://eslint.org/docs/developer-guide/working-with-rules#providing-suggestions).';
+
     for (const ruleName of RULE_NAMES) {
       const rule = rules[ruleName];
       const filePath = path.join(
@@ -135,6 +138,18 @@ describe('rules setup is correct', function () {
             assert.ok(
               !file.includes(CONFIG_MSG_EMBER),
               'does not have `ember` config notice'
+            );
+          }
+
+          if (rule.meta.hasSuggestions) {
+            assert.ok(
+              file.includes(HAS_SUGGESTIONS),
+              'includes suggestions notice'
+            );
+          } else {
+            assert.ok(
+              !file.includes(HAS_SUGGESTIONS),
+              'does not include suggestions notice'
             );
           }
         });
