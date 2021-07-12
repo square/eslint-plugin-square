@@ -50,7 +50,7 @@
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-unicorn": "^33.0.0",
     "eslint-utils": "^3.0.0",
-    "espree": "^7.3.0",
+    "espree": "^8.0.0",
     "estraverse": "^5.2.0",
     "prettier": "^2.3.0",
     "requireindex": "^1.2.0"
