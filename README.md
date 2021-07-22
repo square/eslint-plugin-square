@@ -32,7 +32,7 @@ module.exports = {
 |     | Name | Description |
 | --- | --- | --- |
 | | [base] | Rules and configuration for any JavaScript-based project. Includes recommended and optional rules from [eslint], [prettier], [eslint-plugin-eslint-comments], [eslint-plugin-import], [eslint-plugin-unicorn], and more. |
-| :fire: | [ember] | [Ember.js]-specific additions on top of `base`. Includes recommended and optional rules from [eslint-plugin-ember], kebab-case filename enforcement with [eslint-plugin-filenames], and more. |
+| 🔥 | [ember] | [Ember.js]-specific additions on top of `base`. Includes recommended and optional rules from [eslint-plugin-ember], kebab-case filename enforcement with [eslint-plugin-filenames], and more. |
 | | [react] | [React](https://reactjs.org)-specific additions on top of `base`. |
 | | [strict] | A variety of stricter lint rules on top of `base`. |
 | | [typescript] | [TypeScript](https://www.typescriptlang.org/)-specific additions on top of `base`. Use with [@typescript-eslint/parser]. |
@@ -47,15 +47,15 @@ Rules enabled by these configurations should meet the following criteria:
 
 | Rule | Category | Config | Fixable? | Suggestions? |
 | :--- | :------- | :----- | :------- | :----------- |
-| [no-assert-ok-find](docs/rules/no-assert-ok-find.md) | Ember Testing | :fire: | | 💡 |
+| [no-assert-ok-find](docs/rules/no-assert-ok-find.md) | Ember Testing | 🔥 | | 💡 |
 | [no-handlebar-interpolation](docs/rules/no-handlebar-interpolation.md) | Ember | | | |
 | [no-missing-tests](docs/rules/no-missing-tests.md) | Testing | | | |
 | [no-restricted-files](docs/rules/no-restricted-files.md) | JavaScript | | | |
-| [no-test-return-value](docs/rules/no-test-return-value.md) | Testing | :fire: | | 💡 |
-| [no-translation-key-interpolation](docs/rules/no-translation-key-interpolation.md) | Ember | :fire: | | |
-| [require-await-function](docs/rules/require-await-function.md) | JavaScript | :fire: | :wrench: | |
-| [use-call-count-test-assert](docs/rules/use-call-count-test-assert.md) | Testing | :fire: | :wrench: | |
-| [use-ember-find](docs/rules/use-ember-find.md) | Ember Testing | :fire: | :wrench: | |
+| [no-test-return-value](docs/rules/no-test-return-value.md) | Testing | 🔥 | | 💡 |
+| [no-translation-key-interpolation](docs/rules/no-translation-key-interpolation.md) | Ember | 🔥 | | |
+| [require-await-function](docs/rules/require-await-function.md) | JavaScript | 🔥 | 🔧 | |
+| [use-call-count-test-assert](docs/rules/use-call-count-test-assert.md) | Testing | 🔥 | 🔧 | |
+| [use-ember-find](docs/rules/use-ember-find.md) | Ember Testing | 🔥 | 🔧 | |
 
 Note that we prefer to upstream our custom lint rules to third-party eslint plugins whenever possible. The rules that still remain here are typically here because:
 

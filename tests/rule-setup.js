@@ -70,7 +70,7 @@ describe('rules setup is correct', function () {
 
   describe('rule documentation files', function () {
     const CONFIG_MSG_EMBER =
-      ':fire: The `"extends": "plugin:square/ember"` property in a configuration file enables this rule.';
+      '🔥 The `"extends": "plugin:square/ember"` property in a configuration file enables this rule.';
 
     const HAS_SUGGESTIONS =
       '💡 Some problems reported by this rule are manually fixable by editor [suggestions](https://eslint.org/docs/developer-guide/working-with-rules#providing-suggestions).';

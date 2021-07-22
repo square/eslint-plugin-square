@@ -1,6 +1,6 @@
 # no-translation-key-interpolation
 
-:fire: The `"extends": "plugin:square/ember"` property in a configuration file enables this rule.
+🔥 The `"extends": "plugin:square/ember"` property in a configuration file enables this rule.
 
 Using string interpolation for constructing translation keys makes it difficult to search for them to determine where and if they are used.
 
