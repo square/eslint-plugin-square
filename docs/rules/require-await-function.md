@@ -1,6 +1,8 @@
-# require-await-function (fixable)
+# require-await-function
 
 🔥 The `"extends": "plugin:square/ember"` property in a configuration file enables this rule.
+
+🔧 The `--fix` option on the [command line](https://eslint.org/docs/user-guide/command-line-interface#fixing-problems) can automatically fix some of the problems reported by this rule.
 
 Some functions are asynchronous and you may want to wait for their code to finish executing before continuing on. The modern `async` / `await` syntax can help you achieve this.
 

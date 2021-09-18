@@ -1,6 +1,8 @@
-# use-ember-find (fixable)
+# use-ember-find
 
 🔥 The `"extends": "plugin:square/ember"` property in a configuration file enables this rule.
+
+🔧 The `--fix` option on the [command line](https://eslint.org/docs/user-guide/command-line-interface#fixing-problems) can automatically fix some of the problems reported by this rule.
 
 It is preferred to use Ember test helpers like `find(selector)` instead of jQuery for selecting elements in tests.
 

@@ -72,6 +72,9 @@ describe('rules setup is correct', function () {
     const CONFIG_MSG_EMBER =
       '🔥 The `"extends": "plugin:square/ember"` property in a configuration file enables this rule.';
 
+    const FIXABLE =
+      '🔧 The `--fix` option on the [command line](https://eslint.org/docs/user-guide/command-line-interface#fixing-problems) can automatically fix some of the problems reported by this rule.';
+
     const HAS_SUGGESTIONS =
       '💡 Some problems reported by this rule are manually fixable by editor [suggestions](https://eslint.org/docs/developer-guide/working-with-rules#providing-suggestions).';
 
@@ -120,11 +123,11 @@ describe('rules setup is correct', function () {
             );
           }
 
-          if (rule.meta.fixable === 'code') {
-            assert.ok(file.includes('(fixable)'), 'includes fixable notice');
+          if (rule.meta.fixable) {
+            assert.ok(file.includes(FIXABLE), 'includes fixable notice');
           } else {
             assert.ok(
-              !file.includes('(fixable)'),
+              !file.includes(FIXABLE),
               'does not include fixable notice'
             );
           }

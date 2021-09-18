@@ -45,8 +45,14 @@ Rules enabled by these configurations should meet the following criteria:
 
 ## Custom rules
 
-| Rule | Category | Config | Fixable? | Suggestions? |
-| :--- | :------- | :----- | :------- | :----------- |
+Each rule has emojis denoting:
+
+* What configuration it belongs to
+* 🔧 if some problems reported by the rule are automatically fixable by the `--fix` [command line](https://eslint.org/docs/user-guide/command-line-interface#fixing-problems) option
+* 💡 if some problems reported by the rule are manually fixable by editor [suggestions](https://eslint.org/docs/developer-guide/working-with-rules#providing-suggestions)
+
+| Name    | Category | 🔥 | 🔧 | 💡 |
+| :------ | :------- | :-- | :-- | :-- |
 | [no-assert-ok-find](docs/rules/no-assert-ok-find.md) | Ember Testing | 🔥 | | 💡 |
 | [no-handlebar-interpolation](docs/rules/no-handlebar-interpolation.md) | Ember | | | |
 | [no-missing-tests](docs/rules/no-missing-tests.md) | Testing | | | |
