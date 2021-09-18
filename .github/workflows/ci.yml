@@ -21,11 +21,27 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+
+    - name: Cache dependencies
+      uses: actions/cache@v2
+      with:
+        path: |
+          node_modules
+          .cache/yarn
+        key: eslint-plugin-square-${{ hashFiles('yarn.lock') }}
+        restore-keys: eslint-plugin-square
+
     - run: yarn install --frozen-lockfile --non-interactive
+      env:
+        YARN_CACHE_FOLDER: .cache/yarn
+
     - run: yarn lint
+
     - run: yarn test
+
     - run: yarn add --dev eslint@6 && yarn test && yarn lint
