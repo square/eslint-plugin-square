@@ -1,6 +1,8 @@
-# use-call-count-test-assert (fixable)
+# use-call-count-test-assert
 
 🔥 The `"extends": "plugin:square/ember"` property in a configuration file enables this rule.
+
+🔧 The `--fix` option on the [command line](https://eslint.org/docs/user-guide/command-line-interface#fixing-problems) can automatically fix some of the problems reported by this rule.
 
 Using `callCount` rather than the other shortcut count helpers (such as `calledOnce`, `notCalled`) allows the test runner to show the actual number of times the spy was called.
 
