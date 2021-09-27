@@ -1857,9 +1857,9 @@ eslint-module-utils@^2.6.1:
     pkg-dir "^2.0.0"
 
 eslint-plugin-ember@^10.5.0:
-  version "10.5.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-ember/-/eslint-plugin-ember-10.5.0.tgz#f2a9e8286dcc026287501bcca4f587af1a7363f5"
-  integrity sha512-i9+zPBgVKH0Goe6/BCY06+Nzjf72vBzWerdtn5YzAXwVbX+O3fZHXKfTwtNS64o/4F+0HyJ356EisD1PuUQGLA==
+  version "10.5.5"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-ember/-/eslint-plugin-ember-10.5.5.tgz#fbd292f24ea9ea4d32979d42039dbb878b6cf545"
+  integrity sha512-yuNiGyOT2pRaGcifJo9H5RU5XlHiVUXvNuAlLBXrTQyZtsOYFBsXgEhMCCq4BVV/0Q79SqXG+03ceB1YtoJHEQ==
   dependencies:
     "@ember-data/rfc395-data" "^0.0.4"
     css-tree "^1.0.0-alpha.39"
