@@ -1,4 +1,4 @@
-# TODO: rule-name-goes-here (TODO: fixable)
+# TODO: rule-name-goes-here
 
 TODO: context about the problem goes here
 
@@ -50,6 +50,6 @@ TODO: exclude this section if the rule has no extra configuration
 
 ## References
 
-* TODO: link to relevant documentation goes here)
+* TODO: link to relevant documentation goes here
 * TODO: link to relevant function spec goes here
 * TODO: link to relevant guide goes here
