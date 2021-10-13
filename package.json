@@ -33,9 +33,9 @@
   "prettier": "@square/prettier-config",
   "nyc": {
     "branches": 93,
-    "functions": 97,
-    "lines": 96,
-    "statements": 96
+    "functions": 100,
+    "lines": 98,
+    "statements": 98
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^4.26.0",
