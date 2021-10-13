@@ -39,7 +39,6 @@
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^4.26.0",
-    "camelcase": "^6.2.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-ember": "^10.5.0",
     "eslint-plugin-es": "^4.1.0",
@@ -67,8 +66,7 @@
     "nyc": "^15.1.0",
     "release-it": "^14.9.0",
     "release-it-lerna-changelog": "^3.1.0",
-    "sort-package-json": "^1.50.0",
-    "strip-indent": "^4.0.0"
+    "sort-package-json": "^1.50.0"
   },
   "peerDependencies": {
     "eslint": ">= 6"
