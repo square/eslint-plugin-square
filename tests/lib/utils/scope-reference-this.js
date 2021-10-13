@@ -15,6 +15,10 @@ describe('scopeReferencesThis', function () {
       !scopeReferencesThis(p('"this"')),
       'the string "this" does not use this'
     );
+    assert.ok(
+      !scopeReferencesThis('class Foo { @someDecorator() someProp }'),
+      'Does not throw with node type (ClassProperty) not handled by estraverse'
+    );
   });
 
   it('can find nested `this`', function () {
