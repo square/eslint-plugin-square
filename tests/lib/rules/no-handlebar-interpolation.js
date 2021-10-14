@@ -37,8 +37,7 @@ ruleTester.run('no-handlebar-interpolation', rule, {
       output: null,
       errors: [
         {
-          message:
-            'Use of "no-handlebar-interpolation" `{{{` to insert unsafe HTML is not allowed',
+          messageId: 'error',
           type: 'Literal',
         },
       ],
@@ -52,8 +51,7 @@ ruleTester.run('no-handlebar-interpolation', rule, {
       options: [{ filePatterns: [/\.hbs$/] }],
       errors: [
         {
-          message:
-            'Use of "no-handlebar-interpolation" `{{{` to insert unsafe HTML is not allowed',
+          messageId: 'error',
           type: 'Literal',
         },
       ],
@@ -66,8 +64,7 @@ ruleTester.run('no-handlebar-interpolation', rule, {
       output: null,
       errors: [
         {
-          message:
-            'Use of "no-handlebar-interpolation" `{{{` to insert unsafe HTML is not allowed',
+          messageId: 'error',
           type: 'Literal',
         },
       ],
@@ -80,8 +77,7 @@ ruleTester.run('no-handlebar-interpolation', rule, {
       output: null,
       errors: [
         {
-          message:
-            'Use of "no-handlebar-interpolation" `{{{` to insert unsafe HTML is not allowed',
+          messageId: 'error',
           type: 'Literal',
         },
       ],
@@ -94,8 +90,7 @@ ruleTester.run('no-handlebar-interpolation', rule, {
       options: [{ filePatterns: [/\.hbs$/, /\.js$/] }],
       errors: [
         {
-          message:
-            'Use of "no-handlebar-interpolation" `{{{` to insert unsafe HTML is not allowed',
+          messageId: 'error',
           type: 'Literal',
         },
       ],
@@ -108,8 +103,7 @@ ruleTester.run('no-handlebar-interpolation', rule, {
       options: [{ filePatterns: [/\.hbs$/, /\.js$/] }],
       errors: [
         {
-          message:
-            'Use of "no-handlebar-interpolation" `{{{` to insert unsafe HTML is not allowed',
+          messageId: 'error',
           type: 'Literal',
         },
       ],

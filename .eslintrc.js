@@ -11,7 +11,6 @@ module.exports = {
   },
   rules: {
     'eslint-plugin/consistent-output': ['error', 'always'],
-    'eslint-plugin/prefer-message-ids': 'off',
     'eslint-plugin/require-meta-docs-url': [
       'error',
       {

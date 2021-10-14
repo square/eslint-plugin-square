@@ -6,8 +6,6 @@ const path = require('path');
 const RuleTester = require('eslint').RuleTester;
 const rule = require('../../../lib/rules/no-missing-tests');
 
-const { ERROR_MESSAGE } = rule;
-
 const ruleTester = new RuleTester();
 
 const RULES_TESTS_PATH = __dirname;
@@ -64,7 +62,7 @@ ruleTester.run('no-missing-tests', rule, {
           },
         ],
       ],
-      errors: [{ message: ERROR_MESSAGE, line: 1, column: 1, type: 'Program' }],
+      errors: [{ messageId: 'error', line: 1, column: 1, type: 'Program' }],
     },
     {
       filename: RULE_FILE,
@@ -79,7 +77,7 @@ ruleTester.run('no-missing-tests', rule, {
           },
         ],
       ],
-      errors: [{ message: ERROR_MESSAGE, line: 1, column: 1, type: 'Program' }],
+      errors: [{ messageId: 'error', line: 1, column: 1, type: 'Program' }],
     },
   ],
 });

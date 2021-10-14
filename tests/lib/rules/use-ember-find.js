@@ -3,8 +3,6 @@
 const rule = require('../../../lib/rules/use-ember-find');
 const RuleTester = require('eslint').RuleTester;
 
-const { ERROR_MESSAGE } = rule;
-
 const TEST_FILE_NAME = 'some-test.js';
 
 const ruleTester = new RuleTester();
@@ -65,20 +63,20 @@ ruleTester.run('use-ember-find', rule, {
       filename: TEST_FILE_NAME,
       code: "$('.some-selector');",
       output: "find('.some-selector', 'body');",
-      errors: [{ message: ERROR_MESSAGE, type: 'CallExpression' }],
+      errors: [{ messageId: 'error', type: 'CallExpression' }],
     },
     {
       filename: TEST_FILE_NAME,
       code: "($)('.some-selector');",
       output: "(find)('.some-selector', 'body');",
-      errors: [{ message: ERROR_MESSAGE, type: 'CallExpression' }],
+      errors: [{ messageId: 'error', type: 'CallExpression' }],
     },
     {
       filename: TEST_FILE_NAME,
       code: '$(`.some-${selector}`);', // eslint-disable-line no-template-curly-in-string
       output: "find(`.some-${selector}`, 'body');", // eslint-disable-line no-template-curly-in-string
       parserOptions: { ecmaVersion: 2020 },
-      errors: [{ message: ERROR_MESSAGE, type: 'CallExpression' }],
+      errors: [{ messageId: 'error', type: 'CallExpression' }],
     },
 
     // Using `jQuery`:
@@ -86,20 +84,20 @@ ruleTester.run('use-ember-find', rule, {
       filename: TEST_FILE_NAME,
       code: "jQuery('.some-selector');",
       output: "find('.some-selector', 'body');",
-      errors: [{ message: ERROR_MESSAGE, type: 'CallExpression' }],
+      errors: [{ messageId: 'error', type: 'CallExpression' }],
     },
     {
       filename: TEST_FILE_NAME,
       code: "(jQuery)('.some-selector');",
       output: "(find)('.some-selector', 'body');",
-      errors: [{ message: ERROR_MESSAGE, type: 'CallExpression' }],
+      errors: [{ messageId: 'error', type: 'CallExpression' }],
     },
     {
       filename: TEST_FILE_NAME,
       code: 'jQuery(`.some-${selector}`);', // eslint-disable-line no-template-curly-in-string
       output: "find(`.some-${selector}`, 'body');", // eslint-disable-line no-template-curly-in-string
       parserOptions: { ecmaVersion: 2020 },
-      errors: [{ message: ERROR_MESSAGE, type: 'CallExpression' }],
+      errors: [{ messageId: 'error', type: 'CallExpression' }],
     },
   ],
 });
