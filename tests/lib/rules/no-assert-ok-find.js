@@ -3,8 +3,6 @@
 const rule = require('../../../lib/rules/no-assert-ok-find');
 const RuleTester = require('eslint').RuleTester;
 
-const { ERROR_MESSAGE, SUGGEST_MESSAGE } = rule;
-
 const TEST_FILE_NAME = 'some-test.js';
 const NON_TEST_FILE_NAME = 'some-file.js';
 
@@ -57,11 +55,11 @@ ruleTester.run('no-assert-ok-find', rule, {
       globals: { find: true },
       errors: [
         {
-          message: ERROR_MESSAGE,
+          messageId: 'error',
           type: 'CallExpression',
           suggestions: [
             {
-              desc: SUGGEST_MESSAGE,
+              messageId: 'changeToAssertEqualFindLength',
               output: "assert.equal(find('.class').length, 1);",
             },
           ],
@@ -75,11 +73,11 @@ ruleTester.run('no-assert-ok-find', rule, {
       globals: { find: true },
       errors: [
         {
-          message: ERROR_MESSAGE,
+          messageId: 'error',
           type: 'CallExpression',
           suggestions: [
             {
-              desc: SUGGEST_MESSAGE,
+              messageId: 'changeToAssertEqualFindLength',
               output: "assert.equal(find('.class').length, 1, 'it exists');",
             },
           ],
