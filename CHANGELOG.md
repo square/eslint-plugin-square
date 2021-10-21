@@ -1,3 +1,26 @@
+
+## v20.0.3 (2021-10-21)
+
+#### :bug: Bug Fix
+* [#494](https://github.com/square/eslint-plugin-square/pull/494) Switch to message IDs for reporting violations ([@bmish](https://github.com/bmish))
+* [#489](https://github.com/square/eslint-plugin-square/pull/489) Remove unused dependencies `camelcase` and `strip-indent` ([@bmish](https://github.com/bmish))
+* [#488](https://github.com/square/eslint-plugin-square/pull/488) Remove unused `estraverse` dependency and `scope-reference-this` util ([@bmish](https://github.com/bmish))
+
+#### :memo: Documentation
+* [#464](https://github.com/square/eslint-plugin-square/pull/464) Add `eslintplugin` keyword in package.json ([@bmish](https://github.com/bmish))
+* [#462](https://github.com/square/eslint-plugin-square/pull/462) Improve rules table header and fixable notices ([@bmish](https://github.com/bmish))
+* [#445](https://github.com/square/eslint-plugin-square/pull/445) Switch from github emojis to standard emojis ([@bmish](https://github.com/bmish))
+* [#431](https://github.com/square/eslint-plugin-square/pull/431) Mention which rules provide suggestions in individual rule docs ([@bmish](https://github.com/bmish))
+
+#### :house: Internal
+* [#490](https://github.com/square/eslint-plugin-square/pull/490) Increase required test coverage percentages ([@bmish](https://github.com/bmish))
+* [#463](https://github.com/square/eslint-plugin-square/pull/463) Cache dependencies on GitHub Actions to speed up CI ([@ddzz](https://github.com/ddzz))
+
+#### Committers: 2
+- Bryan Mishkin ([@bmish](https://github.com/bmish))
+- Darius D. ([@ddzz](https://github.com/ddzz))
+
+
 ## v20.0.2 (2021-06-20)
 
 #### :bug: Bug Fix
