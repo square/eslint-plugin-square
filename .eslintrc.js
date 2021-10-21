@@ -10,7 +10,6 @@ module.exports = {
     sourceType: 'script',
   },
   rules: {
-    'eslint-plugin/consistent-output': ['error', 'always'],
     'eslint-plugin/require-meta-docs-url': [
       'error',
       {
