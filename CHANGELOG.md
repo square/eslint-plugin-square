@@ -1,4 +1,25 @@
 
+
+## v21.0.0 (2021-10-21)
+
+#### :boom: Breaking Change
+* [#486](https://github.com/square/eslint-plugin-square/pull/486) Support ESLint v8 (includes eslint-plugin-unicorn v37 upgrade) ([@bmish](https://github.com/bmish))
+* [#505](https://github.com/square/eslint-plugin-square/pull/505) Drop support below ESLint 7.32 ([@bmish](https://github.com/bmish))
+* [#485](https://github.com/square/eslint-plugin-square/pull/485) chore(deps): bump eslint-plugin-prettier from 3.4.0 to 4.0.0 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#460](https://github.com/square/eslint-plugin-square/pull/460) chore(deps): bump espree from 7.3.1 to 9.0.0 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#502](https://github.com/square/eslint-plugin-square/pull/502) chore(deps): bump @typescript-eslint/eslint-plugin from 4.33.0 to 5.1.0 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#499](https://github.com/square/eslint-plugin-square/pull/499) chore(deps): bump eslint-plugin-qunit from 6.1.1 to 7.0.0 ([@dependabot[bot]](https://github.com/apps/dependabot))
+
+#### :rocket: Enhancement
+* [#507](https://github.com/square/eslint-plugin-square/pull/507) Update all dependencies to latest ([@bmish](https://github.com/bmish))
+
+#### :house: Internal
+* [#506](https://github.com/square/eslint-plugin-square/pull/506) Test on Node 17 ([@bmish](https://github.com/bmish))
+
+#### Committers: 1
+- Bryan Mishkin ([@bmish](https://github.com/bmish))
+
+
 ## v20.0.3 (2021-10-21)
 
 #### :bug: Bug Fix
