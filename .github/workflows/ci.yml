@@ -34,4 +34,4 @@ jobs:
 
     - run: yarn test
 
-    - run: yarn add --dev eslint@7 && yarn test && yarn lint
+    - run: yarn add --dev eslint@^7 && yarn test && yarn lint
