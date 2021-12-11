@@ -1,5 +1,21 @@
 
 
+
+## v21.0.1 (2021-12-11)
+
+#### :bug: Bug Fix
+* [#540](https://github.com/square/eslint-plugin-square/pull/540) Automatically provide `square` plugin so consumers don't have to specify it ([@bmish](https://github.com/bmish))
+
+#### :memo: Documentation
+* [#533](https://github.com/square/eslint-plugin-square/pull/533) Mention related rule `qunit-dom/no-ok-find` in `square/no-assert-ok-find` rule doc ([@bmish](https://github.com/bmish))
+
+#### :house: Internal
+* [#516](https://github.com/square/eslint-plugin-square/pull/516) Add jsdoc `type` annotation to rules ([@bmish](https://github.com/bmish))
+
+#### Committers: 1
+- Bryan Mishkin ([@bmish](https://github.com/bmish))
+
+
 ## v21.0.0 (2021-10-21)
 
 #### :boom: Breaking Change
