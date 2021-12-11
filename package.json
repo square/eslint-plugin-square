@@ -50,7 +50,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-qunit": "^7.0.0",
     "eslint-plugin-react": "^7.26.1",
-    "eslint-plugin-unicorn": "^37.0.1",
+    "eslint-plugin-unicorn": "^39.0.0",
     "eslint-utils": "^3.0.0",
     "espree": "^9.0.0",
     "prettier": "^2.4.1",
