@@ -1,8 +1,8 @@
 module.exports = {
   extends: [
-    './lib/config/base.js',
     'plugin:eslint-plugin/all',
     'plugin:node/recommended',
+    'plugin:square/base',
   ],
   plugins: ['eslint-plugin'],
   parserOptions: {
