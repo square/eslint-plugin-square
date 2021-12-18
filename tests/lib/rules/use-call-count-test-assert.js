@@ -3,7 +3,7 @@
 const rule = require('../../../lib/rules/use-call-count-test-assert');
 const RuleTester = require('eslint').RuleTester;
 
-const { ERROR_MESSAGE, ASSERT_PROPERTY_NAMES, STUB_PROPERTY_NAMES } = rule;
+const { ASSERT_PROPERTY_NAMES, STUB_PROPERTY_NAMES } = rule;
 
 const TEST_FILE_NAME = 'some-test.js';
 const NON_TEST_FILE_NAME = 'some-file.js';
@@ -77,7 +77,7 @@ const INVALID_HELPER_USAGES = ASSERT_PROPERTY_NAMES.flatMap(
       const ex1 = {
         code: `assert.${assertPropertyName}(myStub.${stubPropertyName});`,
         output: null,
-        errors: [{ message: ERROR_MESSAGE, type: 'CallExpression' }],
+        errors: [{ messageId: 'error', type: 'CallExpression' }],
         filename: TEST_FILE_NAME,
       };
 
@@ -85,7 +85,7 @@ const INVALID_HELPER_USAGES = ASSERT_PROPERTY_NAMES.flatMap(
       const ex2 = {
         code: `assert.${assertPropertyName}(this.prop.myStub.${stubPropertyName});`,
         output: null,
-        errors: [{ message: ERROR_MESSAGE, type: 'CallExpression' }],
+        errors: [{ messageId: 'error', type: 'CallExpression' }],
         filename: TEST_FILE_NAME,
       };
 
@@ -93,7 +93,7 @@ const INVALID_HELPER_USAGES = ASSERT_PROPERTY_NAMES.flatMap(
       const ex3 = {
         code: `assert.${assertPropertyName}(myStub.${stubPropertyName}, 'is called the right number of times');`,
         output: null,
-        errors: [{ message: ERROR_MESSAGE, type: 'CallExpression' }],
+        errors: [{ messageId: 'error', type: 'CallExpression' }],
         filename: TEST_FILE_NAME,
       };
 

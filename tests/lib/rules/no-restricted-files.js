@@ -1,8 +1,6 @@
 const rule = require('../../../lib/rules/no-restricted-files');
 const RuleTester = require('eslint').RuleTester;
 
-const { DEFAULT_ERROR_MESSAGE } = rule;
-
 const ruleTester = new RuleTester({
   parserOptions: {
     sourceType: 'module',
@@ -29,7 +27,7 @@ ruleTester.run('no-restricted-files', rule, {
       code: 'const x = 123;',
       output: null,
       options: [{ paths: [REGEXP_DISALLOW_UNSCOPED_COMPONENTS] }],
-      errors: [{ message: DEFAULT_ERROR_MESSAGE, type: 'Program' }],
+      errors: [{ messageId: 'defaultError', type: 'Program' }],
     },
     {
       // With custom error message:

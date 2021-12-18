@@ -3,8 +3,6 @@
 const RuleTester = require('eslint').RuleTester;
 const rule = require('../../../lib/rules/no-translation-key-interpolation');
 
-const { ERROR_MESSAGE } = rule;
-
 const ruleTester = new RuleTester({
   parserOptions: {
     ecmaVersion: 2020,
@@ -47,18 +45,18 @@ ruleTester.run('no-translation-key-interpolation', rule, {
     {
       code: 'intl.t(`key.${variable}`);', // eslint-disable-line no-template-curly-in-string
       output: null,
-      errors: [{ message: ERROR_MESSAGE, type: 'CallExpression' }],
+      errors: [{ messageId: 'error', type: 'CallExpression' }],
     },
     {
       // With variable:
       code: 'intl.t(`key.${variable}`, { someVariable: 123 });', // eslint-disable-line no-template-curly-in-string
       output: null,
-      errors: [{ message: ERROR_MESSAGE, type: 'CallExpression' }],
+      errors: [{ messageId: 'error', type: 'CallExpression' }],
     },
     {
       code: 'this.intl.t(`key.${variable}`);', // eslint-disable-line no-template-curly-in-string
       output: null,
-      errors: [{ message: ERROR_MESSAGE, type: 'CallExpression' }],
+      errors: [{ messageId: 'error', type: 'CallExpression' }],
     },
 
     // Custom service name:
@@ -66,7 +64,7 @@ ruleTester.run('no-translation-key-interpolation', rule, {
       code: 'this.i18n.t(`key.${variable}`);', // eslint-disable-line no-template-curly-in-string
       output: null,
       options: [{ serviceName: 'i18n' }],
-      errors: [{ message: ERROR_MESSAGE, type: 'CallExpression' }],
+      errors: [{ messageId: 'error', type: 'CallExpression' }],
     },
   ],
 });

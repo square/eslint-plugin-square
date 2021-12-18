@@ -68,6 +68,28 @@ describe('rules setup is correct', function () {
     );
   });
 
+  describe('rule files', function () {
+    for (const ruleName of RULE_NAMES) {
+      const filePath = path.join(
+        __dirname,
+        '..',
+        'lib',
+        'rules',
+        `${ruleName}.js`
+      );
+      const file = readFileSync(filePath, 'utf8');
+
+      describe(ruleName, function () {
+        it('should have the right contents', function () {
+          assert.ok(
+            file.includes("/** @type {import('eslint').Rule.RuleModule} */"),
+            'includes jsdoc comment for rule type'
+          );
+        });
+      });
+    }
+  });
+
   describe('rule documentation files', function () {
     const CONFIG_MSG_EMBER =
       '🔥 The `"extends": "plugin:square/ember"` property in a configuration file enables this rule.';

@@ -17,7 +17,7 @@ jobs:
     strategy:
       matrix:
         os: [ ubuntu, windows ]
-        node-version: [12.x, 14.x, 16.x]
+        node-version: [12.x, 14.x, 16.x, 17.x]
 
     steps:
     - uses: actions/checkout@v2
@@ -34,4 +34,4 @@ jobs:
 
     - run: yarn test
 
-    - run: yarn add --dev eslint@6 && yarn test && yarn lint
+    - run: yarn add --dev eslint@^7 && yarn test && yarn lint

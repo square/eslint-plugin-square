@@ -7,7 +7,7 @@ This plugin contains lint rule definitions and configurations for [ESLint](http:
 
 ## Requirements
 
-* [ESLint](https://eslint.org/) `>= 6`
+* [ESLint](https://eslint.org/) `>= 7.32.0`
 * [Node.js](https://nodejs.org/) `12.* || 14.* || >= 16.*`
 
 ## Usage
@@ -22,7 +22,6 @@ Edit your `.eslintrc.js` configuration file to extend one of the available confi
 
 ```js
 module.exports = {
-  plugins: ['square'],
   extends: ['plugin:square/base'], // Or other configuration.
 };
 ```
