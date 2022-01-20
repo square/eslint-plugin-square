@@ -26,6 +26,11 @@ const VALID_USAGES = [
     options: [{ functions: ['asyncFunc'] }],
   },
   {
+    // Arrow function directly returning the result
+    code: 'const myFunction = () => asyncFunc();',
+    options: [{ functions: ['asyncFunc'] }],
+  },
+  {
     // Not one of the specified functions.
     code: 'otherFunc();',
     options: [{ functions: ['asyncFunc'] }],
