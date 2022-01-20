@@ -31,6 +31,16 @@ const VALID_USAGES = [
     options: [{ functions: ['asyncFunc'] }],
   },
   {
+    // Returning the result of a nested function call
+    code: 'function test() { return foo(asyncFunc()); }',
+    options: [{ functions: ['asyncFunc'] }],
+  },
+  {
+    // Returning the result of a nested arrow function call
+    code: 'const test = () => foo(asyncFunc());',
+    options: [{ functions: ['asyncFunc'] }],
+  },
+  {
     // Not one of the specified functions.
     code: 'otherFunc();',
     options: [{ functions: ['asyncFunc'] }],
@@ -48,6 +58,18 @@ const INVALID_USAGES = [
     code: 'async function test() { asyncFunc(); }',
     options: [{ functions: ['asyncFunc'] }],
     output: 'async function test() { await asyncFunc(); }',
+    errors: [
+      {
+        message: 'Use `await` with `asyncFunc` function call.',
+        type: 'CallExpression',
+      },
+    ],
+  },
+  {
+    // Missing `await` and part of nested function call.
+    code: 'async function test() { foo(asyncFunc()); }',
+    options: [{ functions: ['asyncFunc'] }],
+    output: 'async function test() { foo(await asyncFunc()); }',
     errors: [
       {
         message: 'Use `await` with `asyncFunc` function call.',
