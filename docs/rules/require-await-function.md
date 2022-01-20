@@ -8,11 +8,13 @@ Some functions are asynchronous and you may want to wait for their code to finis
 
 ## Rule Details
 
-This lint rule requires that specified functions be called with the `async` keyword. The benefits of this include:
+This lint rule requires that specified functions be called with the `await` keyword. The benefits of this include:
 
 * Ensure code runs in the right (deterministic) order
 * Promote cleaner code by reducing unwieldy promise chain usage
 * Enforce a consistent way of calling/chaining asynchronous functions
+
+Note: this rule does not require using `await` in return statements or when nested inside other function calls.
 
 ## Examples
 
