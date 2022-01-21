@@ -21,6 +21,31 @@ const VALID_USAGES = [
     options: [{ functions: ['asyncFunc'] }],
   },
   {
+    // Returning the result of the async function
+    code: 'function myFunction() { return asyncFunc(); }',
+    options: [{ functions: ['asyncFunc'] }],
+  },
+  {
+    // Arrow function directly returning the result
+    code: 'const myFunction = () => asyncFunc();',
+    options: [{ functions: ['asyncFunc'] }],
+  },
+  {
+    // Part of a nested function call, foo() might want to consume a promise directly
+    code: 'function test() { foo(asyncFunc()); }',
+    options: [{ functions: ['asyncFunc'] }],
+  },
+  {
+    // Returning the result of a nested function call
+    code: 'function test() { return foo(asyncFunc()); }',
+    options: [{ functions: ['asyncFunc'] }],
+  },
+  {
+    // Returning the result of a nested arrow function call
+    code: 'const test = () => foo(asyncFunc());',
+    options: [{ functions: ['asyncFunc'] }],
+  },
+  {
     // Not one of the specified functions.
     code: 'otherFunc();',
     options: [{ functions: ['asyncFunc'] }],
