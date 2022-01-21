@@ -1,6 +1,21 @@
 
 
 
+
+## v21.0.2 (2022-01-21)
+
+#### :bug: Bug Fix
+* [#564](https://github.com/square/eslint-plugin-square/pull/564) Don't require `await` in return statements in `require-await-function` rule ([@fengb](https://github.com/fengb))
+
+#### :house: Internal
+* [#545](https://github.com/square/eslint-plugin-square/pull/545) Add GitHub Actions to Dependabot config ([@ddzz](https://github.com/ddzz))
+
+#### Committers: 3
+- Benjamin Feng ([@fengb](https://github.com/fengb))
+- Bryan Mishkin ([@bmish](https://github.com/bmish))
+- Darius D. ([@ddzz](https://github.com/ddzz))
+
+
 ## v21.0.1 (2021-12-11)
 
 #### :bug: Bug Fix
