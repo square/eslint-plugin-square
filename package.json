@@ -17,7 +17,8 @@
     "url": "https://github.com/square/eslint-plugin-square.git"
   },
   "license": "Apache-2.0",
-  "main": "lib/index.js",
+  "exports": "./lib/index.js",
+  "main": "./lib/index.js",
   "files": [
     "lib"
   ],
