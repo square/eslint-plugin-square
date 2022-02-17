@@ -8,7 +8,7 @@ This plugin contains lint rule definitions and configurations for [ESLint](http:
 ## Requirements
 
 * [ESLint](https://eslint.org/) `>= 8.8.0`
-* [Node.js](https://nodejs.org/) `12.* || 14.* || >= 16.*`
+* [Node.js](https://nodejs.org/) `^12.22.0 || ^14.17.0 || >=16.0.0`
 
 ## Usage
 
