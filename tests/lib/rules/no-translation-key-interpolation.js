@@ -5,7 +5,7 @@ const rule = require('../../../lib/rules/no-translation-key-interpolation');
 
 const ruleTester = new RuleTester({
   parserOptions: {
-    ecmaVersion: 2020,
+    ecmaVersion: 2021,
     sourceType: 'module',
   },
 });

@@ -15,7 +15,7 @@ ruleTester.run('no-handlebar-interpolation', rule, {
     {
       filename: 'foo/bar.js',
       code: "const foo = (bar) => { return '{{bar}}'; };",
-      parserOptions: { ecmaVersion: 2020 },
+      parserOptions: { ecmaVersion: 2021 },
     },
     // Ignores file types that doesn't match default pattern
     {

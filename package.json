@@ -73,7 +73,7 @@
     "sort-package-json": "^1.54.0"
   },
   "peerDependencies": {
-    "eslint": ">= 7.32.0"
+    "eslint": ">= 8.8.0"
   },
   "engines": {
     "node": "12.* || 14.* || >= 16.*"
