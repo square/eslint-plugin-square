@@ -2,6 +2,23 @@
 
 
 
+
+## v22.0.0 (2022-02-17)
+
+#### :boom: Breaking Change
+* [#586](https://github.com/square/eslint-plugin-square/pull/586) Drop ESLint 7 support and enable `es2021` environment ([@bmish](https://github.com/bmish))
+* [#588](https://github.com/square/eslint-plugin-square/pull/588) Drop support for old minor versions of Node 12 and 14 ([@bmish](https://github.com/bmish))
+* [#587](https://github.com/square/eslint-plugin-square/pull/587) Strictly define Node API ([@bmish](https://github.com/bmish))
+* [#582](https://github.com/square/eslint-plugin-square/pull/582) chore(deps): bump eslint-plugin-unicorn from 37.0.1 to 41.0.0 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#565](https://github.com/square/eslint-plugin-square/pull/565) Add more async Ember test helpers ([@bmish](https://github.com/bmish))
+
+#### :rocket: Enhancement
+* [#589](https://github.com/square/eslint-plugin-square/pull/589) Expose `ASYNC_EMBER_TEST_HELPERS` in public Node API ([@bmish](https://github.com/bmish))
+
+#### Committers: 1
+- Bryan Mishkin ([@bmish](https://github.com/bmish))
+
+
 ## v21.0.2 (2022-01-21)
 
 #### :bug: Bug Fix
