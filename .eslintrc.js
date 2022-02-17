@@ -6,7 +6,7 @@ module.exports = {
   ],
   plugins: ['eslint-plugin'],
   parserOptions: {
-    ecmaVersion: 2020,
+    ecmaVersion: 2021,
     sourceType: 'script',
   },
   rules: {
