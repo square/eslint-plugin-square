@@ -5,6 +5,7 @@ updates:
   - package-ecosystem: 'npm'
     directory: '/'
     open-pull-requests-limit: 15
+    versioning-strategy: 'increase' # Update versions in both package.json and lockfile
     schedule:
       interval: 'weekly'
 
