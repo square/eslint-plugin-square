@@ -13,16 +13,19 @@ const ruleTester = new RuleTester({
 ruleTester.run('no-translation-key-interpolation', rule, {
   valid: [
     // With valid string:
+    "t('some.key');",
     "intl.t('some.key');",
     "this.intl.t('some.key');",
     "this.get('intl').t('some.key');",
 
     // With valid variable usage:
+    't(SOME_VARIABLE);',
     'intl.t(SOME_VARIABLE);',
     'this.intl.t(SOME_VARIABLE);',
     "this.get('intl').t(SOME_VARIABLE);",
 
     // With valid function call:
+    't(constructKey());',
     'intl.t(constructKey());',
     'this.intl.t(constructKey());',
     "this.get('intl').t(constructKey());",
@@ -40,8 +43,19 @@ ruleTester.run('no-translation-key-interpolation', rule, {
       code: "this.i18n.t('some.key');",
       options: [{ serviceName: 'i18n' }],
     },
+
+    // Enforce string literal keys:
+    {
+      code: "this.i18n.t('some.key');",
+      options: [{ enforceStringLiteralKeys: true }],
+    },
   ],
   invalid: [
+    {
+      code: 't(`key.${variable}`);', // eslint-disable-line no-template-curly-in-string
+      output: null,
+      errors: [{ messageId: 'error', type: 'CallExpression' }],
+    },
     {
       code: 'intl.t(`key.${variable}`);', // eslint-disable-line no-template-curly-in-string
       output: null,
@@ -61,9 +75,29 @@ ruleTester.run('no-translation-key-interpolation', rule, {
 
     // Custom service name:
     {
+      code: 't(`key.${variable}`);', // eslint-disable-line no-template-curly-in-string
+      output: null,
+      options: [{ serviceName: 'i18n' }],
+      errors: [{ messageId: 'error', type: 'CallExpression' }],
+    },
+    {
       code: 'this.i18n.t(`key.${variable}`);', // eslint-disable-line no-template-curly-in-string
       output: null,
       options: [{ serviceName: 'i18n' }],
+      errors: [{ messageId: 'error', type: 'CallExpression' }],
+    },
+
+    // Enforce string literal keys:
+    {
+      code: "t(SOME_VARIABLE);",
+      output: null,
+      options: [{ enforceStringLiteralKeys: true }],
+      errors: [{ messageId: 'error', type: 'CallExpression' }],
+    },
+    {
+      code: "t(constructKey());",
+      output: null,
+      options: [{ enforceStringLiteralKeys: true }],
       errors: [{ messageId: 'error', type: 'CallExpression' }],
     },
   ],
