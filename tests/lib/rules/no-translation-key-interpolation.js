@@ -89,13 +89,13 @@ ruleTester.run('no-translation-key-interpolation', rule, {
 
     // Enforce string literal keys:
     {
-      code: "t(SOME_VARIABLE);",
+      code: 't(SOME_VARIABLE);',
       output: null,
       options: [{ enforceStringLiteralKeys: true }],
       errors: [{ messageId: 'error', type: 'CallExpression' }],
     },
     {
-      code: "t(constructKey());",
+      code: 't(constructKey());',
       output: null,
       options: [{ enforceStringLiteralKeys: true }],
       errors: [{ messageId: 'error', type: 'CallExpression' }],
