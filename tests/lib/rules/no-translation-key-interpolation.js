@@ -43,12 +43,6 @@ ruleTester.run('no-translation-key-interpolation', rule, {
       code: "this.i18n.t('some.key');",
       options: [{ serviceName: 'i18n' }],
     },
-
-    // Enforce string literal keys:
-    {
-      code: "this.i18n.t('some.key');",
-      options: [{ enforceStringLiteralKeys: true }],
-    },
   ],
   invalid: [
     {
@@ -84,20 +78,6 @@ ruleTester.run('no-translation-key-interpolation', rule, {
       code: 'this.i18n.t(`key.${variable}`);', // eslint-disable-line no-template-curly-in-string
       output: null,
       options: [{ serviceName: 'i18n' }],
-      errors: [{ messageId: 'error', type: 'CallExpression' }],
-    },
-
-    // Enforce string literal keys:
-    {
-      code: 't(SOME_VARIABLE);',
-      output: null,
-      options: [{ enforceStringLiteralKeys: true }],
-      errors: [{ messageId: 'error', type: 'CallExpression' }],
-    },
-    {
-      code: 't(constructKey());',
-      output: null,
-      options: [{ enforceStringLiteralKeys: true }],
       errors: [{ messageId: 'error', type: 'CallExpression' }],
     },
   ],
