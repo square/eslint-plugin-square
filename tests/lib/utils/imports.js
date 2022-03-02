@@ -1,12 +1,37 @@
 const {
   parse: babelESLintParse,
 } = require('../../helpers/babel-eslint-parser');
+const { FauxContext } = require('../../helpers/faux-context');
 const importUtils = require('../../../lib/utils/import');
 const assert = require('assert');
 
 function parse(code) {
   return babelESLintParse(code).body[0].expression;
 }
+
+describe('getSourceModuleNameForIdentifier', () => {
+  it('gets the correct module name from an imported method', () => {
+    const context = new FauxContext(
+      "import { someMethod } from 'some-service';"
+    );
+    const node = parse('someMethod()').callee;
+    assert.strictEqual(
+      importUtils.getSourceModuleNameForIdentifier(context, node),
+      'some-service'
+    );
+  });
+
+  it('gets the correct module name from an imported aliased method', () => {
+    const context = new FauxContext(
+      "import { someMethod as aliasMethod } from 'some-service';"
+    );
+    const node = parse('aliasMethod()').callee;
+    assert.strictEqual(
+      importUtils.getSourceModuleNameForIdentifier(context, node),
+      'some-service'
+    );
+  });
+});
 
 describe('getSourceModuleName', () => {
   it('gets the correct module name with MemberExpression', () => {
@@ -24,9 +49,9 @@ describe('getSourceModuleName', () => {
     assert.strictEqual(importUtils.getSourceModuleName(node), 'Model');
   });
 
-  it('throws error when invalid node is passed in', () => {
+  it('throws error when undefined node is passed in', () => {
     try {
-      const node = '';
+      const node = undefined;
       importUtils.getSourceModuleName(node);
     } catch (err) {
       assert.strictEqual(
