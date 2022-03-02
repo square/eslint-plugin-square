@@ -1,10 +1,15 @@
 'use strict';
 
+/*
+  Based on helper from eslint-plugin-ember:
+  https://github.com/ember-cli/eslint-plugin-ember/blob/master/tests/helpers/faux-context.js
+ */
+
 const { parseForESLint } = require('../helpers/babel-eslint-parser');
 
 /**
  * Builds a fake ESLint context object that's enough to satisfy the contract
- * expected by `getSourceModuleNameForIdentifier` and `isEmberCoreModule`
+ * expected by `getSourceModuleNameForIdentifier`
  */
 class FauxContext {
   constructor(code, filename = '', report = () => {}) {
