@@ -3,6 +3,19 @@
 
 
 
+
+## v22.1.0 (2022-03-03)
+
+#### :rocket: Enhancement
+* [#600](https://github.com/square/eslint-plugin-square/pull/600) Add `enforceStringLiteralKeys` option to `no-translation-key-interpolation` rule ([@edcheung1](https://github.com/edcheung1))
+
+#### :bug: Bug Fix
+* [#598](https://github.com/square/eslint-plugin-square/pull/598) Check for imported `t` method in `no-translation-key-interpolation` rule ([@edcheung1](https://github.com/edcheung1))
+
+#### Committers: 1
+- Ed Cheung ([@edcheung1](https://github.com/edcheung1))
+
+
 ## v22.0.0 (2022-02-17)
 
 #### :boom: Breaking Change
