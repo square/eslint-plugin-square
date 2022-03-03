@@ -40,6 +40,7 @@ function getStatusString(status) {
 This rule takes an optional object containing:
 
 * `string` -- `serviceName` -- optional override for service name to look for (default is `intl`)
+* `boolean` -- `enforceStringLiteralKeys` -- optional override to restrict translation keys to only string literals (default is `false`)
 
 ## References
 

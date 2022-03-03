@@ -59,6 +59,12 @@ ruleTester.run('no-translation-key-interpolation', rule, {
     't(SOME_VARIABLE);',
     't(constructKey());',
     't(`key.${variable}`);', // eslint-disable-line no-template-curly-in-string
+
+    // Enforce string literal keys:
+    {
+      code: "intl.t('some.key');",
+      options: [{ enforceStringLiteralKeys: true }],
+    },
   ],
   invalid: [
     {
@@ -110,6 +116,20 @@ ruleTester.run('no-translation-key-interpolation', rule, {
         foo(\`key.\${variable}\`);
       `,
       output: null,
+      errors: [{ messageId: 'error', type: 'CallExpression' }],
+    },
+
+    // Enforce string literal keys:
+    {
+      code: 'intl.t(SOME_VARIABLE);',
+      output: null,
+      options: [{ enforceStringLiteralKeys: true }],
+      errors: [{ messageId: 'error', type: 'CallExpression' }],
+    },
+    {
+      code: 'intl.t(constructKey());',
+      output: null,
+      options: [{ enforceStringLiteralKeys: true }],
       errors: [{ messageId: 'error', type: 'CallExpression' }],
     },
   ],
