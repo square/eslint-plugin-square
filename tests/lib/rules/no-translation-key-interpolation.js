@@ -40,6 +40,25 @@ ruleTester.run('no-translation-key-interpolation', rule, {
       code: "this.i18n.t('some.key');",
       options: [{ serviceName: 'i18n' }],
     },
+
+    // With `t` method imported directly:
+    "import { t } from 'intl'; t('some.key');",
+    "import { t as foo } from 'intl'; t(`key.${variable}`);", // eslint-disable-line no-template-curly-in-string
+    "import { t as foo } from 'intl'; foo('some.key');",
+    "import { t } from 'other-lib'; t(`key.${variable}`);", // eslint-disable-line no-template-curly-in-string
+    {
+      code: `
+        import { t } from 'i18n';
+        t('some.key');
+      `,
+      options: [{ serviceName: 'i18n' }],
+    },
+
+    // Ignore `t` if import source is unknown
+    "t('some.key');",
+    't(SOME_VARIABLE);',
+    't(constructKey());',
+    't(`key.${variable}`);', // eslint-disable-line no-template-curly-in-string
   ],
   invalid: [
     {
@@ -64,6 +83,33 @@ ruleTester.run('no-translation-key-interpolation', rule, {
       code: 'this.i18n.t(`key.${variable}`);', // eslint-disable-line no-template-curly-in-string
       output: null,
       options: [{ serviceName: 'i18n' }],
+      errors: [{ messageId: 'error', type: 'CallExpression' }],
+    },
+
+    // With `t` method imported directly:
+    {
+      code: `
+        import { t } from 'intl';
+        t(\`key.\${variable}\`);
+      `,
+      output: null,
+      errors: [{ messageId: 'error', type: 'CallExpression' }],
+    },
+    {
+      code: `
+        import { t } from 'i18n';
+        t(\`key.\${variable}\`);
+      `,
+      output: null,
+      options: [{ serviceName: 'i18n' }],
+      errors: [{ messageId: 'error', type: 'CallExpression' }],
+    },
+    {
+      code: `
+        import { t as foo } from 'intl';
+        foo(\`key.\${variable}\`);
+      `,
+      output: null,
       errors: [{ messageId: 'error', type: 'CallExpression' }],
     },
   ],
