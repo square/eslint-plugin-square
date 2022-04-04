@@ -1763,7 +1763,7 @@ eslint-plugin-react@^7.28.0:
     string.prototype.matchall "^4.0.6"
 
 "eslint-plugin-square@file:.":
-  version "22.0.0"
+  version "22.1.0"
   dependencies:
     "@typescript-eslint/eslint-plugin" "^5.12.0"
     eslint-config-prettier "^8.4.0"
@@ -1775,16 +1775,16 @@ eslint-plugin-react@^7.28.0:
     eslint-plugin-prettier "^4.0.0"
     eslint-plugin-qunit "^7.2.0"
     eslint-plugin-react "^7.28.0"
-    eslint-plugin-unicorn "^41.0.0"
+    eslint-plugin-unicorn "^42.0.0"
     eslint-utils "^3.0.0"
     espree "^9.3.1"
     prettier "^2.5.1"
     requireindex "^1.2.0"
 
-eslint-plugin-unicorn@^41.0.0:
-  version "41.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-unicorn/-/eslint-plugin-unicorn-41.0.0.tgz#bf0974f8551ab4dd4aaae7d9cf53894040defbbd"
-  integrity sha512-xoJCaRc1uy5REg9DkVga1BkZV57jJxoqOcrU28QHZB89Lk5LdSqdVyTIt9JQVfHNKaiyJ7X+3iLlIn+VEHWEzA==
+eslint-plugin-unicorn@^42.0.0:
+  version "42.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-unicorn/-/eslint-plugin-unicorn-42.0.0.tgz#47d60c00c263ad743403b052db689e39acbacff1"
+  integrity sha512-ixBsbhgWuxVaNlPTT8AyfJMlhyC5flCJFjyK3oKE8TRrwBnaHvUbuIkCM1lqg8ryYrFStL/T557zfKzX4GKSlg==
   dependencies:
     "@babel/helper-validator-identifier" "^7.15.7"
     ci-info "^3.3.0"
