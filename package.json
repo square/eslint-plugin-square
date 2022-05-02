@@ -74,7 +74,7 @@
     "nyc": "^15.1.0",
     "release-it": "^14.12.5",
     "release-it-lerna-changelog": "^4.0.1",
-    "sort-package-json": "^1.54.0"
+    "sort-package-json": "^1.56.1"
   },
   "peerDependencies": {
     "eslint": ">= 8.8.0"
