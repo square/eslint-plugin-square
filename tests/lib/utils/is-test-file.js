@@ -1,7 +1,7 @@
 'use strict';
 
 const isTestFile = require('../../../lib/utils/is-test-file');
-const assert = require('assert');
+const assert = require('node:assert');
 
 describe('isTestFile', () => {
   it('detects test files', () => {

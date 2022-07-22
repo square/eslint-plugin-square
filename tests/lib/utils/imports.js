@@ -3,7 +3,7 @@ const {
 } = require('../../helpers/babel-eslint-parser');
 const { FauxContext } = require('../../helpers/faux-context');
 const importUtils = require('../../../lib/utils/import');
-const assert = require('assert');
+const assert = require('node:assert');
 
 function parse(code) {
   return babelESLintParse(code).body[0].expression;
