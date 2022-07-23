@@ -1758,10 +1758,10 @@ eslint-module-utils@^2.7.2:
     debug "^3.2.7"
     find-up "^2.1.0"
 
-eslint-plugin-ember@^10.5.9:
-  version "10.5.9"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-ember/-/eslint-plugin-ember-10.5.9.tgz#4071ac135c7207c7d4942e9fa75b710214885469"
-  integrity sha512-kJsdAaKNcfRvZBZ+YZ67pxxUgl+aPLFAnoFJNwTo+BsaptiOCsHUEc4xUKXiInH2BJOC6mg0FQcZKn1a6gwKrA==
+eslint-plugin-ember@^11.0.1:
+  version "11.0.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-ember/-/eslint-plugin-ember-11.0.1.tgz#08d6d616062a72b39a3867bf0197b9416b7c9847"
+  integrity sha512-V1ZpU8y6y+VzSxDpnK21wADYbNCmBUZwMpA0zDIyBPTGeiFqKa0zt05vhHWSE5jJLddXm6wdmW/UrMF3lUykrQ==
   dependencies:
     "@ember-data/rfc395-data" "^0.0.4"
     css-tree "^2.0.4"
@@ -1892,7 +1892,7 @@ eslint-plugin-react@^7.28.0:
   dependencies:
     "@typescript-eslint/eslint-plugin" "^5.12.0"
     eslint-config-prettier "^8.4.0"
-    eslint-plugin-ember "^10.5.9"
+    eslint-plugin-ember "^11.0.1"
     eslint-plugin-es "^4.1.0"
     eslint-plugin-eslint-comments "^3.2.0"
     eslint-plugin-filenames "^1.3.2"
