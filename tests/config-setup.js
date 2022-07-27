@@ -1,9 +1,9 @@
 'use strict';
 /* eslint-env node */
 
-const { readdirSync, readFileSync } = require('fs');
-const path = require('path');
-const assert = require('assert');
+const { readdirSync, readFileSync } = require('node:fs');
+const path = require('node:path');
+const assert = require('node:assert');
 const configs = require('../lib').configs;
 
 const CONFIG_NAMES = Object.keys(configs);
