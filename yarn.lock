@@ -621,10 +621,10 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
   integrity sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==
 
-"@square/prettier-config@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@square/prettier-config/-/prettier-config-1.0.0.tgz#5bf0dd20e4256838babcfa667b9a123c263c6192"
-  integrity sha512-uGGTvwLH3XDcaTwiVoKhbV+s4QTvQ/z10dhMbwVIosskdBFk2s/87I6N9sVFnLeLjzw7niRm3dxR2RX1dlHfIw==
+"@square/prettier-config@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@square/prettier-config/-/prettier-config-2.0.0.tgz#fb10b91d21b2516723b6214dbf2211fe122b1c52"
+  integrity sha512-IDE7IqqEPx1mJhQmqvU1Gx8KAokFM0T6R56dOVEqB3sg0jk7bkzIUIa44GB9Djm9xXOsEa1ZSoB1YKxGgV0pIQ==
 
 "@szmarczak/http-timer@^1.1.2":
   version "1.1.2"
