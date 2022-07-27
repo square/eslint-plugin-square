@@ -4,6 +4,25 @@
 
 
 
+
+## v23.0.0 (2022-07-27)
+
+#### :boom: Breaking Change
+* [#676](https://github.com/square/eslint-plugin-square/pull/676) Drop support for Node 12 and Node 17 ([@bmish](https://github.com/bmish))
+* [#675](https://github.com/square/eslint-plugin-square/pull/675) Drop support below ESLint 8.18.0 ([@bmish](https://github.com/bmish))
+* [#691](https://github.com/square/eslint-plugin-square/pull/691) Remove `filenames/match-regex` rule in favor of `unicorn/filename-case` ([@rachid-square](https://github.com/rachid-square))
+* [#674](https://github.com/square/eslint-plugin-square/pull/674) Require pascal-case export for components in `React` config ([@rachid-square](https://github.com/rachid-square))
+* [#692](https://github.com/square/eslint-plugin-square/pull/692) chore(deps): bump eslint-plugin-ember from 10.5.9 to 11.0.3 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#681](https://github.com/square/eslint-plugin-square/pull/681) chore(deps): bump eslint-plugin-unicorn from 41.0.0 to 43.0.2 ([@dependabot[bot]](https://github.com/apps/dependabot))
+
+#### :house: Internal
+* [#693](https://github.com/square/eslint-plugin-square/pull/693) Enable `unicorn/prefer-node-protocol` rule internally ([@bmish](https://github.com/bmish))
+
+#### Committers: 2
+- Bryan Mishkin ([@bmish](https://github.com/bmish))
+- Rachid Lamouri ([@rachid-square](https://github.com/rachid-square))
+
+
 ## v22.1.0 (2022-03-03)
 
 #### :rocket: Enhancement
