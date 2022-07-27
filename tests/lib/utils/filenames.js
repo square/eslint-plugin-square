@@ -1,7 +1,7 @@
 'use strict';
 
 const filenames = require('../../../lib/utils/filenames');
-const assert = require('assert');
+const assert = require('node:assert');
 
 describe('filenames', () => {
   // filenames/match-regex ignores file extension so these tests also do

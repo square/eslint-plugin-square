@@ -1,6 +1,6 @@
 'use strict';
 
-const assert = require('assert');
+const assert = require('node:assert');
 const parse = require('espree').parse;
 const isLiteral = require('../../../lib/utils/is-literal');
 
