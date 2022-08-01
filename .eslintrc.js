@@ -37,7 +37,6 @@ module.exports = {
         sourceType: 'module',
       },
       rules: {
-        'filenames/match-regex': 'off',
         'no-undef': 'off',
         'no-unused-vars': 'off',
         'node/no-missing-import': 'off',
