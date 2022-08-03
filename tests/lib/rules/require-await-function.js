@@ -55,6 +55,11 @@ const VALID_USAGES = [
     code: 'async function myFunction() { await otherAsyncFunc(); }',
     options: [{ functions: ['asyncFunc'] }],
   },
+  {
+    // Allowed to store promise into variable with assignment.
+    code: 'async function myFunction() { const promise = asyncFunc(); await promise; }',
+    options: [{ functions: ['asyncFunc'] }],
+  },
 ];
 
 const INVALID_USAGES = [
