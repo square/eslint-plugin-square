@@ -6,6 +6,18 @@
 
 
 
+
+## v23.0.2 (2022-08-03)
+
+#### :bug: Bug Fix
+* [#706](https://github.com/square/eslint-plugin-square/pull/706) Ignore assignment in `require-await-function` rule ([@bmish](https://github.com/bmish))
+* [#702](https://github.com/square/eslint-plugin-square/pull/702) Handle `.d.ts` files correctly for `filenames/match-exported` rule ([@mongoose700](https://github.com/mongoose700))
+
+#### Committers: 2
+- Bryan Mishkin ([@bmish](https://github.com/bmish))
+- Michael Peirce ([@mongoose700](https://github.com/mongoose700))
+
+
 ## v23.0.1 (2022-07-28)
 
 #### :bug: Bug Fix
