@@ -1840,10 +1840,10 @@ eslint-plugin-eslint-comments@^3.2.0:
     escape-string-regexp "^1.0.5"
     ignore "^5.0.5"
 
-eslint-plugin-eslint-plugin@^5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-eslint-plugin/-/eslint-plugin-eslint-plugin-5.0.1.tgz#96318fe15a224a62073c3656c41fe0143c727515"
-  integrity sha512-Q0ymijkdviKNozMko2iIIpvKUN80oaoUd9hMkej08e1eLhfmu8covIdWAjs1LwiyvT585RiqWorINZI5Ep2twQ==
+eslint-plugin-eslint-plugin@^5.0.3:
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-eslint-plugin/-/eslint-plugin-eslint-plugin-5.0.3.tgz#2af2c82ed90fdda2ab04caad205f0ac5b9af75ed"
+  integrity sha512-GcJO7etUAql3mvw2pyEuIFRTR0i+b3W44hcxE1JOTPrf+bbkRtgeNfL+DFBGeYCe25hzMfuRvd0FmqHBtLmdcg==
   dependencies:
     eslint-utils "^3.0.0"
     estraverse "^5.2.0"
@@ -1932,7 +1932,7 @@ eslint-plugin-react@^7.30.1:
     string.prototype.matchall "^4.0.7"
 
 "eslint-plugin-square@file:.":
-  version "23.0.1"
+  version "23.0.2"
   dependencies:
     "@typescript-eslint/eslint-plugin" "^5.32.0"
     eslint-config-prettier "^8.4.0"
