@@ -26,6 +26,23 @@ module.exports = {
 };
 ```
 
+Add the relevant lint scripts in `package.json`:
+
+```json
+{
+  "scripts": {
+    "lint": "npm-run-all --continue-on-error --aggregate-output --parallel lint:*",
+    "lint:js": "eslint --cache ."
+  }
+}
+```
+
+And be sure to run linting:
+
+* As a build check during CI
+* In your precommit hook (see [lint-staged](https://github.com/okonet/lint-staged) and [husky](https://github.com/typicode/husky))
+* With the ESLint extension for your IDE
+
 ## Configurations
 
 |     | Name | Description |
