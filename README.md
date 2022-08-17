@@ -12,10 +12,10 @@ This plugin contains lint rule definitions and configurations for [ESLint](http:
 
 ## Usage
 
-Install via yarn (or npm):
+Install alongside ESLint via yarn (or npm):
 
 ```sh
-yarn add --dev eslint-plugin-square
+yarn add --dev eslint eslint-plugin-square
 ```
 
 Edit your `.eslintrc.js` configuration file to extend one of the available configurations from this plugin:
