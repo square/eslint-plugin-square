@@ -37,7 +37,7 @@ Add the relevant lint scripts in `package.json`:
 }
 ```
 
-And be sure to run linting:
+Configure linting to run:
 
 * As a build check during CI
 * In your precommit hook (see [lint-staged](https://github.com/okonet/lint-staged) and [husky](https://github.com/typicode/husky))
@@ -99,6 +99,18 @@ Note that we prefer to upstream our custom lint rules to third-party ESLint plug
 [strict]: lib/config/strict.js
 [typescript]: lib/config/typescript.js
 [@typescript-eslint/parser]: https://www.npmjs.com/package/@typescript-eslint/parser
+
+## Related
+
+Consider adding other linters not included by plugin:
+
+* [check-dependency-version-consistency](https://github.com/bmish/check-dependency-version-consistency) for monorepos
+* [ember-template-lint](https://github.com/ember-template-lint/ember-template-lint) for handlebars files
+* [eslint-plugin-markdown](https://github.com/eslint/eslint-plugin-markdown) for markdown code samples
+* [eslint-plugin-node](https://github.com/mysticatea/eslint-plugin-node) for Node files
+* [markdownlint-cli](https://github.com/igorshubovych/markdownlint-cli) for markdown documentation formatting
+* [npm-package-json-lint](https://github.com/tclindner/npm-package-json-lint) for package.json
+* [stylelint](https://github.com/stylelint/stylelint) for CSS files
 
 ## License
 
