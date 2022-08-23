@@ -44,5 +44,13 @@ module.exports = {
         'unicorn/filename-case': 'off',
       },
     },
+    {
+      parser: '@typescript-eslint/parser',
+      files: ['*.ts'],
+      extends: ['plugin:@typescript-eslint/recommended'],
+      rules: {
+        'node/no-unsupported-features/es-syntax': 'off',
+      },
+    },
   ],
 };

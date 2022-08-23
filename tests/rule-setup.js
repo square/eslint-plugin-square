@@ -11,6 +11,10 @@ const RULE_NAMES = Object.keys(rules);
 const RULE_NAMES_EMBER = new Set(Object.keys(configEmber.rules));
 RULE_NAMES_EMBER.add('square/require-await-function'); // This rule is enabled in an override.
 
+/**
+ * @param {import('json-schema').JSONSchema4} jsonSchema
+ * @returns {string[]}
+ */
 function getAllNamedOptions(jsonSchema) {
   if (!jsonSchema) {
     return [];
@@ -69,6 +73,11 @@ describe('rules setup is correct', function () {
   });
 
   describe('rule files', function () {
+    const TYPE_ANNOTATION = "/** @type {import('eslint').Rule.RuleModule} */";
+    const TYPE_ANNOTATION_UNCLOSED = TYPE_ANNOTATION.slice(
+      0,
+      Math.max(0, TYPE_ANNOTATION.lastIndexOf('}'))
+    ); // Allow for & in the type annotation.
     for (const ruleName of RULE_NAMES) {
       const filePath = path.join(
         __dirname,
@@ -82,8 +91,9 @@ describe('rules setup is correct', function () {
       describe(ruleName, function () {
         it('should have the right contents', function () {
           assert.ok(
-            file.includes("/** @type {import('eslint').Rule.RuleModule} */"),
-            'includes jsdoc comment for rule type'
+            file.includes(TYPE_ANNOTATION) ||
+              file.includes(TYPE_ANNOTATION_UNCLOSED),
+            `includes jsdoc comment for rule type: ${TYPE_ANNOTATION}`
           );
         });
       });

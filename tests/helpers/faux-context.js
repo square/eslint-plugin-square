@@ -12,6 +12,11 @@ const { parseForESLint } = require('../helpers/babel-eslint-parser');
  * expected by `getSourceModuleNameForIdentifier`
  */
 class FauxContext {
+  /**
+   * @param {string} code
+   * @param {string} filename
+   * @param {Function} report
+   */
   constructor(code, filename = '', report = () => {}) {
     const { ast } = parseForESLint(code);
 
@@ -23,6 +28,7 @@ class FauxContext {
   /**
    * Does not build the full tree of "ancestors" for the identifier, but
    * we only care about the first one; the Program node
+   * @returns {[import('estree').Program]}
    */
   getAncestors() {
     return [this.ast];

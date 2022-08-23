@@ -76,6 +76,7 @@ const INVALID_HELPER_USAGES = ASSERT_PROPERTY_NAMES.flatMap(
       // Test case: basic.
       const ex1 = {
         code: `assert.${assertPropertyName}(myStub.${stubPropertyName});`,
+        /** @type {null|string} */
         output: null,
         errors: [{ messageId: 'error', type: 'CallExpression' }],
         filename: TEST_FILE_NAME,
@@ -84,6 +85,7 @@ const INVALID_HELPER_USAGES = ASSERT_PROPERTY_NAMES.flatMap(
       // Test case: with more complicated stub path.
       const ex2 = {
         code: `assert.${assertPropertyName}(this.prop.myStub.${stubPropertyName});`,
+        /** @type {null|string} */
         output: null,
         errors: [{ messageId: 'error', type: 'CallExpression' }],
         filename: TEST_FILE_NAME,
@@ -92,6 +94,7 @@ const INVALID_HELPER_USAGES = ASSERT_PROPERTY_NAMES.flatMap(
       // Test case: passing the optional message parameter.
       const ex3 = {
         code: `assert.${assertPropertyName}(myStub.${stubPropertyName}, 'is called the right number of times');`,
+        /** @type {null|string} */
         output: null,
         errors: [{ messageId: 'error', type: 'CallExpression' }],
         filename: TEST_FILE_NAME,
