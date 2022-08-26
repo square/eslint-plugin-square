@@ -7,6 +7,21 @@
 
 
 
+
+## v23.1.0 (2022-08-26)
+
+#### :rocket: Enhancement
+* [#723](https://github.com/square/eslint-plugin-square/pull/723) Add TypeScript type-checking to all JavaScript files and publish utility types ([@bmish](https://github.com/bmish))
+
+#### :memo: Documentation
+* [#726](https://github.com/square/eslint-plugin-square/pull/726) Mention other common linters not included by this plugin in README ([@bmish](https://github.com/bmish))
+* [#719](https://github.com/square/eslint-plugin-square/pull/719) Mention that this needs to be installed alongside our peer dependency ESLint in README ([@bmish](https://github.com/bmish))
+* [#718](https://github.com/square/eslint-plugin-square/pull/718) Mention lint scripts and ways to run linting in README ([@bmish](https://github.com/bmish))
+
+#### Committers: 1
+- Bryan Mishkin ([@bmish](https://github.com/bmish))
+
+
 ## v23.0.2 (2022-08-03)
 
 #### :bug: Bug Fix
