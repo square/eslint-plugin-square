@@ -23,10 +23,19 @@ ruleTester.run('no-restricted-files', rule, {
   ],
   invalid: [
     {
+      // With paths only.
       filename: FILEPATH_UNSCOPED_COMPONENT,
       code: 'const x = 123;',
       output: null,
       options: [{ paths: [REGEXP_DISALLOW_UNSCOPED_COMPONENTS] }],
+      errors: [{ messageId: 'defaultError', type: 'Program' }],
+    },
+    {
+      // Multiple paths.
+      filename: FILEPATH_UNSCOPED_COMPONENT,
+      code: 'const x = 123;',
+      output: null,
+      options: [{ paths: ['foo-[0-9]', REGEXP_DISALLOW_UNSCOPED_COMPONENTS] }],
       errors: [{ messageId: 'defaultError', type: 'Program' }],
     },
     {
@@ -56,6 +65,19 @@ ruleTester.run('no-restricted-files', rule, {
           message: 'No unscoped components.',
         },
       ],
+      errors: [{ message: 'No unscoped components.', type: 'Program' }],
+    },
+    {
+      // No options, should disallow every file.
+      code: 'const x = 123;',
+      output: null,
+      errors: [{ messageId: 'defaultError', type: 'Program' }],
+    },
+    {
+      // Only message specified, should disallow every file.
+      code: 'const x = 123;',
+      output: null,
+      options: [{ message: 'No unscoped components.' }],
       errors: [{ message: 'No unscoped components.', type: 'Program' }],
     },
   ],
