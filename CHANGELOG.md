@@ -8,6 +8,19 @@
 
 
 
+
+## v23.1.1 (2022-09-15)
+
+#### :bug: Bug Fix
+* [#753](https://github.com/square/eslint-plugin-square/pull/753) `paths` option is now optional in `no-restricted-files` rule ([@bmish](https://github.com/bmish))
+
+#### :memo: Documentation
+* [#740](https://github.com/square/eslint-plugin-square/pull/740) Improve completeness of README as a holistic lint guide ([@bmish](https://github.com/bmish))
+
+#### Committers: 1
+- Bryan Mishkin ([@bmish](https://github.com/bmish))
+
+
 ## v23.1.0 (2022-08-26)
 
 #### :rocket: Enhancement
