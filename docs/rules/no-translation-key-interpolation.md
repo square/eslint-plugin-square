@@ -39,11 +39,11 @@ function getStatusString(status) {
 
 This rule takes an optional object containing:
 
-* `string` -- `serviceName` -- optional override for service name to look for (default is `intl`)
-* `boolean` -- `enforceStringLiteralKeys` -- optional override to restrict translation keys to only string literals (when disabled, function calls and variables are allowed) (default is `false`)
+- `string` -- `serviceName` -- optional override for service name to look for (default is `intl`)
+- `boolean` -- `enforceStringLiteralKeys` -- optional override to restrict translation keys to only string literals (when disabled, function calls and variables are allowed) (default is `false`)
 
 ## References
 
-* [Service API](https://ember-intl.github.io/ember-intl/versions/v4.0.0/docs/guide/ember-service-api) for [ember-intl]
+- [Service API](https://ember-intl.github.io/ember-intl/versions/v4.0.0/docs/guide/ember-service-api) for [ember-intl]
 
 [ember-intl]: https://github.com/ember-intl/ember-intl

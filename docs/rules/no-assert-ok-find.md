@@ -46,6 +46,6 @@ test('the element exists', function (assert) {
 
 ## References
 
-* See the [documentation](https://guides.emberjs.com/v2.14.0/testing/acceptance/) for Ember's `find` acceptance test helper
-* See the [documentation](https://github.com/simplabs/qunit-dom) for the `qunit-dom` package
-* Related rule: [qunit-dom/no-ok-find](https://github.com/simplabs/eslint-plugin-qunit-dom/blob/main/rules/no-ok-find.md)
+- See the [documentation](https://guides.emberjs.com/v2.14.0/testing/acceptance/) for Ember's `find` acceptance test helper
+- See the [documentation](https://github.com/simplabs/qunit-dom) for the `qunit-dom` package
+- Related rule: [qunit-dom/no-ok-find](https://github.com/simplabs/eslint-plugin-qunit-dom/blob/main/rules/no-ok-find.md)

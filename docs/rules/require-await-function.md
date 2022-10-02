@@ -10,9 +10,9 @@ Some functions are asynchronous and you may want to wait for their code to finis
 
 This lint rule requires that specified functions be called with the `await` keyword. The benefits of this include:
 
-* Ensure code runs in the right (deterministic) order
-* Promote cleaner code by reducing unwieldy promise chain usage
-* Enforce a consistent way of calling/chaining asynchronous functions
+- Ensure code runs in the right (deterministic) order
+- Promote cleaner code by reducing unwieldy promise chain usage
+- Enforce a consistent way of calling/chaining asynchronous functions
 
 Note: this rule does not require using `await` in return statements or when nested inside other function calls.
 
@@ -57,28 +57,28 @@ test('clicking the button sends the action', async function (assert) {
 
 This rule accepts a single argument:
 
-* Set the required `functions` option to an array of the function names that must be called with `await`.
+- Set the required `functions` option to an array of the function names that must be called with `await`.
 
 ## Migration
 
-* [async-await-codemod](https://github.com/sgilroy/async-await-codemod) can help convert async function calls / promise chains to use `await`
-* [ember-test-helpers-codemod](https://github.com/simonihmig/ember-test-helpers-codemod) has transforms such as [click](https://github.com/simonihmig/ember-test-helpers-codemod/blob/master/transforms/acceptance/transforms/click.js) that can be modified to call `makeAwait()` and `dropAndThen()` on the function calls that you're trying to bring into compliance with this rule
+- [async-await-codemod](https://github.com/sgilroy/async-await-codemod) can help convert async function calls / promise chains to use `await`
+- [ember-test-helpers-codemod](https://github.com/simonihmig/ember-test-helpers-codemod) has transforms such as [click](https://github.com/simonihmig/ember-test-helpers-codemod/blob/master/transforms/acceptance/transforms/click.js) that can be modified to call `makeAwait()` and `dropAndThen()` on the function calls that you're trying to bring into compliance with this rule
 
 ## When Not To Use It
 
 You should avoid enabling this rule if:
 
-* Your JavaScript/browser environment does not support `async` functions (an ES8/ES2017 feature)
-* You have no asynchronous functions
-* You prefer to use promise chains instead of the `async` keyword
+- Your JavaScript/browser environment does not support `async` functions (an ES8/ES2017 feature)
+- You have no asynchronous functions
+- You prefer to use promise chains instead of the `async` keyword
 
 ## Related Rules
 
-* [no-await-in-loop](https://eslint.org/docs/rules/no-await-in-loop.md)
-* [no-return-await](https://eslint.org/docs/rules/no-return-await.md)
-* [require-atomic-updates](https://eslint.org/docs/rules/require-atomic-updates.md)
-* [require-await](https://eslint.org/docs/rules/require-await.md)
+- [no-await-in-loop](https://eslint.org/docs/rules/no-await-in-loop.md)
+- [no-return-await](https://eslint.org/docs/rules/no-return-await.md)
+- [require-atomic-updates](https://eslint.org/docs/rules/require-atomic-updates.md)
+- [require-await](https://eslint.org/docs/rules/require-await.md)
 
 ## Resources
 
-* See the [documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function) for async functions
+- See the [documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function) for async functions

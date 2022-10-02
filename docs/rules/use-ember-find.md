@@ -32,9 +32,9 @@ find('.my-selector');
 
 ## Related Rules
 
-* [no-jquery](https://github.com/ember-cli/eslint-plugin-ember/blob/master/docs/rules/no-jquery.md)
+- [no-jquery](https://github.com/ember-cli/eslint-plugin-ember/blob/master/docs/rules/no-jquery.md)
 
 ## References
 
-* See the [documentation](https://github.com/emberjs/ember-test-helpers/blob/master/API.md#find) for Ember's `find` test helper
-* See the [Ember Application Tests](https://guides.emberjs.com/release/testing/acceptance/) guide
+- See the [documentation](https://github.com/emberjs/ember-test-helpers/blob/master/API.md#find) for Ember's `find` test helper
+- See the [Ember Application Tests](https://guides.emberjs.com/release/testing/acceptance/) guide

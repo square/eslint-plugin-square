@@ -44,5 +44,5 @@ test('it does something', function (assert) {
 
 ## Configuration
 
-* object -- containing the following properties:
-  * `String[]` -- `testHooks` -- optional array of test hook names to use (see rule implementation for the default list)
+- object -- containing the following properties:
+  - `String[]` -- `testHooks` -- optional array of test hook names to use (see rule implementation for the default list)

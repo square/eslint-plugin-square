@@ -10,11 +10,11 @@ Using `callCount` rather than the other shortcut count helpers (such as `calledO
 
 This lint rule prevents the use of:
 
-* `notCalled`
-* `calledOnce`
-* `calledTwice`
-* `calledThrice`
-* `called`
+- `notCalled`
+- `calledOnce`
+- `calledTwice`
+- `calledThrice`
+- `called`
 
 The above do not provide as much information to the test runner.
 
@@ -38,4 +38,4 @@ test('it works', function (assert) {
 
 ## Resources
 
-* See the [documentation](https://sinonjs.org/releases/latest/spies/) for spies and their properties
+- See the [documentation](https://sinonjs.org/releases/latest/spies/) for spies and their properties
