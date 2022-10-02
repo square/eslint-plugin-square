@@ -32,8 +32,8 @@ const config = {
 
 Example implementation file and test file pair that would be enforced:
 
-* `app/components/my-component.js`
-* `tests/unit/components/my-component-test.js`
+- `app/components/my-component.js`
+- `tests/unit/components/my-component-test.js`
 
 ## Migration
 
@@ -41,7 +41,7 @@ There's an autofixer in the rule implementation that can be uncommented as desir
 
 ## Configuration
 
-* object[]
-  * string -- `filePath` -- path to files that should have tests
-  * string[] -- `testPaths` -- paths to possible test file locations to check
-  * boolean -- `hasTestSuffix` -- whether the test files end in `-test` (default true)
+- object[]
+  - string -- `filePath` -- path to files that should have tests
+  - string[] -- `testPaths` -- paths to possible test file locations to check
+  - boolean -- `hasTestSuffix` -- whether the test files end in `-test` (default true)

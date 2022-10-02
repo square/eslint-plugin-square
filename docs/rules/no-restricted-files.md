@@ -37,9 +37,9 @@ module.exports = {
 
 ## Configuration
 
-* object[] -- containing the following properties:
-  * string[] -- `paths` -- optional list of regexp file paths to disallow (if you want to use glob patterns, use ESLint's built-in [glob pattern overrides feature](https://eslint.org/docs/latest/user-guide/configuring/configuration-files#configuration-based-on-glob-patterns) instead of this)
-  * string -- `message` -- optional custom error message to display for these disallowed file paths
+- object[] -- containing the following properties:
+  - string[] -- `paths` -- optional list of regexp file paths to disallow (if you want to use glob patterns, use ESLint's built-in [glob pattern overrides feature](https://eslint.org/docs/latest/user-guide/configuring/configuration-files#configuration-based-on-glob-patterns) instead of this)
+  - string -- `message` -- optional custom error message to display for these disallowed file paths
 
 ## Migration
 
