@@ -1,6 +1,4 @@
-# Disallow files with a path matching a specific regexp (`square/no-restricted-files`)
-
-<!-- end rule header -->
+# no-restricted-files
 
 This rule can be used to disallow files at certain file paths.
 

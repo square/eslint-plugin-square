@@ -1,6 +1,4 @@
-# Disallow files without a corresponding test file (`square/no-missing-tests`)
-
-<!-- end rule header -->
+# no-missing-tests
 
 Ensuring that files have corresponding test files can be helpful towards improving test coverage.
 

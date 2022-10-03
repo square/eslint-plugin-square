@@ -1,10 +1,4 @@
-# Enforce using `assert.equal(...callCount, ...);` instead of `assert.ok(...calledOnce);` (`square/use-call-count-test-assert`)
-
-💼 This rule is enabled in the following configs: `ember`, `strict`.
-
-🔧 This rule is automatically fixable using the `--fix` [option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix) on the command line.
-
-<!-- end rule header -->
+# use-call-count-test-assert
 
 🔥 The `"extends": "plugin:square/ember"` property in a configuration file enables this rule.
 

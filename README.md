@@ -84,21 +84,6 @@ Rules enabled by these configurations should meet the following criteria:
 - There is a practical migration path (autofixers, codemod, find-and-replace, manual fixes) for enabling them in most applications.
 
 ## Custom rules
-<!-- begin rules list -->
-
-| Rule                                                                               | Description                                                                              | 💼                     | 🔧  | 💡  |
-| ---------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------- | --- | --- |
-| [no-assert-ok-find](docs/rules/no-assert-ok-find.md)                               | disallow usage of `assert.ok(find(...))` as it will always pass                          | ![ember][]             |     | 💡  |
-| [no-handlebar-interpolation](docs/rules/no-handlebar-interpolation.md)             | disallow unsafe HTML in strings/hbs/translations                                         |                        |     |     |
-| [no-missing-tests](docs/rules/no-missing-tests.md)                                 | disallow files without a corresponding test file                                         |                        |     |     |
-| [no-restricted-files](docs/rules/no-restricted-files.md)                           | disallow files with a path matching a specific regexp                                    |                        |     |     |
-| [no-test-return-value](docs/rules/no-test-return-value.md)                         | disallow test functions with a return value                                              | ![ember][]             |     | 💡  |
-| [no-translation-key-interpolation](docs/rules/no-translation-key-interpolation.md) | disallow string interpolation in translation keys                                        | ![ember][]             |     |     |
-| [require-await-function](docs/rules/require-await-function.md)                     | enforce using `await` with calls to specified functions                                  |                        | 🔧  |     |
-| [use-call-count-test-assert](docs/rules/use-call-count-test-assert.md)             | enforce using `assert.equal(...callCount, ...);` instead of `assert.ok(...calledOnce);`  | ![ember][] ![strict][] | 🔧  |     |
-| [use-ember-find](docs/rules/use-ember-find.md)                                     | require use of Ember's `find` helper instead of `jQuery` for selecting elements in tests | ![ember][]             | 🔧  |     |
-
-<!-- end rules list -->
 
 Each rule has emojis denoting:
 
