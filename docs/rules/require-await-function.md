@@ -1,4 +1,8 @@
-# require-await-function
+# Enforce using `await` with calls to specified functions (`square/require-await-function`)
+
+🔧 This rule is automatically fixable using the `--fix` [option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix) on the command line.
+
+<!-- end rule header -->
 
 🔥 The `"extends": "plugin:square/ember"` property in a configuration file enables this rule.
 

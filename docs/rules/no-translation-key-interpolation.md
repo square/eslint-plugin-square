@@ -1,4 +1,8 @@
-# no-translation-key-interpolation
+# Disallow string interpolation in translation keys (`square/no-translation-key-interpolation`)
+
+💼 This rule is enabled in the following configs: `ember`.
+
+<!-- end rule header -->
 
 🔥 The `"extends": "plugin:square/ember"` property in a configuration file enables this rule.
 
