@@ -71,11 +71,11 @@ If you prefer not to adopt a specific rule, you can disable it:
 
 |     | Name | Description |
 | --- | --- | --- |
-| | [base] | Rules and configuration for any JavaScript-based project. Includes recommended and optional rules from [eslint], [prettier], [eslint-plugin-eslint-comments], [eslint-plugin-import], [eslint-plugin-unicorn], and more. |
-| 🔥 | [ember] | [Ember.js]-specific additions on top of `base`. Includes recommended and optional rules from [eslint-plugin-ember], kebab-case filename enforcement with [eslint-plugin-filenames], and more. |
-| | [react] | [React](https://reactjs.org)-specific additions on top of `base`. |
-| | [strict] | A variety of stricter lint rules on top of `base`. |
-| | [typescript] | [TypeScript](https://www.typescriptlang.org/)-specific additions on top of `base`. Use with [@typescript-eslint/parser]. |
+| | [base](lib/config/base.js) | Rules and configuration for any JavaScript-based project. Includes recommended and optional rules from [eslint], [prettier], [eslint-plugin-eslint-comments], [eslint-plugin-import], [eslint-plugin-unicorn], and more. |
+| 🔥 | [ember](lib/config/ember.js) | [Ember.js](https://www.emberjs.com/)-specific additions on top of `base`. Includes recommended and optional rules from [eslint-plugin-ember], kebab-case filename enforcement with [eslint-plugin-filenames], and more. |
+| | [react](lib/config/react.js) | [React](https://reactjs.org/)-specific additions on top of `base`. |
+| | [strict](lib/config/strict.js) | A variety of stricter lint rules on top of `base`. |
+| | [typescript](lib/config/typescript.js) | [TypeScript](https://www.typescriptlang.org/)-specific additions on top of `base`. Use with [@typescript-eslint/parser]. |
 
 Rules enabled by these configurations should meet the following criteria:
 
@@ -85,23 +85,27 @@ Rules enabled by these configurations should meet the following criteria:
 
 ## Custom rules
 
-Each rule has emojis denoting:
+🔧 if some problems reported by the rule are automatically fixable by the `--fix` [command line](https://eslint.org/docs/user-guide/command-line-interface#fixing-problems) option \
+💡 if some problems reported by the rule are manually fixable by editor [suggestions](https://eslint.org/docs/developer-guide/working-with-rules#providing-suggestions)
 
-- What configuration it belongs to
-- 🔧 if some problems reported by the rule are automatically fixable by the `--fix` [command line](https://eslint.org/docs/user-guide/command-line-interface#fixing-problems) option
-- 💡 if some problems reported by the rule are manually fixable by editor [suggestions](https://eslint.org/docs/developer-guide/working-with-rules#providing-suggestions)
+<!-- begin rules list -->
 
-| Name    | Category | 🔥 | 🔧 | 💡 |
-| :------ | :------- | :-- | :-- | :-- |
-| [no-assert-ok-find](docs/rules/no-assert-ok-find.md) | Ember Testing | 🔥 | | 💡 |
-| [no-handlebar-interpolation](docs/rules/no-handlebar-interpolation.md) | Ember | | | |
-| [no-missing-tests](docs/rules/no-missing-tests.md) | Testing | | | |
-| [no-restricted-files](docs/rules/no-restricted-files.md) | JavaScript | | | |
-| [no-test-return-value](docs/rules/no-test-return-value.md) | Testing | 🔥 | | 💡 |
-| [no-translation-key-interpolation](docs/rules/no-translation-key-interpolation.md) | Ember | 🔥 | | |
-| [require-await-function](docs/rules/require-await-function.md) | JavaScript | 🔥 | 🔧 | |
-| [use-call-count-test-assert](docs/rules/use-call-count-test-assert.md) | Testing | 🔥 | 🔧 | |
-| [use-ember-find](docs/rules/use-ember-find.md) | Ember Testing | 🔥 | 🔧 | |
+| Rule                                                                               | Description                                                                              | 💼                     | 🔧  | 💡  |
+| ---------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------- | --- | --- |
+| [no-assert-ok-find](docs/rules/no-assert-ok-find.md)                               | disallow usage of `assert.ok(find(...))` as it will always pass                          | ![ember][]             |     | 💡  |
+| [no-handlebar-interpolation](docs/rules/no-handlebar-interpolation.md)             | disallow unsafe HTML in strings/hbs/translations                                         |                        |     |     |
+| [no-missing-tests](docs/rules/no-missing-tests.md)                                 | disallow files without a corresponding test file                                         |                        |     |     |
+| [no-restricted-files](docs/rules/no-restricted-files.md)                           | disallow files with a path matching a specific regexp                                    |                        |     |     |
+| [no-test-return-value](docs/rules/no-test-return-value.md)                         | disallow test functions with a return value                                              | ![ember][]             |     | 💡  |
+| [no-translation-key-interpolation](docs/rules/no-translation-key-interpolation.md) | disallow string interpolation in translation keys                                        | ![ember][]             |     |     |
+| [require-await-function](docs/rules/require-await-function.md)                     | enforce using `await` with calls to specified functions                                  | ![ember][]             | 🔧  |     |
+| [use-call-count-test-assert](docs/rules/use-call-count-test-assert.md)             | enforce using `assert.equal(...callCount, ...);` instead of `assert.ok(...calledOnce);`  | ![ember][] ![strict][] | 🔧  |     |
+| [use-ember-find](docs/rules/use-ember-find.md)                                     | require use of Ember's `find` helper instead of `jQuery` for selecting elements in tests | ![ember][]             | 🔧  |     |
+
+<!-- end rules list -->
+
+[ember]: https://img.shields.io/badge/-ember-orange.svg
+[strict]: https://img.shields.io/badge/-strict-black.svg
 
 Note that we prefer to upstream our custom lint rules to third-party ESLint plugins whenever possible. The rules that still remain here are typically here because:
 
@@ -119,9 +123,6 @@ Lint rule ideas often come from:
 - Inconsistencies throughout the codebase
 - Outdated / obsolete / legacy code
 
-[base]: lib/config/base.js
-[ember]: lib/config/ember.js
-[Ember.js]: https://www.emberjs.com/
 [eslint]: https://eslint.org/
 [eslint-plugin-ember]: https://github.com/ember-cli/eslint-plugin-ember
 [eslint-plugin-eslint-comments]: https://github.com/mysticatea/eslint-plugin-eslint-comments
@@ -129,10 +130,7 @@ Lint rule ideas often come from:
 [eslint-plugin-import]: https://github.com/benmosher/eslint-plugin-import
 [eslint-plugin-unicorn]: https://github.com/sindresorhus/eslint-plugin-unicorn
 [prettier]: https://prettier.io/
-[react]: lib/config/react.js
-[strict]: lib/config/strict.js
-[typescript]: lib/config/typescript.js
-[@typescript-eslint/parser]: https://www.npmjs.com/package/@typescript-eslint/parser
+[@typescript-eslint/parser]: https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/parser
 
 ## Related
 
