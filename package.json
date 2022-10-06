@@ -74,7 +74,7 @@
     "@types/estree": "^1.0.0",
     "@types/jest": "^29.1.1",
     "@types/requireindex": "^1.2.0",
-    "@typescript-eslint/parser": "^5.37.0",
+    "@typescript-eslint/parser": "^5.39.0",
     "eslint": "^8.24.0",
     "eslint-doc-generator": "^0.3.5",
     "eslint-plugin-eslint-plugin": "^5.0.6",
