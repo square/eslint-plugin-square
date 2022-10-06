@@ -1,4 +1,6 @@
-# no-handlebar-interpolation
+# Disallow unsafe HTML in strings/hbs/translations (`square/no-handlebar-interpolation`)
+
+<!-- end rule header -->
 
 This rule disallows "no-handlebar-interpolation" `{{{` in strings which is assumed to be used to insert unsafe HTML.
 
