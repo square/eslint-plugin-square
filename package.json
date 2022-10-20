@@ -27,7 +27,7 @@
   "scripts": {
     "lint": "npm-run-all --continue-on-error --aggregate-output --parallel lint:*",
     "lint:docs": "markdownlint \"**/*.md\"",
-    "lint:eslint-docs": "npm-run-all update:eslint-docs && git diff --exit-code",
+    "lint:eslint-docs": "npm-run-all \"update:eslint-docs -- --check\"",
     "lint:js": "eslint --cache .",
     "lint:package-json": "npmPkgJsonLint .",
     "lint:package-json-sorting": "sort-package-json --check",
@@ -37,7 +37,7 @@
     "preversion": "yarn test && yarn lint",
     "release": "release-it",
     "test": "nyc --all --check-coverage mocha --recursive tests",
-    "update:eslint-docs": "eslint-doc-generator"
+    "update:eslint-docs": "eslint-doc-generator --config-emoji ember,🔥 --url-configs \"https://github.com/square/eslint-plugin-square/blob/master/README.md#configurations\""
   },
   "prettier": "@square/prettier-config",
   "nyc": {
@@ -76,7 +76,7 @@
     "@types/requireindex": "^1.2.0",
     "@typescript-eslint/parser": "^5.40.0",
     "eslint": "^8.24.0",
-    "eslint-doc-generator": "^0.3.5",
+    "eslint-doc-generator": "^0.16.0",
     "eslint-plugin-eslint-plugin": "^5.0.6",
     "eslint-plugin-markdown": "^3.0.0",
     "eslint-plugin-node": "^11.1.0",

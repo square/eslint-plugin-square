@@ -1,10 +1,10 @@
 # Disallow usage of `assert.ok(find(...))` as it will always pass (`square/no-assert-ok-find`)
 
-💼 This rule is enabled in the following configs: `ember`.
+🔥 This rule is enabled in the `ember` [config](https://github.com/square/eslint-plugin-square/blob/master/README.md#configurations).
 
-💡 This rule provides [suggestions](https://eslint.org/docs/developer-guide/working-with-rules#providing-suggestions) that can be applied manually.
+💡 This rule is manually fixable by [editor suggestions](https://eslint.org/docs/developer-guide/working-with-rules#providing-suggestions).
 
-<!-- end rule header -->
+<!-- end auto-generated rule header -->
 
 Ember's old built-in `find('.selector')` acceptance test helper function always returns an array, even when no elements match. As a result, `assert.ok(find('.selector'))` will always pass, even if no elements are found, as an empty array is still truthy.
 

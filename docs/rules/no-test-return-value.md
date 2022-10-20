@@ -1,10 +1,10 @@
 # Disallow test functions with a return value (`square/no-test-return-value`)
 
-💼 This rule is enabled in the following configs: `ember`.
+🔥 This rule is enabled in the `ember` [config](https://github.com/square/eslint-plugin-square/blob/master/README.md#configurations).
 
-💡 This rule provides [suggestions](https://eslint.org/docs/developer-guide/working-with-rules#providing-suggestions) that can be applied manually.
+💡 This rule is manually fixable by [editor suggestions](https://eslint.org/docs/developer-guide/working-with-rules#providing-suggestions).
 
-<!-- end rule header -->
+<!-- end auto-generated rule header -->
 
 For asynchronous tests, use async/await instead of returning a promise.
 

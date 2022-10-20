@@ -1,10 +1,10 @@
 # Enforce using `assert.equal(...callCount, ...);` instead of `assert.ok(...calledOnce);` (`square/use-call-count-test-assert`)
 
-💼 This rule is enabled in the following configs: `ember`, `strict`.
+💼 This rule is enabled in the following [configs](https://github.com/square/eslint-plugin-square/blob/master/README.md#configurations): 🔥 `ember`, 🔒 `strict`.
 
-🔧 This rule is automatically fixable using the `--fix` [option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix) on the command line.
+🔧 This rule is automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
 
-<!-- end rule header -->
+<!-- end auto-generated rule header -->
 
 Using `callCount` rather than the other shortcut count helpers (such as `calledOnce`, `notCalled`) allows the test runner to show the actual number of times the spy was called.
 

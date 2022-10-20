@@ -2024,13 +2024,15 @@ eslint-config-prettier@^8.4.0:
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.5.0.tgz#5a81680ec934beca02c7b1a61cf8ca34b66feab1"
   integrity sha512-obmWKLUNCnhtQRKc+tmnYuQl0pFU1ibYJQ5BGhTVB08bHe9wC8qUeG7c08dj9XX+AuPj1YSGSQIHl1pnDHZR0Q==
 
-eslint-doc-generator@^0.3.5:
-  version "0.3.5"
-  resolved "https://registry.yarnpkg.com/eslint-doc-generator/-/eslint-doc-generator-0.3.5.tgz#e1828528faa3acd0f7dcc8ea52e2d5858decf89a"
-  integrity sha512-jNyIyGHDOxDeAA9WVZMYNoU3Rkzyp0eOBtWwave3N5eig14bE/UT96SYSKEwAFnmn9ipjHm5U4BjsBzs+t7dxw==
+eslint-doc-generator@^0.16.0:
+  version "0.16.0"
+  resolved "https://registry.yarnpkg.com/eslint-doc-generator/-/eslint-doc-generator-0.16.0.tgz#97d69d891a1d399c76774c52f90a1988c9a4b26e"
+  integrity sha512-L6SQIKGP5TQsNDfDDv6n+VMh662BCYkDFK0aS4ey3+42DDMcs8NGHUQLTJkoLW2OSZvIM/lxHmZTjkDVXqLdFg==
   dependencies:
     "@typescript-eslint/utils" "^5.38.1"
+    camelcase "^7.0.0"
     commander "^9.4.0"
+    markdown-table "^3.0.2"
     type-fest "^3.0.0"
 
 eslint-import-resolver-node@^0.3.6:
@@ -3848,6 +3850,11 @@ markdown-it@13.0.1:
     linkify-it "^4.0.1"
     mdurl "^1.0.1"
     uc.micro "^1.0.5"
+
+markdown-table@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/markdown-table/-/markdown-table-3.0.2.tgz#9b59eb2c1b22fe71954a65ff512887065a7bb57c"
+  integrity sha512-y8j3a5/DkJCmS5x4dMCQL+OR0+2EAq3DOtio1COSHsmW2BGXnNCK3v12hJt1LrUz5iZH5g0LmuYOjDdI+czghA==
 
 markdownlint-cli@^0.32.2:
   version "0.32.2"
