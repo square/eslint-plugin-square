@@ -1,10 +1,10 @@
 # Enforce using `await` with calls to specified functions (`square/require-await-function`)
 
-💼 This rule is enabled in the following configs: `ember`.
+🔥 This rule is enabled in the `ember` [config](https://github.com/square/eslint-plugin-square/blob/master/README.md#configurations).
 
-🔧 This rule is automatically fixable using the `--fix` [option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix) on the command line.
+🔧 This rule is automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
 
-<!-- end rule header -->
+<!-- end auto-generated rule header -->
 
 Some functions are asynchronous and you may want to wait for their code to finish executing before continuing on. The modern `async` / `await` syntax can help you achieve this.
 

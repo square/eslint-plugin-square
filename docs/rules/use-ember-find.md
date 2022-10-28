@@ -1,10 +1,10 @@
 # Require use of Ember's `find` helper instead of `jQuery` for selecting elements in tests (`square/use-ember-find`)
 
-💼 This rule is enabled in the following configs: `ember`.
+🔥 This rule is enabled in the `ember` [config](https://github.com/square/eslint-plugin-square/blob/master/README.md#configurations).
 
-🔧 This rule is automatically fixable using the `--fix` [option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix) on the command line.
+🔧 This rule is automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
 
-<!-- end rule header -->
+<!-- end auto-generated rule header -->
 
 It is preferred to use Ember test helpers like `find(selector)` instead of jQuery for selecting elements in tests.
 
