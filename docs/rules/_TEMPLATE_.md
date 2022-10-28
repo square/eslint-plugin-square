@@ -1,4 +1,6 @@
-# TODO: rule-name-goes-here
+# Rule description (`square/rule-name`)
+
+<!-- end auto-generated rule header -->
 
 TODO: context about the problem goes here
 
