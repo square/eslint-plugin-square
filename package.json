@@ -69,7 +69,7 @@
     "@babel/plugin-proposal-decorators": "^7.19.3",
     "@release-it-plugins/lerna-changelog": "^5.0.0",
     "@square/prettier-config": "^2.0.0",
-    "@types/eslint": "^8.4.8",
+    "@types/eslint": "^8.4.9",
     "@types/eslint-utils": "^3.0.2",
     "@types/estree": "^1.0.0",
     "@types/jest": "^29.2.0",
