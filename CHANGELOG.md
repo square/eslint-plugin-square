@@ -9,6 +9,20 @@
 
 
 
+
+## v23.1.2 (2022-11-16)
+
+#### :bug: Bug Fix
+* [#786](https://github.com/square/eslint-plugin-square/pull/786) Allow all unused vars with leading `_` in `typescript` config ([@maorleger](https://github.com/maorleger))
+
+#### :memo: Documentation
+* [#764](https://github.com/square/eslint-plugin-square/pull/764) Automate docs with eslint-doc-generator ([@bmish](https://github.com/bmish))
+
+#### Committers: 2
+- Bryan Mishkin ([@bmish](https://github.com/bmish))
+- Maor Leger ([@maorleger](https://github.com/maorleger))
+
+
 ## v23.1.1 (2022-09-15)
 
 #### :bug: Bug Fix
