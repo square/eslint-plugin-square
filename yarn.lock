@@ -2440,7 +2440,7 @@ eslint-plugin-react@^7.31.10:
     eslint-plugin-react "^7.31.10"
     eslint-plugin-unicorn "^43.0.2"
     eslint-utils "^3.0.0"
-    espree "^9.3.3"
+    espree "^9.4.1"
     prettier "^2.7.1"
     requireindex "^1.2.0"
 
@@ -2554,10 +2554,10 @@ eslint@^8.27.0:
     strip-json-comments "^3.1.0"
     text-table "^0.2.0"
 
-espree@^9.3.3, espree@^9.4.0:
-  version "9.4.0"
-  resolved "https://registry.yarnpkg.com/espree/-/espree-9.4.0.tgz#cd4bc3d6e9336c433265fc0aa016fc1aaf182f8a"
-  integrity sha512-DQmnRpLj7f6TgN/NYb0MTzJXL+vJF9h3pHy4JhCIs3zwcgez8xmGg3sXHcEO97BrmO2OSvCwMdfdlyl+E9KjOw==
+espree@^9.4.0, espree@^9.4.1:
+  version "9.4.1"
+  resolved "https://registry.yarnpkg.com/espree/-/espree-9.4.1.tgz#51d6092615567a2c2cff7833445e37c28c0065bd"
+  integrity sha512-XwctdmTO6SIvCzd9810yyNzIrOrqNYV9Koizx4C/mRhf9uq0o4yHoCEU/670pOxOL/MSraektvSAji79kX90Vg==
   dependencies:
     acorn "^8.8.0"
     acorn-jsx "^5.3.2"
