@@ -1,6 +1,6 @@
 # Disallow usage of `assert.ok(find(...))` as it will always pass (`square/no-assert-ok-find`)
 
-🔥 This rule is enabled in the `ember` [config](https://github.com/square/eslint-plugin-square/blob/master/README.md#configurations).
+💼 This rule is enabled in the 🔥 `ember` [config](https://github.com/square/eslint-plugin-square/blob/master/README.md#configurations).
 
 💡 This rule is manually fixable by [editor suggestions](https://eslint.org/docs/developer-guide/working-with-rules#providing-suggestions).
 
