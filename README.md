@@ -88,22 +88,22 @@ Rules enabled by these configurations should meet the following criteria:
 <!-- begin auto-generated rules list -->
 
 💼 [Configurations](https://github.com/square/eslint-plugin-square/blob/master/README.md#configurations) enabled in.\
-🔥 Enabled in the `ember` [configuration](https://github.com/square/eslint-plugin-square/blob/master/README.md#configurations).\
-🔒 Enabled in the `strict` [configuration](https://github.com/square/eslint-plugin-square/blob/master/README.md#configurations).\
+🔥 Set in the `ember` [configuration](https://github.com/square/eslint-plugin-square/blob/master/README.md#configurations).\
+🔒 Set in the `strict` [configuration](https://github.com/square/eslint-plugin-square/blob/master/README.md#configurations).\
 🔧 Automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/user-guide/command-line-interface#--fix).\
 💡 Manually fixable by [editor suggestions](https://eslint.org/docs/developer-guide/working-with-rules#providing-suggestions).
 
-| Name                                                                               | Description                                                                              | 💼    | 🔧  | 💡  |
-| :--------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------- | :---- | :-- | :-- |
-| [no-assert-ok-find](docs/rules/no-assert-ok-find.md)                               | disallow usage of `assert.ok(find(...))` as it will always pass                          | 🔥    |     | 💡  |
-| [no-handlebar-interpolation](docs/rules/no-handlebar-interpolation.md)             | disallow unsafe HTML in strings/hbs/translations                                         |       |     |     |
-| [no-missing-tests](docs/rules/no-missing-tests.md)                                 | disallow files without a corresponding test file                                         |       |     |     |
-| [no-restricted-files](docs/rules/no-restricted-files.md)                           | disallow files with a path matching a specific regexp                                    |       |     |     |
-| [no-test-return-value](docs/rules/no-test-return-value.md)                         | disallow test functions with a return value                                              | 🔥    |     | 💡  |
-| [no-translation-key-interpolation](docs/rules/no-translation-key-interpolation.md) | disallow string interpolation in translation keys                                        | 🔥    |     |     |
-| [require-await-function](docs/rules/require-await-function.md)                     | enforce using `await` with calls to specified functions                                  | 🔥    | 🔧  |     |
-| [use-call-count-test-assert](docs/rules/use-call-count-test-assert.md)             | enforce using `assert.equal(...callCount, ...);` instead of `assert.ok(...calledOnce);`  | 🔥 🔒 | 🔧  |     |
-| [use-ember-find](docs/rules/use-ember-find.md)                                     | require use of Ember's `find` helper instead of `jQuery` for selecting elements in tests | 🔥    | 🔧  |     |
+| Name                                                                               | Description                                                                              | 💼    | 🔧 | 💡 |
+| :--------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------- | :---- | :- | :- |
+| [no-assert-ok-find](docs/rules/no-assert-ok-find.md)                               | disallow usage of `assert.ok(find(...))` as it will always pass                          | 🔥    |    | 💡 |
+| [no-handlebar-interpolation](docs/rules/no-handlebar-interpolation.md)             | disallow unsafe HTML in strings/hbs/translations                                         |       |    |    |
+| [no-missing-tests](docs/rules/no-missing-tests.md)                                 | disallow files without a corresponding test file                                         |       |    |    |
+| [no-restricted-files](docs/rules/no-restricted-files.md)                           | disallow files with a path matching a specific regexp                                    |       |    |    |
+| [no-test-return-value](docs/rules/no-test-return-value.md)                         | disallow test functions with a return value                                              | 🔥    |    | 💡 |
+| [no-translation-key-interpolation](docs/rules/no-translation-key-interpolation.md) | disallow string interpolation in translation keys                                        | 🔥    |    |    |
+| [require-await-function](docs/rules/require-await-function.md)                     | enforce using `await` with calls to specified functions                                  | 🔥    | 🔧 |    |
+| [use-call-count-test-assert](docs/rules/use-call-count-test-assert.md)             | enforce using `assert.equal(...callCount, ...);` instead of `assert.ok(...calledOnce);`  | 🔥 🔒 | 🔧 |    |
+| [use-ember-find](docs/rules/use-ember-find.md)                                     | require use of Ember's `find` helper instead of `jQuery` for selecting elements in tests | 🔥    | 🔧 |    |
 
 <!-- end auto-generated rules list -->
 
