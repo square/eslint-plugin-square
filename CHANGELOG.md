@@ -10,6 +10,16 @@
 
 
 
+
+## v23.1.3 (2022-12-02)
+
+#### :bug: Bug Fix
+* [#799](https://github.com/square/eslint-plugin-square/pull/799) Revert `@square/prettier-config` to v1 to fix inconsistent Prettier quotes configurations  ([@bmish](https://github.com/bmish))
+
+#### Committers: 1
+- Bryan Mishkin ([@bmish](https://github.com/bmish))
+
+
 ## v23.1.2 (2022-11-16)
 
 #### :bug: Bug Fix
