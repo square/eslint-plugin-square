@@ -11,6 +11,16 @@
 
 
 
+
+## v23.1.4 (2022-12-05)
+
+#### :bug: Bug Fix
+* [#809](https://github.com/square/eslint-plugin-square/pull/809) Disable `filenames/match-exported` rule for generated `config/environment.d.ts` in `ember` config ([@raycohen](https://github.com/raycohen))
+
+#### Committers: 1
+- Ray Cohen ([@raycohen](https://github.com/raycohen))
+
+
 ## v23.1.3 (2022-12-02)
 
 #### :bug: Bug Fix
