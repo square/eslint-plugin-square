@@ -73,7 +73,7 @@ If you prefer not to adopt a specific rule, you can disable it:
 | --- | --- | --- |
 | | [base](lib/config/base.js) | Rules and configuration for any JavaScript-based project. Includes recommended and optional rules from [eslint], [prettier], [eslint-plugin-eslint-comments], [eslint-plugin-import], [eslint-plugin-unicorn], and more. |
 | 🔥 | [ember](lib/config/ember.js) | [Ember.js](https://www.emberjs.com/)-specific additions on top of `base`. Includes recommended and optional rules from [eslint-plugin-ember], kebab-case filename enforcement with [eslint-plugin-filenames], and more. |
-| | [react](lib/config/react.js) | [React](https://reactjs.org/)-specific additions on top of `base`. |
+| | [react](lib/config/react.js) | [React](https://reactjs.org/)-specific additions on top of `base`. Includes recommended rules from [eslint-plugin-jsx-a11y], [eslint-plugin-react], and [eslint-plugin-react-hooks]. |
 | | [strict](lib/config/strict.js) | A variety of stricter lint rules on top of `base`. |
 | | [typescript](lib/config/typescript.js) | [TypeScript](https://www.typescriptlang.org/)-specific additions on top of `base`. Use with [@typescript-eslint/parser]. |
 
@@ -128,6 +128,9 @@ Lint rule ideas often come from:
 [eslint-plugin-eslint-comments]: https://github.com/mysticatea/eslint-plugin-eslint-comments
 [eslint-plugin-filenames]: https://github.com/selaux/eslint-plugin-filenames
 [eslint-plugin-import]: https://github.com/benmosher/eslint-plugin-import
+[eslint-plugin-jsx-a11y]: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y
+[eslint-plugin-react]: https://github.com/jsx-eslint/eslint-plugin-react
+[eslint-plugin-react-hooks]: https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks
 [eslint-plugin-unicorn]: https://github.com/sindresorhus/eslint-plugin-unicorn
 [prettier]: https://prettier.io/
 [@typescript-eslint/parser]: https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/parser
