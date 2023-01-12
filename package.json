@@ -28,7 +28,7 @@
     "lint": "npm-run-all --continue-on-error --aggregate-output --parallel lint:*",
     "lint:docs": "markdownlint \"**/*.md\"",
     "lint:eslint-docs": "npm-run-all \"update:eslint-docs -- --check\"",
-    "lint:js": "eslint --cache .",
+    "lint:js": "eslint --report-unused-disable-directives --cache .",
     "lint:package-json": "npmPkgJsonLint .",
     "lint:package-json-sorting": "sort-package-json --check",
     "lint:package-json-sorting:fix": "sort-package-json package.json",

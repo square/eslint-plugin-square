@@ -18,16 +18,15 @@ Install alongside ESLint via yarn (or npm):
 yarn add --dev eslint eslint-plugin-square npm-run-all
 ```
 
-Edit your `.eslintrc.js` configuration file to extend one of the available configurations from this plugin and [detect unused disable directives](https://eslint.org/docs/latest/user-guide/configuring/rules#report-unused-eslint-disable-comments):
+Edit your `.eslintrc.js` configuration file to extend one of the available configurations from this plugin:
 
 ```js
 module.exports = {
-  reportUnusedDisableDirectives: true,
   extends: ['plugin:square/base'], // Or other configuration.
 };
 ```
 
-Add the relevant lint scripts in `package.json` with [npm-run-all](https://github.com/mysticatea/npm-run-all):
+Add the relevant lint scripts in `package.json` with [npm-run-all](https://github.com/mysticatea/npm-run-all) and include detection for [unused disable directives](https://eslint.org/docs/latest/user-guide/command-line-interface#--report-unused-disable-directives):
 
 ```json
 {
