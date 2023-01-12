@@ -27,12 +27,15 @@ this.intl.t('some.translation.key');
 ```js
 function getStatusString(status) {
   switch (status) {
-    case Status.INVALID_EMAIL:
+    case Status.INVALID_EMAIL: {
       return this.intl.t('error.email');
-    case Status.INVALID_PHONE:
+    }
+    case Status.INVALID_PHONE: {
       return this.intl.t('error.phone');
-    default:
+    }
+    default: {
       return this.intl.t('error.unknown');
+    }
   }
 }
 ```
