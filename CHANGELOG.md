@@ -12,6 +12,20 @@
 
 
 
+
+## v24.0.0 (2023-01-12)
+
+#### :boom: Breaking Change
+* [#829](https://github.com/square/eslint-plugin-square/pull/829) Warn on unused ESLint disable directives in `base` config ([@bmish](https://github.com/bmish))
+* [#815](https://github.com/square/eslint-plugin-square/pull/815) chore(deps): bump eslint-plugin-unicorn from 43.0.2 to 45.0.2 ([@dependabot[bot]](https://github.com/apps/dependabot))
+* [#827](https://github.com/square/eslint-plugin-square/pull/827) Add `eslint-plugin-jsx-a11y` and `eslint-plugin-react-hooks` to `react` config ([@atdrago](https://github.com/atdrago))
+* [#705](https://github.com/square/eslint-plugin-square/pull/705) Automatically use `import/typescript` config in `base` config for TypeScript files ([@bmish](https://github.com/bmish))
+
+#### Committers: 2
+- Adam Drago ([@atdrago](https://github.com/atdrago))
+- Bryan Mishkin ([@bmish](https://github.com/bmish))
+
+
 ## v23.1.4 (2022-12-05)
 
 #### :bug: Bug Fix
