@@ -68,7 +68,7 @@
   "devDependencies": {
     "@babel/eslint-parser": "^7.19.1",
     "@babel/plugin-proposal-class-properties": "^7.18.6",
-    "@babel/plugin-proposal-decorators": "^7.20.5",
+    "@babel/plugin-proposal-decorators": "^7.20.7",
     "@release-it-plugins/lerna-changelog": "^5.0.0",
     "@square/prettier-config": "^1.0.0",
     "@types/eslint": "^8.4.10",
