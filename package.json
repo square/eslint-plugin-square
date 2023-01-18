@@ -37,12 +37,15 @@
     "preversion": "yarn test && yarn lint",
     "release": "release-it",
     "test": "nyc --all --check-coverage mocha --recursive tests",
-    "update:eslint-docs": "eslint-doc-generator --config-emoji ember,🔥 --url-configs \"https://github.com/square/eslint-plugin-square/blob/master/README.md#configurations\""
+    "update:eslint-docs": "eslint-doc-generator"
   },
   "prettier": "@square/prettier-config",
   "nyc": {
-    "branches": 93,
+    "branches": 97,
     "functions": 100,
+    "include": [
+      "lib"
+    ],
     "lines": 98,
     "statements": 98
   },
