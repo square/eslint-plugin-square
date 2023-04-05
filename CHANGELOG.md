@@ -13,6 +13,23 @@
 
 
 
+
+## v25.0.0 (2023-04-05)
+
+#### :boom: Breaking Change
+* [#838](https://github.com/square/eslint-plugin-square/pull/838) Apply TypeScript rules to additional file types ([@jose-elias-alvarez](https://github.com/jose-elias-alvarez))
+
+#### :rocket: Enhancement
+* [#859](https://github.com/square/eslint-plugin-square/pull/859) chore(deps): bump eslint-plugin-unicorn from 45.0.2 to 46.0.0 ([@dependabot[bot]](https://github.com/apps/dependabot))
+
+#### :memo: Documentation
+* [#835](https://github.com/square/eslint-plugin-square/pull/835) Add emojis for each config and use config file for eslint-doc-generator ([@bmish](https://github.com/bmish))
+
+#### Committers: 2
+- Bryan Mishkin ([@bmish](https://github.com/bmish))
+- Jose Alvarez ([@jose-elias-alvarez](https://github.com/jose-elias-alvarez))
+
+
 ## v24.0.0 (2023-01-12)
 
 #### :boom: Breaking Change
