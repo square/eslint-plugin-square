@@ -64,7 +64,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-unicorn": "^45.0.2",
     "eslint-utils": "^3.0.0",
-    "espree": "^9.4.1",
+    "espree": "^9.5.1",
     "prettier": "^2.7.1",
     "requireindex": "^1.2.0"
   },
