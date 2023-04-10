@@ -93,7 +93,7 @@
     "nyc": "^15.1.0",
     "release-it": "^15.10.1",
     "sort-package-json": "^2.4.1",
-    "typescript": "^5.0.3"
+    "typescript": "^5.0.4"
   },
   "peerDependencies": {
     "eslint": ">= 8.18.0"
