@@ -81,7 +81,7 @@
     "@types/requireindex": "^1.2.0",
     "@typescript-eslint/parser": "^5.57.1",
     "eslint": "^8.29.0",
-    "eslint-doc-generator": "^1.0.2",
+    "eslint-doc-generator": "^1.4.3",
     "eslint-plugin-eslint-plugin": "^5.0.8",
     "eslint-plugin-markdown": "^3.0.0",
     "eslint-plugin-node": "^11.1.0",
