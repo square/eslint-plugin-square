@@ -14,6 +14,16 @@
 
 
 
+
+## v26.0.0-0 (2023-06-28)
+
+#### :boom: Breaking Change
+* [#886](https://github.com/square/eslint-plugin-square/pull/886) Drop support for Node v14 ([@maxbeatty](https://github.com/maxbeatty))
+
+#### Committers: 1
+- Max Beatty ([@maxbeatty](https://github.com/maxbeatty))
+
+
 ## v25.0.0 (2023-04-05)
 
 #### :boom: Breaking Change
