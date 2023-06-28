@@ -17,8 +17,6 @@ module.exports = {
           'https://github.com/square/eslint-plugin-square/tree/master/docs/rules/{{name}}.md',
       },
     ],
-
-    'unicorn/prefer-node-protocol': 'error', // TODO: Move this to `base` config once we drop support for Node 14 entirely.
   },
   overrides: [
     {
