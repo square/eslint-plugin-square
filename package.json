@@ -80,7 +80,7 @@
     "@types/jest": "^29.5.2",
     "@types/requireindex": "^1.2.0",
     "@typescript-eslint/parser": "^5.61.0",
-    "eslint": "^8.38.0",
+    "eslint": "^8.40.0",
     "eslint-doc-generator": "^1.0.2",
     "eslint-plugin-eslint-plugin": "^5.0.8",
     "eslint-plugin-markdown": "^3.0.0",
@@ -96,7 +96,7 @@
     "typescript": "^5.1.6"
   },
   "peerDependencies": {
-    "eslint": ">= 8.18.0"
+    "eslint": ">= 8.40.0"
   },
   "engines": {
     "node": "^16.0.0 || ^18.0.0 || >=20.0.0"
