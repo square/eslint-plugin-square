@@ -65,7 +65,7 @@
     "eslint-plugin-unicorn": "^48.0.1",
     "eslint-utils": "^3.0.0",
     "espree": "^9.5.1",
-    "prettier": "^2.8.7",
+    "prettier": "^3.0.3",
     "requireindex": "^1.2.0"
   },
   "devDependencies": {
