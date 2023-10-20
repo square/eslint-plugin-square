@@ -10,11 +10,11 @@ const ruleTester = new RuleTester();
 
 const RULES_TESTS_PATH = __dirname;
 const RULES_LIB_PATH = path.normalize(
-  path.join(__dirname, '..', '..', '..', 'lib', 'rules')
+  path.join(__dirname, '..', '..', '..', 'lib', 'rules'),
 );
 const RULE_FILE = path.join(RULES_LIB_PATH, 'no-missing-tests.js');
 const RANDOM_FILE = path.normalize(
-  path.join(__dirname, '..', '..', '..', 'lib', 'index.js')
+  path.join(__dirname, '..', '..', '..', 'lib', 'index.js'),
 );
 
 ruleTester.run('no-missing-tests', rule, {

@@ -21,7 +21,7 @@ const VALID_HELPER_USAGES_1 = ASSERT_PROPERTY_NAMES.map(
       code: `assert.${assertPropertyName}(myBool);`,
       filename: TEST_FILE_NAME,
     };
-  }
+  },
 );
 
 const VALID_HELPER_USAGES_2 = STUB_PROPERTY_NAMES.map((stubPropertyName) => {
@@ -116,7 +116,7 @@ const INVALID_HELPER_USAGES = ASSERT_PROPERTY_NAMES.flatMap(
 
       return [ex1, ex2, ex3];
     });
-  }
+  },
 );
 
 ruleTester.run('use-call-count-test-assert', rule, {

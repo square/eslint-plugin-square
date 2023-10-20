@@ -18,30 +18,30 @@ function parseCallExpression(code) {
     return parsed.body[0].expression;
   }
   throw new Error(
-    'Expected first statement in body to be an ExpressionStatement of a CallExpression.'
+    'Expected first statement in body to be an ExpressionStatement of a CallExpression.',
   );
 }
 
 describe('getSourceModuleNameForIdentifier', () => {
   it('gets the correct module name from an imported method', () => {
     const context = new FauxContext(
-      "import { someMethod } from 'some-service';"
+      "import { someMethod } from 'some-service';",
     );
     const node = parseCallExpression('someMethod()').callee;
     assert.strictEqual(
       importUtils.getSourceModuleNameForIdentifier(context, node),
-      'some-service'
+      'some-service',
     );
   });
 
   it('gets the correct module name from an imported aliased method', () => {
     const context = new FauxContext(
-      "import { someMethod as aliasMethod } from 'some-service';"
+      "import { someMethod as aliasMethod } from 'some-service';",
     );
     const node = parseCallExpression('aliasMethod()').callee;
     assert.strictEqual(
       importUtils.getSourceModuleNameForIdentifier(context, node),
-      'some-service'
+      'some-service',
     );
   });
 });
@@ -69,7 +69,7 @@ describe('getSourceModuleName', () => {
     } catch (/** @type {any} */ err) {
       assert.strictEqual(
         err.message,
-        '`getSourceModuleName` should only be called on a `CallExpression`, `MemberExpression` or `Identifier`'
+        '`getSourceModuleName` should only be called on a `CallExpression`, `MemberExpression` or `Identifier`',
       );
       assert.strictEqual(err.actual, false);
     }
@@ -82,7 +82,7 @@ describe('getImportIdentifier', () => {
       .body[0];
     assert.strictEqual(
       importUtils.getImportIdentifier(node, '@ember/object', 'action'),
-      undefined
+      undefined,
     );
   });
 
@@ -92,7 +92,7 @@ describe('getImportIdentifier', () => {
     const identifier = importUtils.getImportIdentifier(
       node,
       '@ember/runloop',
-      'later'
+      'later',
     );
 
     assert.strictEqual(identifier, 'later');
@@ -100,12 +100,12 @@ describe('getImportIdentifier', () => {
 
   it('gets an aliased identifier when found', () => {
     const node = babelESLintParse(
-      "import { later as laterz } from '@ember/runloop';"
+      "import { later as laterz } from '@ember/runloop';",
     ).body[0];
     const identifier = importUtils.getImportIdentifier(
       node,
       '@ember/runloop',
-      'later'
+      'later',
     );
 
     assert.strictEqual(identifier, 'laterz');
@@ -124,7 +124,7 @@ describe('getImportIdentifier', () => {
       .body[0];
     const identifier = importUtils.getImportIdentifier(
       node,
-      '@ember/component'
+      '@ember/component',
     );
 
     assert.strictEqual(identifier, 'Component');
@@ -136,7 +136,7 @@ describe('getImportIdentifier', () => {
     const identifier = importUtils.getImportIdentifier(
       node,
       '@ember/runloop',
-      'later'
+      'later',
     );
 
     assert.strictEqual(identifier, 'later');
@@ -147,7 +147,7 @@ describe('getImportIdentifier', () => {
       .body[0];
     const identifier = importUtils.getImportIdentifier(
       node,
-      '@ember/component'
+      '@ember/component',
     );
 
     assert.strictEqual(identifier, 'Component');

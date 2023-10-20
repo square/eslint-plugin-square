@@ -17,7 +17,7 @@ describe('config setup is correct', function () {
       CONFIG_NAMES,
       files
         .filter((file) => !file.startsWith('.'))
-        .map((file) => file.replace('.js', ''))
+        .map((file) => file.replace('.js', '')),
     );
   });
 

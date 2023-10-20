@@ -20,7 +20,7 @@ describe('rules setup is correct', function () {
       RULE_NAMES,
       files
         .filter((file) => !file.startsWith('.'))
-        .map((file) => file.replace('.js', ''))
+        .map((file) => file.replace('.js', '')),
     );
   });
 
@@ -32,7 +32,7 @@ describe('rules setup is correct', function () {
       RULE_NAMES,
       files
         .filter((file) => !file.startsWith('.'))
-        .map((file) => file.replace('.js', ''))
+        .map((file) => file.replace('.js', '')),
     );
   });
 
@@ -44,7 +44,7 @@ describe('rules setup is correct', function () {
       RULE_NAMES,
       files
         .filter((file) => !file.startsWith('.') && !file.startsWith('_'))
-        .map((file) => file.replace('.md', ''))
+        .map((file) => file.replace('.md', '')),
     );
   });
 
@@ -52,7 +52,7 @@ describe('rules setup is correct', function () {
     const TYPE_ANNOTATION = "/** @type {import('eslint').Rule.RuleModule} */";
     const TYPE_ANNOTATION_UNCLOSED = TYPE_ANNOTATION.slice(
       0,
-      Math.max(0, TYPE_ANNOTATION.lastIndexOf('}'))
+      Math.max(0, TYPE_ANNOTATION.lastIndexOf('}')),
     ); // Allow for & in the type annotation.
     for (const ruleName of RULE_NAMES) {
       const filePath = path.join(
@@ -60,7 +60,7 @@ describe('rules setup is correct', function () {
         '..',
         'lib',
         'rules',
-        `${ruleName}.js`
+        `${ruleName}.js`,
       );
       const file = readFileSync(filePath, 'utf8');
 
@@ -69,7 +69,7 @@ describe('rules setup is correct', function () {
           assert.ok(
             file.includes(TYPE_ANNOTATION) ||
               file.includes(TYPE_ANNOTATION_UNCLOSED),
-            `includes jsdoc comment for rule type: ${TYPE_ANNOTATION}`
+            `includes jsdoc comment for rule type: ${TYPE_ANNOTATION}`,
           );
         });
       });
