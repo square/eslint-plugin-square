@@ -18,7 +18,9 @@ Install alongside ESLint via yarn (or npm):
 yarn add --dev eslint eslint-plugin-square npm-run-all
 ```
 
-Edit your `.eslintrc.js` configuration file to extend one of the available configurations from this plugin:
+If you're creating a new ESLint configuration, refer to ESLint's [documentation](https://eslint.org/docs/latest/use/configure/configuration-files) to determine the correct file format for your project. For example, ESM projects with `"type": "module"` in their package.json should use an `.eslintrc.cjs` file format instead of `.eslintrc.js`.
+
+Once you have an ESLint configuration file, add this plugin to your `extends` property:
 
 ```js
 module.exports = {
