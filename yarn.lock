@@ -771,6 +771,18 @@
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/@pkgjs/parseargs/-/parseargs-0.11.0.tgz#a77ea742fab25775145434eb1d2328cf5013ac33"
   integrity sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==
 
+"@pkgr/utils@^2.3.1":
+  version "2.4.2"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/@pkgr/utils/-/utils-2.4.2.tgz#9e638bbe9a6a6f165580dc943f138fd3309a2cbc"
+  integrity sha512-POgTXhjrTfbTV63DiFXav4lBHiICLKKwDeaKn9Nphwj7WH6m0hMMCaJkMyRWjgtPFyRKRVoMXXjczsTQRDEhYw==
+  dependencies:
+    cross-spawn "^7.0.3"
+    fast-glob "^3.3.0"
+    is-glob "^4.0.3"
+    open "^9.1.0"
+    picocolors "^1.0.0"
+    tslib "^2.6.0"
+
 "@pnpm/config.env-replace@^1.1.0":
   version "1.1.0"
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/@pnpm/config.env-replace/-/config.env-replace-1.1.0.tgz#ab29da53df41e8948a00f2433f085f54de8b3a4c"
@@ -999,14 +1011,15 @@
     semver "^7.3.7"
     tsutils "^3.21.0"
 
-"@typescript-eslint/parser@^5.62.0":
-  version "5.62.0"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-5.62.0.tgz#1b63d082d849a2fcae8a569248fbe2ee1b8a56c7"
-  integrity sha512-VlJEV0fOQ7BExOsHYAGrgbEiZoi8D+Bl2+f6V2RrXerRSylnp+ZBHmPvaIa8cz0Ajx7WO7Z5RqfgYg7ED1nRhA==
+"@typescript-eslint/parser@^6.8.0":
+  version "6.8.0"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/@typescript-eslint/parser/-/parser-6.8.0.tgz#bb2a969d583db242f1ee64467542f8b05c2e28cb"
+  integrity sha512-5tNs6Bw0j6BdWuP8Fx+VH4G9fEPDxnVI7yH1IAPkQH5RUtvKwRoqdecAPdQXv4rSOADAaz1LFBZvZG7VbXivSg==
   dependencies:
-    "@typescript-eslint/scope-manager" "5.62.0"
-    "@typescript-eslint/types" "5.62.0"
-    "@typescript-eslint/typescript-estree" "5.62.0"
+    "@typescript-eslint/scope-manager" "6.8.0"
+    "@typescript-eslint/types" "6.8.0"
+    "@typescript-eslint/typescript-estree" "6.8.0"
+    "@typescript-eslint/visitor-keys" "6.8.0"
     debug "^4.3.4"
 
 "@typescript-eslint/scope-manager@5.61.0":
@@ -1024,6 +1037,14 @@
   dependencies:
     "@typescript-eslint/types" "5.62.0"
     "@typescript-eslint/visitor-keys" "5.62.0"
+
+"@typescript-eslint/scope-manager@6.8.0":
+  version "6.8.0"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/@typescript-eslint/scope-manager/-/scope-manager-6.8.0.tgz#5cac7977385cde068ab30686889dd59879811efd"
+  integrity sha512-xe0HNBVwCph7rak+ZHcFD6A+q50SMsFwcmfdjs9Kz4qDh5hWhaPhFjRs/SODEhroBI5Ruyvyz9LfwUJ624O40g==
+  dependencies:
+    "@typescript-eslint/types" "6.8.0"
+    "@typescript-eslint/visitor-keys" "6.8.0"
 
 "@typescript-eslint/type-utils@5.61.0":
   version "5.61.0"
@@ -1044,6 +1065,11 @@
   version "5.62.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/types/-/types-5.62.0.tgz#258607e60effa309f067608931c3df6fed41fd2f"
   integrity sha512-87NVngcbVXUahrRTqIK27gD2t5Cu1yuCXxbLcFtCzZGlfyVWWh8mLHkoxzjsB6DDNnvdL+fW8MiwPEJyGJQDgQ==
+
+"@typescript-eslint/types@6.8.0":
+  version "6.8.0"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/@typescript-eslint/types/-/types-6.8.0.tgz#1ab5d4fe1d613e3f65f6684026ade6b94f7e3ded"
+  integrity sha512-p5qOxSum7W3k+llc7owEStXlGmSl8FcGvhYt8Vjy7FqEnmkCVlM3P57XQEGj58oqaBWDQXbJDZxwUWMS/EAPNQ==
 
 "@typescript-eslint/typescript-estree@5.61.0":
   version "5.61.0"
@@ -1070,6 +1096,19 @@
     is-glob "^4.0.3"
     semver "^7.3.7"
     tsutils "^3.21.0"
+
+"@typescript-eslint/typescript-estree@6.8.0":
+  version "6.8.0"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/@typescript-eslint/typescript-estree/-/typescript-estree-6.8.0.tgz#9565f15e0cd12f55cf5aa0dfb130a6cb0d436ba1"
+  integrity sha512-ISgV0lQ8XgW+mvv5My/+iTUdRmGspducmQcDw5JxznasXNnZn3SKNrTRuMsEXv+V/O+Lw9AGcQCfVaOPCAk/Zg==
+  dependencies:
+    "@typescript-eslint/types" "6.8.0"
+    "@typescript-eslint/visitor-keys" "6.8.0"
+    debug "^4.3.4"
+    globby "^11.1.0"
+    is-glob "^4.0.3"
+    semver "^7.5.4"
+    ts-api-utils "^1.0.1"
 
 "@typescript-eslint/utils@5.61.0":
   version "5.61.0"
@@ -1114,6 +1153,14 @@
   dependencies:
     "@typescript-eslint/types" "5.62.0"
     eslint-visitor-keys "^3.3.0"
+
+"@typescript-eslint/visitor-keys@6.8.0":
+  version "6.8.0"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/@typescript-eslint/visitor-keys/-/visitor-keys-6.8.0.tgz#cffebed56ae99c45eba901c378a6447b06be58b8"
+  integrity sha512-oqAnbA7c+pgOhW2OhGvxm0t1BULX5peQI/rLsNDpGM78EebV3C9IGbX5HNZabuZ6UQrYveCLjKo8Iy/lLlBkkg==
+  dependencies:
+    "@typescript-eslint/types" "6.8.0"
+    eslint-visitor-keys "^3.4.1"
 
 "@ungap/structured-clone@^1.2.0":
   version "1.2.0"
@@ -2883,13 +2930,13 @@ eslint-plugin-prettier@^4.2.1:
   dependencies:
     prettier-linter-helpers "^1.0.0"
 
-eslint-plugin-qunit@^7.3.4:
-  version "7.3.4"
-  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/eslint-plugin-qunit/-/eslint-plugin-qunit-7.3.4.tgz#2465b6f29ff56fbe9b741bde2740dec109ee9bec"
-  integrity sha512-EbDM0zJerH9zVdUswMJpcFF7wrrpvsGuYfNexUpa5hZkkdFhaFcX+yD+RSK4Nrauw4psMGlcqeWUMhaVo+Manw==
+eslint-plugin-prettier@^5.0.1:
+  version "5.0.1"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/eslint-plugin-prettier/-/eslint-plugin-prettier-5.0.1.tgz#a3b399f04378f79f066379f544e42d6b73f11515"
+  integrity sha512-m3u5RnR56asrwV/lDC4GHorlW75DsFfmUcjfCYylTUs85dBRnB7VM6xG8eCMJdeDRnppzmxZVf1GEPJvl1JmNg==
   dependencies:
-    eslint-utils "^3.0.0"
-    requireindex "^1.2.0"
+    prettier-linter-helpers "^1.0.0"
+    synckit "^0.8.5"
 
 eslint-plugin-qunit@^8.0.1:
   version "8.0.1"
@@ -2938,7 +2985,7 @@ eslint-plugin-react@^7.33.2:
     eslint-plugin-import "^2.28.1"
     eslint-plugin-jsx-a11y "^6.7.1"
     eslint-plugin-prettier "^4.2.1"
-    eslint-plugin-qunit "^7.3.4"
+    eslint-plugin-qunit "^8.0.1"
     eslint-plugin-react "^7.33.2"
     eslint-plugin-react-hooks "^4.6.0"
     eslint-plugin-unicorn "^48.0.1"
@@ -5719,7 +5766,7 @@ onetime@^6.0.0:
   dependencies:
     mimic-fn "^4.0.0"
 
-open@9.1.0:
+open@9.1.0, open@^9.1.0:
   version "9.1.0"
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/open/-/open-9.1.0.tgz#684934359c90ad25742f5a26151970ff8c6c80b6"
   integrity sha512-OS+QTnw1/4vrf+9hh1jc1jnYjzSG4ttTBB8UxOwAnInG3Uo4ssetzC1ihqaIHjLJnA5GGlRl6QlZXOTQhRBUvg==
@@ -7129,6 +7176,14 @@ sync-disk-cache@^1.3.3:
     rimraf "^2.2.8"
     username-sync "^1.0.2"
 
+synckit@^0.8.5:
+  version "0.8.5"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/synckit/-/synckit-0.8.5.tgz#b7f4358f9bb559437f9f167eb6bc46b3c9818fa3"
+  integrity sha512-L1dapNV6vu2s/4Sputv8xGsCdAVlb5nRDMFU/E27D44l5U6cw1g0dGd45uLc+OXjNMmF4ntiMdCimzcjFKQI8Q==
+  dependencies:
+    "@pkgr/utils" "^2.3.1"
+    tslib "^2.5.0"
+
 tar@^6.0.2:
   version "6.2.0"
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/tar/-/tar-6.2.0.tgz#b14ce49a79cb1cd23bc9b016302dea5474493f73"
@@ -7233,6 +7288,11 @@ trim-newlines@^3.0.0:
   resolved "https://registry.yarnpkg.com/trim-newlines/-/trim-newlines-3.0.1.tgz#260a5d962d8b752425b32f3a7db0dcacd176c144"
   integrity sha512-c1PTsA3tYrIsLGkJkzHF+w9F2EyxfXGo4UyJc4pFL++FMjnq0HJS69T3M7d//gKrFKwy429bouPescbjecU+Zw==
 
+ts-api-utils@^1.0.1:
+  version "1.0.3"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/ts-api-utils/-/ts-api-utils-1.0.3.tgz#f12c1c781d04427313dbac808f453f050e54a331"
+  integrity sha512-wNMeqtMz5NtwpT/UZGY5alT+VoKdSsOOP/kqHFcUW1P/VRhH2wJ48+DN2WwUliNbQ976ETwDL0Ifd2VVvgonvg==
+
 tsconfig-paths@^3.14.2:
   version "3.14.2"
   resolved "https://registry.yarnpkg.com/tsconfig-paths/-/tsconfig-paths-3.14.2.tgz#6e32f1f79412decd261f92d633a9dc1cfa99f088"
@@ -7248,7 +7308,7 @@ tslib@^1.8.1:
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
 
-tslib@^2.0.1, tslib@^2.0.3, tslib@^2.1.0:
+tslib@^2.0.1, tslib@^2.0.3, tslib@^2.1.0, tslib@^2.5.0, tslib@^2.6.0:
   version "2.6.2"
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/tslib/-/tslib-2.6.2.tgz#703ac29425e7b37cd6fd456e92404d46d1f3e4ae"
   integrity sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==
