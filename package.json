@@ -50,7 +50,7 @@
     "statements": 98
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.8.0",
+    "@typescript-eslint/eslint-plugin": "^6.9.1",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-ember": "^11.9.0",
     "eslint-plugin-es": "^4.1.0",
