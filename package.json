@@ -76,7 +76,7 @@
     "@square/prettier-config": "^1.0.0",
     "@types/eslint": "^8.37.0",
     "@types/eslint-utils": "^3.0.2",
-    "@types/estree": "^1.0.1",
+    "@types/estree": "^1.0.5",
     "@types/jest": "^29.5.2",
     "@types/requireindex": "^1.2.0",
     "@typescript-eslint/parser": "^6.9.1",
