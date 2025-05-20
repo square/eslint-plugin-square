@@ -1,20 +1,10 @@
+## [26.0.1](https://github.com/square/eslint-plugin-square/compare/v26.0.0...v26.0.1) (2025-05-20)
 
 
+### Bug Fixes
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* **deps:** bump deps to cut a new release ([9e39ce9](https://github.com/square/eslint-plugin-square/commit/9e39ce94d607a47eaf73022c231bdd74e0da903c))
+* **deps:** bump deps to cut a new release ([2a3cc51](https://github.com/square/eslint-plugin-square/commit/2a3cc51c023b60213b91e2d9292555dafc0a405f))
 
 ## v26.0.0 (2023-10-20)
 
