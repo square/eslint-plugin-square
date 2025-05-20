@@ -3,7 +3,7 @@ name: Release PR
 on:
   push:
     branches:
-      - main
+      - master
   workflow_dispatch: # for manual release fixes
     inputs:
       retry-publish:
