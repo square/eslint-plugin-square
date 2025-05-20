@@ -1,11 +1,13 @@
 # Release Instructions
 
-1. Check that notable PRs since the last release are labeled and have clear and consistent titles
+We are using [Block OSPO Releaser](https://github.com/block/ospo/tree/main/actions/releaser) to handle the release process.
 
-2. `git pull` the latest master and ensure that `git status` shows no local changes
+To release a new version, just go to the current temporary release PR, review if the changelogs make sense, and merge it.
 
-3. `export GITHUB_AUTH="..."` with a [GitHub access token](https://github.com/settings/tokens/new?scopes=repo&description=release-it) with "repo" access so [release-it](https://github.com/release-it/release-it) can conduct a GitHub release and [lerna-changelog](https://github.com/lerna/lerna-changelog) can download the change history
+Once it's merged, the release will be automatically published to NPM, with the GitHub Release and tags being created too.
 
-4. `export EDITOR="vim"` to choose an editor for editing the changelog
+## Temporary Release PRs
 
-5. `yarn release` (uses [@release-it-plugins/lerna-changelog](https://github.com/release-it-plugins/lerna-changelog) to handle versioning, the changelog, publishing to GitHub and NPM, etc)
+A single temporary PR is created once the CI detects relevant pushes (feat, fix, etc.).
+
+Every new push will be aggregated into the same PR, and the changelog will be updated _automagically_ with the new changes.

@@ -1,0 +1,19 @@
+name: "Release Linter PR"
+
+on:
+  pull_request_target:
+    types:
+      - opened
+      - edited
+      - reopened
+
+jobs:
+  main:
+    name: Validate PR title
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: read
+    steps:
+      - uses: block/ospo/actions/releaser-linter@main
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
