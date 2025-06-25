@@ -24,6 +24,8 @@ jobs:
     steps:
       - uses: block/ospo/actions/releaser@main
         with:
+          block-releaser-app-id: ${{ secrets.BLOCK_RELEASER_APP_ID }}
+          block-releaser-private-key: ${{ secrets.BLOCK_RELEASER_APP_PRIVATE_KEY }}
           release-type: node
           node-version: 20
           npm-token: ${{ secrets.NPM_TOKEN }}
